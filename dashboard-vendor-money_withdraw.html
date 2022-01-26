@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>SEWA</title>
+      <!-- Bootstrap link Starts -->
+      <link rel="stylesheet" href="frontend/assets/bootstrap-4.3.1/css/bootstrap.min.css" />
+      <link rel="stylesheet" href="frontend/assets/bootstrap-4.3.1/css/bootstrap.min.css.map" />
+      <!-- Bootstrap link Ends -->
+      <!-- Font Awesome Link Starts -->
+      <link rel="stylesheet" href="frontend/assets/font-awesome-4.7.0/css/font-awesome.min.css" />
+      <!-- Font Awesome Link Ends -->
+      <!-- Slick Css -->
+      <link rel="stylesheet" href="frontend/assets/slick/slick.css" />
+      <link rel="stylesheet" href="frontend/assets/slick/slick-theme.css" />
+      <!-- Slick Css Ends-->
+      <!-- Custom Links -->
+      <!-- Font Link -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <!-- google font  -->
+      <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Readex+Pro:wght@200&display=swap" rel="stylesheet" /> -->
+      <link
+         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Readex+Pro:wght@200&display=swap"
+         rel="stylesheet"
+         />
+      <!-- Font Link Ends -->
+      <link rel="stylesheet" href="frontend/assets/css/style.css" />
+      <!-- <link rel="stylesheet" href="frontend/assets/css/responsive.css" /> -->
+      <link rel="stylesheet" href="frontend/assets/css/dashboard.css" />
+      <link rel="stylesheet" href="frontend/assets/css/dashboard-two.css" />
+      <link rel="stylesheet" href="frontend/assets/css/dashboard-responsive.css" />
+      <!-- Custom Links Ends -->
+      <!-- Countdown start -->
+      <link rel="stylesheet" href="frontend/assets/countdown/css/flipclock.css" />
+      <!-- Countdown end -->
+   </head>
+   <body>
+      <!-- <div id="loading"></div> -->
+      <header class="section-header top-header-bg d-md-block d-none">
+         <div class="container px-0">
+            <div class="top-header d-flex justify-content-end align-items-center">
+               <div class="top-social-icon">
+                  <ul class="mb-0">
+                     <li class="d-flex align-items-center top_head_right">
+                        <div class="dropdown user_login_mobile">
+                           <button
+                              class="text-light btn_account pb-0 btn bg-transparent dropdown-toggle pt-0 font-weight-normal "
+                              type="button"
+                              data-toggle="dropdown"
+                              >
+                           Track Your Order
+                           <span class="caret"></span>
+                           </button>
+                           <ul class="my_account dropdown-menu pl-3 ">
+                              <div class="input_track_blo d-flex flex-column pb-2">
+                                 <label><small class="font-weight-bold">Track Your Order</small></label>
+                                 <div class="track_input_btn d-flex">
+                                    <input type="text" class="form-control" placeholder="Enter order id"/>
+                                    <button class="btn_custom_go">Go</button>
+                                 </div>
+                              </div>
+                           </ul>
+                        </div>
+                        <!-- user login start  -->
+                        <div class="dropdown user_login_mobile">
+                           <button
+                              class="text-light btn_account pb-0 btn bg-transparent dropdown-toggle pt-0 font-weight-normal "
+                              type="button"
+                              data-toggle="dropdown"
+                              >
+                           <i class="fa fa-user-o" aria-hidden="true"></i> My Account
+                           <span class="caret"></span>
+                           </button>
+                           <ul class="my_account dropdown-menu pl-3">
+                              <li>
+                                 <a href="login.html" class="font-weight-normal"
+                                    ><span class="pr-2"
+                                    ><i class="fa fa-user" aria-hidden="true"></i
+                                    ></span>
+                                 Login</a
+                                    >
+                              </li>
+                              <li>
+                                 <a href="register.html" class="font-weight-normal"
+                                    ><span class="pr-2"
+                                    ><i
+                                    class="fa fa-sign-in"
+                                    aria-hidden="true"
+                                    ></i></span
+                                    >Sign Up</a
+                                    >
+                              </li>
+                           </ul>
+                        </div>
+                        <!-- cart modal start  -->
+                        <!-- Modal -->
+                        <div
+                           class="modal fade"
+                           id="exampleModal"
+                           tabindex="-1"
+                           role="dialog"
+                           aria-labelledby="exampleModalLabel"
+                           aria-hidden="true"
+                           >
+                           <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                 <div class="modal-header">
+                                    <h5
+                                       class="modal-title text-dark font-weight-bold"
+                                       id="exampleModalLabel"
+                                       >
+                                       My Cart
+                                    </h5>
+                                    <button
+                                       type="button"
+                                       class="close"
+                                       data-dismiss="modal"
+                                       aria-label="Close"
+                                       >
+                                    <span aria-hidden="true">×</span>
+                                    </button>
+                                 </div>
+                                 <div class="modal-body mb-0 pb-0">
+                                    <div class="table-responsive px-md-3">
+                                       <table class="table text-center mb-0">
+                                          <tbody class="">
+                                             <tr class="d-flex align-items-center">
+                                                <td class="cart_img">
+                                                   <div>
+                                                      <img
+                                                         src="https://montechbd.com/shopist/demo/public/uploads/1619869340-h-250-tv2.png"
+                                                         alt="image"
+                                                         />
+                                                   </div>
+                                                </td>
+                                                <td>
+                                                   <h5>Blue Diamond Almonds</h5>
+                                                   <h6>Rs233</h6>
+                                                </td>
+                                                <td>
+                                                   <a href="" class="gray_title"
+                                                      ><i
+                                                      class="fa fa-trash-o"
+                                                      aria-hidden="true"
+                                                      ></i
+                                                      ></a>
+                                                </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </div>
+                                 </div>
+                                 <div
+                                    class="modal-footer d-flex flex-column align-items-end"
+                                    >
+                                    <div class="cart_top_total">
+                                       <h6 class="text-dark mr-1">Total Rs233</h6>
+                                    </div>
+                                    <div
+                                       class="top_cartmodal_btn d-flex justify-content-between align-items-center w-100"
+                                       >
+                                       <a
+                                          href="cart.html"
+                                          class="them_btn_new btn_cart_modal"
+                                          >View Cart</a
+                                          >
+                                       <a
+                                          href="checkout.html"
+                                          class="them_btn_new btn_cart_modal"
+                                          >Proceed Checkout</a
+                                          >
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- cart modal end  -->
+                        <!-- Popup Search Modal -->
+                        <!-- Modal -->
+                        <!-- Popup Search Modal Ends-->
+                        <!-- search modal end  -->
+                        <!-- search header end  -->
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </header>
+      <div class="nav_bar header-sticky">
+         <div class="container pl-0 ">
+            <div class="row">
+               <div class="col-md-2">
+                  <a class="navbar-brand text-dark font-weight-bold" href="#"><img src="./frontend/assets/images/logo.jpg" alt="" class="img-fluid"></a>
+               </div>
+               <!-- search start  -->
+               <div class="searchbar d-none d-md-block">
+                  <input
+                     class="search_input"
+                     type="text"
+                     name=""
+                     placeholder="Search..."
+                     />
+                  <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+               </div>
+               <!-- search mobile new star  -->
+               <div class="search_mobile_men  d-block d-md-none">
+                  <button class="search_icon_new" type="submit">
+                  <i class="fa fa-search"></i>
+                  </button>
+                  <div class="sub_search">
+                     <form action="" class="d-flex">
+                        <input
+                           class="input_box"
+                           type="text"
+                           placeholder="Search.."
+                           name="search"
+                           />
+                        <button class="search_top" type="submit">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
+                     </form>
+                  </div>
+               </div>
+               <!-- search mobile new end  -->
+               <div class="col-md-8">
+                  <div class="search_men d-none d-md-block">
+                     <form class="form-inline search_top">
+                        <input
+                           class="form-control border-0 search_input"
+                           type="search"
+                           placeholder="Search for Products"
+                           aria-label="Search"
+                           />
+                        <div class="search_select border-0">
+                           <select
+                              name=""
+                              id=""
+                              class="border-0 search_select_content px-2"
+                              >
+                              <option value="0" selected="selected">
+                                 All Categories
+                              </option>
+                              <option class="level-0" value="accessories">
+                                 Accessories
+                              </option>
+                              <option class="level-0" value="cameras-photography">
+                                 Cameras &amp; Photography
+                              </option>
+                              <option class="level-0" value="computer-components">
+                                 Computer Components
+                              </option>
+                              <option class="level-0" value="gadgets">Gadgets</option>
+                              <option class="level-0" value="home-entertainment">
+                                 Home Entertainment
+                              </option>
+                              <option class="level-0" value="laptops-computers">
+                                 Laptops &amp; Computers
+                              </option>
+                              <option class="level-0" value="headphones-2">
+                                 Headphones
+                              </option>
+                              <option class="level-0" value="speakers-2">Speakers</option>
+                           </select>
+                        </div>
+                        <div class="search_icon_top text-center">
+                           <a href="#" class="search_icon text-dark"
+                              ><i class="fa fa-search"></i
+                              ></a>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+               <div class="col-md-2">
+                  <ul
+                     class="cart_top_list d-flex justify-content-around mb-0 h-100 align-items-center "
+                     >
+                     <li>
+                        <a href="" class="position-relative">
+                        <sub class='sub_block'>1</sub>
+                        <img data-toggle="tooltip" data-placement="top" title="" data-original-title="Compare"
+                           src="./frontend/assets/images/logo/compare.svg"
+                           class="img-fluid"
+                           alt=""
+                           /></a>
+                     </li>
+                     <li>
+                        <a href="" class="position-relative">
+                        <sub class='sub_block'>0</sub
+                           ><img data-toggle="tooltip" data-placement="top" title="" data-original-title="Wishlist"
+                           src="./frontend/assets/images/logo/wishlist.svg"
+                           class="img-fluid"
+                           alt=""
+                           /></a>
+                     </li>
+                     <li>
+                        <a href="" class="position-relative"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <sub class='sub_block'>1</sub
+                           ><img data-toggle="tooltip" data-placement="top" title="" data-original-title="Cart"
+                           src="./frontend/assets/images/logo/cart.svg"
+                           class="img-fluid"
+                           alt=""
+                           /></a>
+                        <!-- cart dropdown start  -->
+                        <div class="dropdown-menu" id="cart_header_table" aria-labelledby="dropdownMenuButton">
+                           <h6 class="text-center font-weight-bold pt-1">Cart Items</h6>
+                           <div class="table-responsive" >
+                              <table class="table mb-0">
+                                 <tbody>
+                                    <tr>
+                                       <td class="img_header_cart">
+                                          <div>
+                                             <a href=""><img src="http://127.0.0.1:8000/uploads/products/thumbnail/awQYj0DwQtoWwENvsPuEeWNoHTzOqOZIihRxRj2u.jpeg" alt=""></a>
+                                          </div>
+                                       </td>
+                                       <td class="cart_header_title"> <a href="" class="text-dark">Electric Keema Machine Keema Maker</a> </td>
+                                       <td>
+                                          <a href="" class="header_cart_icon">
+                                             <ii class="fa fa-trash-o" aria-hidden="true">
+                                             </i>
+                                          </a>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="img_header_cart">
+                                          <div>
+                                             <a href=""><img src="http://127.0.0.1:8000/uploads/products/thumbnail/awQYj0DwQtoWwENvsPuEeWNoHTzOqOZIihRxRj2u.jpeg" alt=""></a>
+                                          </div>
+                                       </td>
+                                       <td class="cart_header_title"> <a href="" class="text-dark">Electric Keema </a> </td>
+                                       <td>
+                                          <a href="" class="header_cart_icon">
+                                             <ii class="fa fa-trash-o" aria-hidden="true">
+                                             </i>
+                                          </a>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="img_header_cart">
+                                          <div>
+                                             <a href=""><img src="http://127.0.0.1:8000/uploads/products/thumbnail/awQYj0DwQtoWwENvsPuEeWNoHTzOqOZIihRxRj2u.jpeg" alt=""></a>
+                                          </div>
+                                       </td>
+                                       <td class="cart_header_title"> <a href="" class="text-dark">Electric Keema Machine Keema Maker</a> </td>
+                                       <td>
+                                          <a href="" class="header_cart_icon">
+                                             <ii class="fa fa-trash-o" aria-hidden="true">
+                                             </i>
+                                          </a>
+                                       </td>
+                                    </tr>
+                                 </tbody>
+                              </table>
+                           </div>
+                           <div class="cart_header_price d-flex justify-content-between">
+                              <div>
+                                 <h6>Subtotal</h6>
+                              </div>
+                              <div>
+                                 <h6>Rs4,300.00</h6>
+                              </div>
+                           </div>
+                           <div class="
+                              top_cartmodal_btn
+                              d-flex
+                              justify-content-around
+                              align-items-center
+                              w-100 pt-2 
+                              ">
+                              <a href="cart.html" class="btn-custom rounded-0 py-2">
+                              <img src="./frontend/assets/images/logo/cart.svg" class="img-fluid" alt="">&nbsp; View Cart</a>
+                              <a href="checkout.html" class="btn-custom rounded-0 py-2">Proceed Checkout</a>
+                           </div>
+                        </div>
+                        <!-- cart dropdown end  -->
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <!-- Button trigger modal -->
+         <div
+            class="mobile-menu d-lg-none d-md-block mr-4 position-absolute"
+            data-toggle="modal"
+            data-target="#rightsidebarfilter"
+            >
+            <span
+               ><i class="fa fa-bars fa-2x text-light" aria-hidden="true"></i
+               ></span>
+         </div>
+         <!-- Button trigger modal -->
+      </div>
+      <!--======================================================= HEADER END ======-->
+      <!--======================================================= BREADCRUMB START ======-->
+      <section id="breadcrumb_item" class="pb-0 breadcrumb mb-0">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12 m-auto">
+                  <nav aria-label="breadcrumb">
+                     <ol class="breadcrumb">
+                        <li class="breadcrumb-item font-weight-bold">
+                           <a href="index.html"><span><i class="fa fa-home" aria-hidden="true"></i></span>
+                           HOME</a>
+                        </li>
+                        <li class="breadcrumb-item font-weight-bold" aria-current="page">
+                           <a href="" class="text-dark">
+                           Dashboard</a>
+                        </li>
+                        <li class="breadcrumb-item font-weight-bold" aria-current="page">
+                           <a href="" class="text-dark">
+                           Money Withdraw</a>
+                        </li>
+                     </ol>
+                  </nav>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!--======================================================= BREADCRUMB END ======-->
+      <!-- Dashboard Vndeor Wrapper -->
+      <section id="dashboard-vendor-wrapper">
+         <section class="gry-bg py-4 profile">
+            <div class="container">
+               <div class="row cols-xs-space cols-sm-space cols-md-space">
+                  <div class="col-lg-3 d-none d-lg-block">
+                     <div id="sidebar_men_block" class="sidebar sidebar--style-3 no-border stickyfill p-0">
+                        <div class="widget mb-0">
+                           <div class="widget-profile-box text-center p-3">
+                              <div class="image" style="background-image:url('http://durbarmart.nextnepal.org/public/uploads/ucQhvfz4EQXNeTbN8Eif0Cpq5LnOwvg8t7qKNKVs.jpeg')">
+                              </div>
+                              <div class="name mb-0">Mr. Seller <span class="ml-2"><i class="fa fa-check-circle"
+                                 style="color:green"></i></span></div>
+                           </div>
+                           <div class="sidebar-widget-title py-3">
+                              <span>Menu</span>
+                           </div>
+                           <div class="widget-profile-menu py-3">
+                              <ul class="categories categories--style-3">
+                                 <li>
+                                    <a href="https://durbarmart.nextnepal.org/dashboard" class="active">
+                                    <i class="fa fa-dashboard"></i>
+                                    <span class="category-name">
+                                    Dashboard
+                                    </span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="https://durbarmart.nextnepal.org/purchase_history" class="">
+                                    <i class="fa fa-file-text"></i>
+                                    <span class="category-name">
+                                    Purchase History </span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="https://durbarmart.nextnepal.org/digital_purchase_history" class="">
+                                    <i class="fa fa-download"></i>
+                                    <span class="category-name">
+                                    Downloads
+                                    </span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href=https://durbarmart.nextnepal.org/ "wishlists" class="">
+                                    <i class="fa fa-heart-o"></i>
+                                    <span class="category-name">
+                                    Wishlist
+                                    </span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="https://durbarmart.nextnepal.org/seller/products" class="">
+                                    <i class="fa fa-diamond"></i>
+                                    <span class="category-name">
+                                    Products
+                                    </span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="https://durbarmart.nextnepal.org/seller/digitalproducts" class="">
+                                    <i class="fa fa-diamond"></i>
+                                    <span class="category-name">
+                                    Digital Products
+                                    </span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="https://durbarmart.nextnepal.org/customer_products" class="">
+                                    <i class="fa fa-diamond"></i>
+                                    <span class="category-name">
+                                    Classified Products
+                                    </span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="https://durbarmart.nextnepal.org/product-bulk-upload/index" class="">
+                                    <i class="fa fa-upload"></i>
+                                    <span class="category-name">
+                                    Product Bulk Upload
+                                    </span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="https://durbarmart.nextnepal.org/orders" class="">
+                                    <i class="fa fa-file-text"></i>
+                                    <span class="category-name">
+                                    Orders </span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="https://durbarmart.nextnepal.org/refund-request" class="">
+                                    <i class="fa fa-file-text"></i>
+                                    <span class="category-name">
+                                    Recieved Refund Request
+                                    </span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="https://durbarmart.nextnepal.org/sent-refund-request" class="">
+                                    <i class="fa fa-file-text"></i>
+                                    <span class="category-name">
+                                    Sent Refund Request
+                                    </span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="dashboard-vendor-product_reviews.html" class="">
+                                    <i class="fa fa-star-o"></i>
+                                    <span class="category-name">
+                                    Product Reviews </span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="dashboard-vendor-conversations.html" class="">
+                                    <i class="fa fa-comment"></i>
+                                    <span class="category-name">
+                                    Conversations
+                                    </span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="dashboard-vendor-shop_setting.html" class="">
+                                    <i class="fa fa-cog"></i>
+                                    <span class="category-name">
+                                    Shop Setting
+                                    </span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="dashboard-vendor-payment_history.html" class="">
+                                    <i class="fa fa-cc-mastercard"></i>
+                                    <span class="category-name">
+                                    Payment History
+                                    </span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="dashboard-vendor-manage_profile.html" class="">
+                                    <i class="fa fa-user"></i>
+                                    <span class="category-name">
+                                    Manage Profile
+                                    </span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="dashboard-vendor-money_withdraw.html" class="">
+                                    <i class="fa fa-money"></i>
+                                    <span class="category-name">
+                                    Money Withdraw
+                                    </span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="dashboard-vendor-wallet.html" class="">
+                                    <i class="fa fa-dollar"></i>
+                                    <span class="category-name">
+                                   Money Withdraw
+                                    </span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="dashboard-vendor-support_ticket.html" class="">
+                                    <i class="fa fa-support"></i>
+                                    <span class="category-name">
+                                    Support Ticket </span>
+                                    </a>
+                                 </li>
+                              </ul>
+                           </div>
+                           <div class="sidebar-widget-title py-3">
+                              <span>Sold Amount</span>
+                           </div>
+                           <div class="widget-balance pb-3 pt-1">
+                              <div class="text-center">
+                                 <div class="heading-4 strong-700 mb-4">
+                                    <small class="d-block text-sm alpha-5 mb-2">Your sold amount (current
+                                    month)</small>
+                                    <span class="p-2 rounded">Rs0.00</span>
+                                 </div>
+                                 <table class="text-left mb-0 table w-75 m-auto">
+                                    <tr>
+                                       <td class="p-1 text-sm">
+                                          Total Sold:
+                                       </td>
+                                       <td class="p-1">
+                                          Rs0.00
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="p-1 text-sm">
+                                          Last Month Sold:
+                                       </td>
+                                       <td class="p-1">
+                                          Rs0.00
+                                       </td>
+                                    </tr>
+                                 </table>
+                              </div>
+                              <table>
+                              </table>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-9">
+                     <div class="main-content">
+                        <div class="page-title">
+                           <div class="row align-items-center">
+                              <div class="col-md-6 col-12 d-flex align-items-center">
+                                 <h2 class="heading heading-6 text-capitalize strong-600 mb-0">
+                                   Money Withdraw
+                                 </h2>
+                              </div>
+                              <div class="col-md-6 col-12">
+                                 <div class="float-md-right">
+                                    <ul class="breadcrumb">
+                                       <li><a href="https://durbarmart.nextnepal.org">Home</a></li>
+                                       <li><a href="https://durbarmart.nextnepal.org/dashboard">Dashboard</a></li>
+                                       <li class="active"><a href="https://durbarmart.nextnepal.org/wallet">My Wallet</a></li>
+                                    </ul>
+                                    <br>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-md-4">
+                              <div class="dashboard-widget text-center green-widget text-white mt-4 c-pointer">
+                                 <i class="fa fa-dollar"></i>
+                                 <span class="d-block title heading-3 strong-400">Rs0.00</span>
+                                 <span class="d-block sub-title">Pending Balance</span>
+                              </div>
+                           </div>
+                           <div class="col-md-4">
+                              <div class=" mt-4">
+                                <button type="button" class="suport_add btn m-auto" data-toggle="modal" data-target="#suport_ticket">
+                                    <img src="https://image.flaticon.com/icons/png/512/1104/1104261.png" alt="" class=" img-fluid m-auto">
+                                    <h5>Send Withdraw Request</h5>
+                                 </button>
+                                
+                              </div>
+                           </div>
+                        </div>
+                        <div class="card no-border mt-5">
+                           <div class="card-header py-3">
+                              <h4 class="mb-0 h6">Withdraw Request history</h4>
+                           </div>
+                           <div id="table_vendor" class="table-responsive-lg">
+                            <table class="table">
+                               <thead>
+                                  <tr>
+                                     <th class="text-left th_size border-0">#</th>
+                                     <th class="text-left th_size border-0">Date</th>
+                                     <th class="text-left th_size border-0">	Amount</th>
+                                     <th class="text-left th_size border-0">		Status</th>
+                                     <th class="text-left th_size border-0">	Message</th>
+                                  </tr>
+                               </thead>
+                               <!-- /thead -->
+                               <tbody>
+                                  <tr class="bordered-1">
+                                     <td class="">
+                                        #2147483647
+                                     </td>
+                                     <td class="">
+                                        2022-01-26 03:28:28
+                                     </td>
+                                     <td class="">
+                                       Rs:22	
+                                     </td>
+                                     <td class="">
+                                      
+                                        <div>
+                                         
+                                         
+                                           <span class="pending_btn">Pending</span>
+                                                                                    </div>
+                                     </td>
+                                     <td class="">
+                                        Magni suscipit exerc
+                                     </td>
+                                  </tr>
+                               </tbody>
+                               <!-- /tbody -->
+                            </table>
+                         </div>
+                        </div>
+                        <div class="pagination-wrapper py-4">
+                           <ul class="pagination justify-content-end">
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="slice-sm footer-top-bar">
+            <div class="container sct-inner">
+               <div class="row no-gutters">
+                  <div class="col-lg-3 col-md-6">
+                     <div class="footer-top-box text-center">
+                        <a href="dashboard-vendor.html">
+                           <i class="fa fa-file-text"></i>
+                           <h4 class="heading-5">Seller Policy</h4>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                     <div class="footer-top-box text-center">
+                        <a href="https://durbarmart.nextnepal.org/returnpolicy">
+                           <i class="fa fa-mail-reply"></i>
+                           <h4 class="heading-5">Return Policy</h4>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                     <div class="footer-top-box text-center">
+                        <a href="https://durbarmart.nextnepal.org/supportpolicy">
+                           <i class="fa fa-support"></i>
+                           <h4 class="heading-5">Support Policy</h4>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                     <div class="footer-top-box text-center">
+                        <a href="https://durbarmart.nextnepal.org/profile">
+                           <i class="fa fa-dashboard"></i>
+                           <h4 class="heading-5">My Profile</h4>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- Cart Ends -->
+      </section>
+      <!-- Dashboard Vndeor Wrapper Ends-->
+      <!--=============================FOOTER START  ============================ -->
+      <footer
+         id="footer"
+         class="footer-bg-color position-relative padding_top pt-5"
+         style="--r1: 130%; --r2: 71.5%"
+         >
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-4 col-12">
+                  <div class="footer-logo-box text_white">
+                     <div class="header-logo">
+                        <a
+                           class="footer-logo navbar-brand text-white font-weight-bold text-uppercase font-weight-bolder mb-4 p-0"
+                           href="index.html"
+                           >
+                        <img src="img/logo.png" alt="image" />
+                        </a>
+                     </div>
+                     <p class="text-white font-weight-normal">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi,
+                        quia accusantium eum aperiam ea eaque ab dignissimos totam
+                        pariatur debitis corporis laborum earum illo alias cumque harum
+                        quasi, rem commodi.
+                     </p>
+                     <ul class="d-flex">
+                        <li class="logo-bg">
+                           <a href="https://www.facebook.com" class="text-white"
+                              ><i class="fa fa-facebook" aria-hidden="true"></i
+                              ></a>
+                        </li>
+                        <li class="feature_in_bg ml-3">
+                           <a href="https://www.instagram.com" class="text-white" ="" =""
+                           ><i class="fa fa-instagram" aria-hidden="true"></i
+                              ></a>
+                        </li>
+                        <li class="logo-bg ml-3">
+                           <a href="https://www.google.com" class="text-white" ="" =""
+                           ><i class="fa fa-google-plus" aria-hidden="true"></i
+                              ></a>
+                        </li>
+                        <li class="logo-bg ml-3">
+                           <a href="https://np.linkedin.com" class="text-white" ="" =""
+                           ><i class="fa fa-linkedin" aria-hidden="true"></i
+                              ></a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-2 col-6">
+                  <div class="footer-title text_white footer_after">
+                     <h4 class="mb-2 mb-md-4 text-white">Quick Links</h4>
+                     <ul class="text-white">
+                        <li class="mb-2">
+                           <a href="index.html" class="text-white">Home</a>
+                        </li>
+                        <li class="mb-2">
+                           <a href="product.html" class="text-white">Products</a>
+                        </li>
+                        <li class="mb-2">
+                           <a href="checkout.html" class="text-white">Checkout</a>
+                        </li>
+                        <li class="mb-2">
+                           <a href="cart.html" class="text-white">Cart</a>
+                        </li>
+                        <li class="mb-2">
+                           <a href="blog.html" class="text-white">Blog</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-2 col-6">
+                  <div class="footer-title text_white footer_after">
+                     <h4 class="text-white mb-2 mb-md-4">Links</h4>
+                     <ul>
+                        <li class="mb-2">
+                           <a href="" class="text-white">Links 1</a>
+                        </li>
+                        <li class="mb-2">
+                           <a href="" class="text-white">Links 2</a>
+                        </li>
+                        <li class="mb-2">
+                           <a href="" class="text-white">Links 3</a>
+                        </li>
+                        <li class="mb-2">
+                           <a href="" class="text-white">Links 4</a>
+                        </li>
+                        <li class="mb-2">
+                           <a href="" class="text-white">Links 5</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-12 mt-4 mt-lg-0">
+                  <div class="footer-title text_white footer_after">
+                     <h4 class="text-white mb-2 mb-md-4">Find Us</h4>
+                     <ul>
+                        <li class="text-white mb-2">
+                           <span class="pr-3"
+                              ><i class="fa fa-map-marker" aria-hidden="true"></i></span
+                              >Kathmandu, Nepal
+                        </li>
+                        <li class="text-white mb-2">
+                           <a href="tel:+61283870907, +61452145677" class="text-light"
+                              ><span class="pr-3"
+                              ><i class="fa fa-phone" aria-hidden="true"></i
+                              ></span>
+                           +61283870907, +61452145677</a
+                              >
+                        </li>
+                        <li>
+                           <a href="mailto:niuto@gmail.com" class="text-white"
+                              ><span class="pr-3"
+                              ><i
+                              class="fa fa-envelope-square"
+                              aria-hidden="true"
+                              ></i></span
+                              >niuto@gmail.com</a
+                              >
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <hr />
+            <div class="row">
+               <div class="col-md-12 text-center pb-3 pt-2">
+                  <p class="mb-0 text-white text-center font-weight-normal">
+                     Copyright All Right Reserved 2021.
+                     <span class="testimonial-title">Power by NEXT NEPAL </span>
+                  </p>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!--=============================FOOTER END  ============================ -->
+      <!--============================================================ LINK START ====-->
+      <!-- 1st Jquery Link Starts-->
+      <script src="frontend/assets/jquery-3.5.1/jquery-3.5.1.js"></script>
+      <!-- Jquery Link Ends-->
+      <!-- Popper -->
+      <script src="frontend/assets/popper/popper.min.js"></script>
+      <!-- Popper Ends-->
+      <!-- 3rd Bootstrap Js Link Starts -->
+      <script src="frontend/assets/bootstrap-4.3.1/js/bootstrap.min.js"></script>
+      <script src="frontend/assets/bootstrap-4.3.1/js/bootstrap.min.js.map"></script>
+      <!-- Bootstrap Js Link Ends -->
+      <!-- Slick Js -->
+      <script src="frontend/assets/slick/slick.min.js"></script>
+      <!-- Slick Js Ends-->
+      <!-- Magnific Popup -->
+      <script src="frontend/assets/magnific-popup/jquery.magnific-popup.min.js"></script>
+      <!-- Magnific Popup Ends-->
+      <!-- Countdown start -->
+      <script src="frontend/assets/countdown/js/flipclock.js"></script>
+      <!-- <script src="frontend/assets/countdown/js/flipclock.min.js"></script> -->
+      <!-- Countdown end -->
+      <!-- Custom Js Starts -->
+      <script src="frontend/assets/js/main.js"></script>
+      <!-- Custom Js Ends -->
+      <!--============================================================= LINK 
+         <!-- Mobile Nav -->
+      <div class="modal fade" id="rightsidebarfilter" tabindex="-1" role="dialog" aria-labelledby="rightsidebarfilterlabel" aria-hidden="true">
+         <div  id="modal_dialog" class="modal-dialog" role="document">
+            <div class="modal-content h-100">
+               <div class="dashboard_menu_btn modal-header px-3 py-3 align-items-center">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="col-lg-3 p-0">
+                  <div id="sidebar_men_block" class="sidebar sidebar--style-3 no-border stickyfill p-0">
+                     <div class="widget mb-0">
+                        <div class="widget-profile-box text-center p-3">
+                           <div class="image" style="background-image:url('http://durbarmart.nextnepal.org/public/uploads/ucQhvfz4EQXNeTbN8Eif0Cpq5LnOwvg8t7qKNKVs.jpeg')">
+                           </div>
+                           <div class="name mb-0">Mr. Seller <span class="ml-2"><i class="fa fa-check-circle"
+                              style="color:green"></i></span></div>
+                        </div>
+                        <div class="sidebar-widget-title py-3">
+                           <span>Menu</span>
+                        </div>
+                        <div class="widget-profile-menu py-3">
+                           <ul class="categories categories--style-3">
+                              <li>
+                                 <a href="https://durbarmart.nextnepal.org/dashboard" class="active">
+                                 <i class="fa fa-dashboard"></i>
+                                 <span class="category-name">
+                                 Dashboard
+                                 </span>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="https://durbarmart.nextnepal.org/purchase_history" class="">
+                                 <i class="fa fa-file-text"></i>
+                                 <span class="category-name">
+                                 Purchase History </span>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="https://durbarmart.nextnepal.org/digital_purchase_history" class="">
+                                 <i class="fa fa-download"></i>
+                                 <span class="category-name">
+                                 Downloads
+                                 </span>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href=https://durbarmart.nextnepal.org/ "wishlists" class="">
+                                 <i class="fa fa-heart-o"></i>
+                                 <span class="category-name">
+                                 Wishlist
+                                 </span>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="https://durbarmart.nextnepal.org/seller/products" class="">
+                                 <i class="fa fa-diamond"></i>
+                                 <span class="category-name">
+                                 Products
+                                 </span>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="https://durbarmart.nextnepal.org/seller/digitalproducts" class="">
+                                 <i class="fa fa-diamond"></i>
+                                 <span class="category-name">
+                                 Digital Products
+                                 </span>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="https://durbarmart.nextnepal.org/customer_products" class="">
+                                 <i class="fa fa-diamond"></i>
+                                 <span class="category-name">
+                                 Classified Products
+                                 </span>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="https://durbarmart.nextnepal.org/product-bulk-upload/index" class="">
+                                 <i class="fa fa-upload"></i>
+                                 <span class="category-name">
+                                 Product Bulk Upload
+                                 </span>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="https://durbarmart.nextnepal.org/orders" class="">
+                                 <i class="fa fa-file-text"></i>
+                                 <span class="category-name">
+                                 Orders </span>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="https://durbarmart.nextnepal.org/refund-request" class="">
+                                 <i class="fa fa-file-text"></i>
+                                 <span class="category-name">
+                                 Recieved Refund Request
+                                 </span>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="https://durbarmart.nextnepal.org/sent-refund-request" class="">
+                                 <i class="fa fa-file-text"></i>
+                                 <span class="category-name">
+                                 Sent Refund Request
+                                 </span>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="dashboard-vendor-product_reviews.html" class="">
+                                 <i class="fa fa-star-o"></i>
+                                 <span class="category-name">
+                                 Product Reviews </span>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="dashboard-vendor-conversations.html" class="">
+                                 <i class="fa fa-comment"></i>
+                                 <span class="category-name">
+                                 Conversations
+                                 </span>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="dashboard-vendor-shop_setting.html" class="">
+                                 <i class="fa fa-cog"></i>
+                                 <span class="category-name">
+                                 Shop Setting
+                                 </span>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="dashboard-vendor-payment_history.html" class="">
+                                 <i class="fa fa-cc-mastercard"></i>
+                                 <span class="category-name">
+                                 Payment History
+                                 </span>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="dashboard-vendor-manage_profile.html" class="">
+                                 <i class="fa fa-user"></i>
+                                 <span class="category-name">
+                                 Manage Profile
+                                 </span>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="dashboard-vendor-money_withdraw.html" class="">
+                                 <i class="fa fa-money"></i>
+                                 <span class="category-name">
+                                 Money Withdraw
+                                 </span>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="dashboard-vendor-wallet.html" class="">
+                                 <i class="fa fa-dollar"></i>
+                                 <span class="category-name">
+                                Money Withdraw
+                                 </span>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="dashboard-vendor-support_ticket.html" class="">
+                                 <i class="fa fa-support"></i>
+                                 <span class="category-name">
+                                 Support Ticket </span>
+                                 </a>
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="sidebar-widget-title py-3">
+                           <span>Sold Amount</span>
+                        </div>
+                        <div class="widget-balance pb-3 pt-1">
+                           <div class="text-center">
+                              <div class="heading-4 strong-700 mb-4">
+                                 <small class="d-block text-sm alpha-5 mb-2">Your sold amount (current
+                                 month)</small>
+                                 <span class="p-2 rounded">Rs0.00</span>
+                              </div>
+                              <table class="text-left mb-0 table w-75 m-auto">
+                                 <tr>
+                                    <td class="p-1 text-sm">
+                                       Total Sold:
+                                    </td>
+                                    <td class="p-1">
+                                       Rs0.00
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="p-1 text-sm">
+                                       Last Month Sold:
+                                    </td>
+                                    <td class="p-1">
+                                       Rs0.00
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                           <table>
+                           </table>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Mobile Nav -->
+      <!-- CREATE TICKET MODAL START  -->
+      <!-- Modal -->
+      <div class="modal fade" id="suport_ticket" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog">
+            <div class="modal-content position-relative">
+                <div class="modal-header">
+                <h5 class="modal-title strong-600 heading-5">Send A Withdraw Request</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+                </button>
+                </div>
+                <form class="" action="https://durbarmart.nextnepal.org/withdraw_requests" method="post">
+                <input type="hidden" name="_token" value="SOUEs7EpD3Sp4seTV9xMj87IxCMKkbRA1I3iF59R"> <div class="modal-body gry-bg px-3 pt-3">
+                <div class="row">
+                <div class="col-md-3">
+                <label>Amount <span class="required-star">*</span></label>
+                </div>
+                <div class="col-md-9">
+                <input type="number" class="form-control mb-3" name="amount" min="1" max="78.40" placeholder="Amount" required="">
+                </div>
+                </div>
+                <div class="row">
+                <div class="col-md-3">
+                <label>Message</label>
+                </div>
+                <div class="col-md-9">
+                <textarea name="message" rows="8" class="form-control mb-3"></textarea>
+                </div>
+                </div>
+                </div>
+                <div class="modal-footer">
+                <button type="submit" class="btn btn-base-1">Send</button>
+                </div>
+                </form>
+                </div>
+         </div>
+      </div>
+      <!-- CREATE TICKET MODAL END  -->
+   </body>
+</html>
