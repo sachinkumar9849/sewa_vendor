@@ -2,13 +2,30 @@
   --primary: #007bff;
 }
 body {
-   font-family: 'Open Sans' !important;
+   /* font-family: 'Open Sans' !important; */
     /* font-family: "Open Sans", sans-serif; */
   color: #333;
   overflow-x: hidden;
   font-size: 13px;
+  position: relative;
 }
 
+/* FONT COLOR START  */
+
+:root {
+  --theme_color: #258aff !important;
+  --theme_color_sub:#f78035;
+  --body_color: #f5f5f5;
+  --black: #000;
+  --black_light: #333;
+  --title_text: #373f50;
+  --red_light: #AC0202;
+  --white: #fff;
+  --gray_light: #f7f7f7;
+  --section_bg: #f6f9fc;
+  --black_light_one: #7d879c;
+  --gray: #878787;
+}
 input[type="number"] {
   -moz-appearance: textfield;
 }
@@ -40,10 +57,12 @@ p:not(.lead) {
   z-index: 99;
 }
 .gry-bg {
-  background-color: #f3f3f3;
+  background-color: #d3d8dd42;
+  
 }
 .bg-gray {
   background-color: #f1f1f1;
+  
 }
 .c-pointer {
   cursor: pointer;
@@ -939,7 +958,7 @@ section.home-banner-area {
 .breadcrumb li:not(:last-of-type):after {
   position: absolute;
   right: 0;
-  content: ">";
+  content: "";
   color: #777;
   opacity: 1.5;
   bottom: 0;
@@ -7914,7 +7933,7 @@ div#table_vendor th.text-left.th_size.border-0 {
 
 /*=================================================== SUPPORT TICKET CSS START  */
 .suport_add img {
-    width: 74px;
+  width: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -7933,14 +7952,37 @@ button.suport_add.btn {
 
 /*========================================== BUTTON CSS START  */
 div#table_vendor .pending_btn {
-    background: #dc3545;
+  background: #dc3545;
     color: white;
     padding: 2px 10px;
     border-radius: 37px;
+    /* line-height: 0 !IMPORTANT; */
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 25px;
+    font-size: 13px;
+    cursor: unset;
 }
+/* div#table_vendor tr.bordered-1 a {
+  font-size: 14px;
+  transition: .3s;
+}
+div#table_vendor tr.bordered-1 a:hover {
+  color: blue;
+} */
 div#table_vendor td {
      font-family: 'Open Sans' !important;
     /* font-family: 'Open Sans' !important; */
+}
+button.btn.btn-base-1 {
+  transition: .5s;
+}
+button.btn.btn-base-1:hover {
+  background: transparent;
+  /* color: black; */
+  border: 1px solid;
+  color: var(--theme_color_sub);
 }
 /*========================================== BUTTON CSS END  */
 #sidebar_men_block {
@@ -7948,7 +7990,7 @@ div#table_vendor td {
     border-radius: 0;
 }
 section#breadcrumb_item {
-    background-color: #e9ecef;
+    background-color:#c8ced5cc;
     padding: 0px 0 !important;
     margin-bottom: 0;
     
@@ -7967,5 +8009,41 @@ section#breadcrumb_item ol.breadcrumb{
 }
 
 /*========================================== PROFILE END  */
-
+ul.categories--style-3>li>a:hover {
+  background-color: var(--theme_color_sub);
+  border-radius: 2px;
+  font-weight: 600;
+  transition: all 0.5s;
+}
+div#sidebar_men_block .heading-4.strong-700.mb-4 span.p-2.rounded {
+  background: var(--theme_color_sub);
+  color: var(--white);
+  border-radius: 0 !important;
+  margin-top: 4px;
+  display: inline-block;
+}
+.search_icon_top {
+  background: var(--theme_color);
+  color: var(--black);
+  width: 7%;
+  transform: translateY(0px);
+}
+section#breadcrumb_item .breadcrumb-item+.breadcrumb-item::before {
+  display: inline-block;
+  padding-right: 0;
+  color: #6c757d;
+  content: "/";
+}
+section#breadcrumb_item .breadcrumb li a {
+  text-transform: capitalize !important;
+  color: #888;
+  padding-right: 0;
+  font-size: 12px;
+}
+.img_vendor_block img {
+  min-width: 100px;
+  max-width: 100px;
+  min-height: 100px;
+  max-height: 100px;
+}
 /*========================================== NEW CSS END  */

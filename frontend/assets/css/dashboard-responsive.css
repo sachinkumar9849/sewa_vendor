@@ -9,7 +9,15 @@
         right: 0;
         top: 0;
     }
-    
+    .modal-content {
+      min-height: 100%;
+      overflow-y: scroll;
+  }
+  button.suport_add.btn {
+  
+    width: 100%;
+   
+}
   /*===========================MOBILE SEARCH CSS START  */
   /* SEARCH MOBILE START  */
 .search_top {
@@ -92,6 +100,13 @@
     font-size: 13px;
     font-weight: 600;
   }
+  .mt-5 {
+    /* margin-bottom: 0 !IMPORTANT; */
+    margin-top: 33px !important;
+}
+.footer-title.text_white.footer_after h4.mb-2.mb-md-4.text-white {
+  font-size: 18px;
+}
     /*=========================== COMMON CSS END  */
      
   
