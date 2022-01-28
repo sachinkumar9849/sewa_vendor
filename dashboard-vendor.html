@@ -23,13 +23,15 @@
       <!-- google font  -->
       <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Readex+Pro:wght@200&display=swap" rel="stylesheet" /> -->
       <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Readex+Pro:wght@200&display=swap"
-      rel="stylesheet"
-      />
+         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Readex+Pro:wght@200&display=swap"
+         rel="stylesheet"
+         />
       <!-- Font Link Ends -->
       <link rel="stylesheet" href="frontend/assets/css/style.css" />
       <link rel="stylesheet" href="frontend/assets/css/responsive.css" />
       <link rel="stylesheet" href="frontend/assets/css/dashboard.css" />
+      <link rel="stylesheet" href="frontend/assets/css/dashboard-two.css" />
+      <link rel="stylesheet" href="frontend/assets/css/dashboard-responsive.css" />
       <!-- Custom Links Ends -->
       <!-- Countdown start -->
       <link rel="stylesheet" href="frontend/assets/countdown/css/flipclock.css" />
@@ -50,7 +52,6 @@
                               data-toggle="dropdown"
                               >
                            Track Your Order
-
                            <span class="caret"></span>
                            </button>
                            <ul class="my_account dropdown-menu pl-3 ">
@@ -58,7 +59,7 @@
                                  <label><small class="font-weight-bold">Track Your Order</small></label>
                                  <div class="track_input_btn d-flex">
                                     <input type="text" class="form-control" placeholder="Enter order id"/>
-                              <button class="btn_custom_go">Go</button>
+                                    <button class="btn_custom_go">Go</button>
                                  </div>
                               </div>
                            </ul>
@@ -148,7 +149,6 @@
                                                       ></a>
                                                 </td>
                                              </tr>
-                                            
                                           </tbody>
                                        </table>
                                     </div>
@@ -196,40 +196,35 @@
                   <a class="navbar-brand text-dark font-weight-bold" href="#"><img src="./frontend/assets/images/logo.jpg" alt="" class="img-fluid"></a>
                </div>
                <!-- search start  -->
-
-          <div class="searchbar d-none d-md-block">
-            <input
-              class="search_input"
-              type="text"
-              name=""
-              placeholder="Search..."
-            />
-            <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
-          </div>
-
-          
-          <!-- search mobile new star  -->
-          <div class="search_mobile_men  d-block d-md-none">
-            <button class="search_icon_new" type="submit">
-              <i class="fa fa-search"></i>
-            </button>
-
-            <div class="sub_search">
-              <form action="" class="d-flex">
-                <input
-                  class="input_box"
-                  type="text"
-                  placeholder="Search.."
-                  name="search"
-                />
-                <button class="search_top" type="submit">
-                  <i class="fa fa-search" aria-hidden="true"></i>
-                </button>
-              </form>
-            </div>
-          </div>
-          <!-- search mobile new end  -->
-
+               <div class="searchbar d-none d-md-block">
+                  <input
+                     class="search_input"
+                     type="text"
+                     name=""
+                     placeholder="Search..."
+                     />
+                  <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+               </div>
+               <!-- search mobile new star  -->
+               <div class="search_mobile_men  d-block d-md-none">
+                  <button class="search_icon_new" type="submit">
+                  <i class="fa fa-search"></i>
+                  </button>
+                  <div class="sub_search">
+                     <form action="" class="d-flex">
+                        <input
+                           class="input_box"
+                           type="text"
+                           placeholder="Search.."
+                           name="search"
+                           />
+                        <button class="search_top" type="submit">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
+                     </form>
+                  </div>
+               </div>
+               <!-- search mobile new end  -->
                <div class="col-md-8">
                   <div class="search_men d-none d-md-block">
                      <form class="form-inline search_top">
@@ -282,10 +277,9 @@
                   <ul
                      class="cart_top_list d-flex justify-content-around mb-0 h-100 align-items-center "
                      >
-                    
                      <li>
                         <a href="" class="position-relative">
-                       <sub class='sub_block'>1</sub>
+                        <sub class='sub_block'>1</sub>
                         <img data-toggle="tooltip" data-placement="top" title="" data-original-title="Compare"
                            src="./frontend/assets/images/logo/compare.svg"
                            class="img-fluid"
@@ -294,7 +288,7 @@
                      </li>
                      <li>
                         <a href="" class="position-relative">
-                       <sub class='sub_block'>0</sub
+                        <sub class='sub_block'>0</sub
                            ><img data-toggle="tooltip" data-placement="top" title="" data-original-title="Wishlist"
                            src="./frontend/assets/images/logo/wishlist.svg"
                            class="img-fluid"
@@ -303,100 +297,131 @@
                      </li>
                      <li>
                         <a href="" class="position-relative"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                       <sub class='sub_block'>1</sub
+                        <sub class='sub_block'>1</sub
                            ><img data-toggle="tooltip" data-placement="top" title="" data-original-title="Cart"
                            src="./frontend/assets/images/logo/cart.svg"
                            class="img-fluid"
                            alt=""
                            /></a>
-                           <!-- cart dropdown start  -->
-                           <div class="dropdown-menu" id="cart_header_table" aria-labelledby="dropdownMenuButton">
-                             <h6 class="text-center font-weight-bold pt-1">Cart Items</h6>
+                        <!-- cart dropdown start  -->
+                        <div class="dropdown-menu" id="cart_header_table" aria-labelledby="dropdownMenuButton">
+                           <h6 class="text-center font-weight-bold pt-1">Cart Items</h6>
                            <div class="table-responsive" >
-                            <table class="table mb-0">
-                             
-                              <tbody>
-                                <tr>
-                                 
-                                  <td class="img_header_cart">
-                                    <div>
-                                      <a href=""><img src="http://127.0.0.1:8000/uploads/products/thumbnail/awQYj0DwQtoWwENvsPuEeWNoHTzOqOZIihRxRj2u.jpeg" alt=""></a>
-                                    </div>
-                                     </td>
-                                  <td class="cart_header_title"> <a href="" class="text-dark">Electric Keema Machine Keema Maker</a> </td>
-                                  <td> <a href="" class="header_cart_icon"><ii class="fa fa-trash-o" aria-hidden="true"></i></a> </td>
-                                </tr>
-                                <tr>
-                                 
-                                  <td class="img_header_cart">
-                                    <div>
-                                      <a href=""><img src="http://127.0.0.1:8000/uploads/products/thumbnail/awQYj0DwQtoWwENvsPuEeWNoHTzOqOZIihRxRj2u.jpeg" alt=""></a>
-                                    </div>
-                                     </td>
-                                  <td class="cart_header_title"> <a href="" class="text-dark">Electric Keema </a> </td>
-                                  <td> <a href="" class="header_cart_icon"><ii class="fa fa-trash-o" aria-hidden="true"></i></a> </td>
-                                </tr>
-                                <tr>
-                                 
-                                  <td class="img_header_cart">
-                                    <div>
-                                      <a href=""><img src="http://127.0.0.1:8000/uploads/products/thumbnail/awQYj0DwQtoWwENvsPuEeWNoHTzOqOZIihRxRj2u.jpeg" alt=""></a>
-                                    </div>
-                                     </td>
-                                  <td class="cart_header_title"> <a href="" class="text-dark">Electric Keema Machine Keema Maker</a> </td>
-                                  <td> <a href="" class="header_cart_icon"><ii class="fa fa-trash-o" aria-hidden="true"></i></a> </td>
-                                </tr>
-                               
-                              </tbody>
-                            </table>
+                              <table class="table mb-0">
+                                 <tbody>
+                                    <tr>
+                                       <td class="img_header_cart">
+                                          <div>
+                                             <a href=""><img src="http://127.0.0.1:8000/uploads/products/thumbnail/awQYj0DwQtoWwENvsPuEeWNoHTzOqOZIihRxRj2u.jpeg" alt=""></a>
+                                          </div>
+                                       </td>
+                                       <td class="cart_header_title"> <a href="" class="text-dark">Electric Keema Machine Keema Maker</a> </td>
+                                       <td>
+                                          <a href="" class="header_cart_icon">
+                                             <ii class="fa fa-trash-o" aria-hidden="true">
+                                             </i>
+                                          </a>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="img_header_cart">
+                                          <div>
+                                             <a href=""><img src="http://127.0.0.1:8000/uploads/products/thumbnail/awQYj0DwQtoWwENvsPuEeWNoHTzOqOZIihRxRj2u.jpeg" alt=""></a>
+                                          </div>
+                                       </td>
+                                       <td class="cart_header_title"> <a href="" class="text-dark">Electric Keema </a> </td>
+                                       <td>
+                                          <a href="" class="header_cart_icon">
+                                             <ii class="fa fa-trash-o" aria-hidden="true">
+                                             </i>
+                                          </a>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="img_header_cart">
+                                          <div>
+                                             <a href=""><img src="http://127.0.0.1:8000/uploads/products/thumbnail/awQYj0DwQtoWwENvsPuEeWNoHTzOqOZIihRxRj2u.jpeg" alt=""></a>
+                                          </div>
+                                       </td>
+                                       <td class="cart_header_title"> <a href="" class="text-dark">Electric Keema Machine Keema Maker</a> </td>
+                                       <td>
+                                          <a href="" class="header_cart_icon">
+                                             <ii class="fa fa-trash-o" aria-hidden="true">
+                                             </i>
+                                          </a>
+                                       </td>
+                                    </tr>
+                                 </tbody>
+                              </table>
                            </div>
-
                            <div class="cart_header_price d-flex justify-content-between">
-                             <div> <h6>Subtotal</h6> </div>
-                             <div> <h6>Rs4,300.00</h6> </div>
+                              <div>
+                                 <h6>Subtotal</h6>
+                              </div>
+                              <div>
+                                 <h6>Rs4,300.00</h6>
+                              </div>
                            </div>
-
                            <div class="
-                               top_cartmodal_btn
-                               d-flex
-                               justify-content-around
-                               align-items-center
-                               w-100 pt-2 
-                             ">
-                             <a href="cart.html" class="btn-custom rounded-0 py-2">
+                              top_cartmodal_btn
+                              d-flex
+                              justify-content-around
+                              align-items-center
+                              w-100 pt-2 
+                              ">
+                              <a href="cart.html" class="btn-custom rounded-0 py-2">
                               <img src="./frontend/assets/images/logo/cart.svg" class="img-fluid" alt="">&nbsp; View Cart</a>
-                             <a href="checkout.html" class="btn-custom rounded-0 py-2">Proceed Checkout</a>
+                              <a href="checkout.html" class="btn-custom rounded-0 py-2">Proceed Checkout</a>
                            </div>
-                            
-                           
-                          </div>
-                          
-                           <!-- cart dropdown end  -->
+                        </div>
+                        <!-- cart dropdown end  -->
                      </li>
                   </ul>
                </div>
             </div>
          </div>
          <!-- Button trigger modal -->
-      <div
-      class="mobile-menu d-lg-none d-md-block mr-4 position-absolute"
-      data-toggle="modal"
-      data-target="#rightsidebarfilter"
-    >
-      <span
-        ><i class="fa fa-bars fa-2x text-light" aria-hidden="true"></i
-      ></span>
-    </div>
-    <!-- Button trigger modal -->
+         <div
+            class="mobile-menu d-lg-none d-md-block mr-4 position-absolute"
+            data-toggle="modal"
+            data-target="#rightsidebarfilter"
+            >
+            <span
+               ><i class="fa fa-bars fa-2x text-light" aria-hidden="true"></i
+               ></span>
+         </div>
+         <!-- Button trigger modal -->
       </div>
       <!--======================================================= HEADER END ======-->
+      <section id="breadcrumb_item" class="pb-0 breadcrumb mb-0">
+        <div class="container">
+           <div class="row">
+              <div class="col-md-12 m-auto">
+                 <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                       <li class="breadcrumb-item font-weight-bold">
+                          <a href="index.html"><span><i class="fa fa-home" aria-hidden="true"></i></span>
+                          HOME</a>
+                       </li>
+                       <li class="breadcrumb-item font-weight-bold" aria-current="page">
+                          <a href="" class="text-dark">
+                          Dashboard</a>
+                       </li>
+                      
+                    </ol>
+                 </nav>
+              </div>
+           </div>
+        </div>
+     </section>
+     <!--======================================================= BREADCRUMB END ======-->
       <!-- Dashboard Vndeor Wrapper -->
       <section id="dashboard-vendor-wrapper">
          <section class="gry-bg py-4 profile">
             <div class="container">
                <div class="row cols-xs-space cols-sm-space cols-md-space">
                   <div class="col-lg-3 d-none d-lg-block">
-                     <div class="sidebar sidebar--style-3 no-border stickyfill p-0">
+                     <div id="sidebar_men_block" class="sidebar sidebar--style-3 no-border stickyfill p-0">
                         <div class="widget mb-0">
                            <div class="widget-profile-box text-center p-3">
                               <div class="image" style="background-image:url('http://durbarmart.nextnepal.org/public/uploads/ucQhvfz4EQXNeTbN8Eif0Cpq5LnOwvg8t7qKNKVs.jpeg')">
@@ -410,7 +435,7 @@
                            <div class="widget-profile-menu py-3">
                               <ul class="categories categories--style-3">
                                  <li>
-                                    <a href="https://durbarmart.nextnepal.org/dashboard" class="active">
+                                    <a href="dashboard-vendor.html" class="active">
                                     <i class="fa fa-dashboard"></i>
                                     <span class="category-name">
                                     Dashboard
@@ -418,14 +443,14 @@
                                     </a>
                                  </li>
                                  <li>
-                                    <a href="https://durbarmart.nextnepal.org/purchase_history" class="">
+                                    <a href="" class="">
                                     <i class="fa fa-file-text"></i>
                                     <span class="category-name">
                                     Purchase History </span>
                                     </a>
                                  </li>
                                  <li>
-                                    <a href="https://durbarmart.nextnepal.org/digital_purchase_history" class="">
+                                    <a href="" class="">
                                     <i class="fa fa-download"></i>
                                     <span class="category-name">
                                     Downloads
@@ -433,7 +458,7 @@
                                     </a>
                                  </li>
                                  <li>
-                                    <a href=https://durbarmart.nextnepal.org/ "wishlists" class="">
+                                    <a href=" class="">
                                     <i class="fa fa-heart-o"></i>
                                     <span class="category-name">
                                     Wishlist
@@ -441,7 +466,7 @@
                                     </a>
                                  </li>
                                  <li>
-                                    <a href="https://durbarmart.nextnepal.org/seller/products" class="">
+                                    <a href="" class="">
                                     <i class="fa fa-diamond"></i>
                                     <span class="category-name">
                                     Products
@@ -449,7 +474,7 @@
                                     </a>
                                  </li>
                                  <li>
-                                    <a href="https://durbarmart.nextnepal.org/seller/digitalproducts" class="">
+                                    <a href="" class="">
                                     <i class="fa fa-diamond"></i>
                                     <span class="category-name">
                                     Digital Products
@@ -457,7 +482,7 @@
                                     </a>
                                  </li>
                                  <li>
-                                    <a href="https://durbarmart.nextnepal.org/customer_products" class="">
+                                    <a href="" class="">
                                     <i class="fa fa-diamond"></i>
                                     <span class="category-name">
                                     Classified Products
@@ -465,7 +490,7 @@
                                     </a>
                                  </li>
                                  <li>
-                                    <a href="https://durbarmart.nextnepal.org/product-bulk-upload/index" class="">
+                                    <a href="product_bulk_upload.html" class="">
                                     <i class="fa fa-upload"></i>
                                     <span class="category-name">
                                     Product Bulk Upload
@@ -473,14 +498,14 @@
                                     </a>
                                  </li>
                                  <li>
-                                    <a href="https://durbarmart.nextnepal.org/orders" class="">
+                                    <a href="order.html" class="">
                                     <i class="fa fa-file-text"></i>
                                     <span class="category-name">
                                     Orders </span>
                                     </a>
                                  </li>
                                  <li>
-                                    <a href="https://durbarmart.nextnepal.org/refund-request" class="">
+                                    <a href="dashboard-vendor-refund-request.html" class="">
                                     <i class="fa fa-file-text"></i>
                                     <span class="category-name">
                                     Recieved Refund Request
@@ -488,7 +513,7 @@
                                     </a>
                                  </li>
                                  <li>
-                                    <a href="https://durbarmart.nextnepal.org/sent-refund-request" class="">
+                                    <a href="dashboard-vendor-sent_refund.html" class="">
                                     <i class="fa fa-file-text"></i>
                                     <span class="category-name">
                                     Sent Refund Request
@@ -567,7 +592,7 @@
                                  <div class="heading-4 strong-700 mb-4">
                                     <small class="d-block text-sm alpha-5 mb-2">Your sold amount (current
                                     month)</small>
-                                    <span class="p-2 rounded">Rs0.00</span>
+                                    <span class="p-2 rounded">Rs .00</span>
                                  </div>
                                  <table class="text-left mb-0 table w-75 m-auto">
                                     <tr>
@@ -575,7 +600,7 @@
                                           Total Sold:
                                        </td>
                                        <td class="p-1">
-                                          Rs0.00
+                                          Rs 1.00
                                        </td>
                                     </tr>
                                     <tr>
@@ -583,7 +608,7 @@
                                           Last Month Sold:
                                        </td>
                                        <td class="p-1">
-                                          Rs0.00
+                                          Rs 0.00
                                        </td>
                                     </tr>
                                  </table>
@@ -602,15 +627,7 @@
                                  Dashboard
                               </h2>
                            </div>
-                           <div class="col-md-6">
-                              <div class="float-md-right">
-                                 <ul class="breadcrumb">
-                                    <li><a href="https://durbarmart.nextnepal.org">Home</a></li>
-                                    <li class="active"><a href="https://durbarmart.nextnepal.org/dashboard">Dashboard</a>
-                                    </li>
-                                 </ul>
-                              </div>
-                           </div>
+                           
                         </div>
                      </div>
                      <div class="">
@@ -770,142 +787,141 @@
          <!-- Cart Ends -->
       </section>
       <!-- Dashboard Vndeor Wrapper Ends-->
-
-       <!--=============================FOOTER START  ============================ -->
-       <footer
-       id="footer"
-       class="footer-bg-color position-relative padding_top pt-5"
-       style="--r1: 130%; --r2: 71.5%"
-       >
-       <div class="container">
-          <div class="row">
-             <div class="col-lg-4 col-12">
-                <div class="footer-logo-box text_white">
-                   <div class="header-logo">
-                      <a
-                         class="footer-logo navbar-brand text-white font-weight-bold text-uppercase font-weight-bolder mb-4 p-0"
-                         href="index.html"
-                         >
-                      <img src="img/logo.png" alt="image" />
-                      </a>
-                   </div>
-                   <p class="text-white font-weight-normal">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi,
-                      quia accusantium eum aperiam ea eaque ab dignissimos totam
-                      pariatur debitis corporis laborum earum illo alias cumque harum
-                      quasi, rem commodi.
-                   </p>
-                   <ul class="d-flex">
-                      <li class="logo-bg">
-                         <a href="https://www.facebook.com" class="text-white"
-                            ><i class="fa fa-facebook" aria-hidden="true"></i
-                            ></a>
-                      </li>
-                      <li class="feature_in_bg ml-3">
-                         <a href="https://www.instagram.com" class="text-white" ="" =""
-                         ><i class="fa fa-instagram" aria-hidden="true"></i
-                            ></a>
-                      </li>
-                      <li class="logo-bg ml-3">
-                         <a href="https://www.google.com" class="text-white" ="" =""
-                         ><i class="fa fa-google-plus" aria-hidden="true"></i
-                            ></a>
-                      </li>
-                      <li class="logo-bg ml-3">
-                         <a href="https://np.linkedin.com" class="text-white" ="" =""
-                         ><i class="fa fa-linkedin" aria-hidden="true"></i
-                            ></a>
-                      </li>
-                   </ul>
-                </div>
-             </div>
-             <div class="col-lg-2 col-6">
-                <div class="footer-title text_white footer_after">
-                   <h4 class="mb-2 mb-md-4 text-white">Quick Links</h4>
-                   <ul class="text-white">
-                      <li class="mb-2">
-                         <a href="index.html" class="text-white">Home</a>
-                      </li>
-                      <li class="mb-2">
-                         <a href="product.html" class="text-white">Products</a>
-                      </li>
-                      <li class="mb-2">
-                         <a href="checkout.html" class="text-white">Checkout</a>
-                      </li>
-                      <li class="mb-2">
-                         <a href="cart.html" class="text-white">Cart</a>
-                      </li>
-                      <li class="mb-2">
-                         <a href="blog.html" class="text-white">Blog</a>
-                      </li>
-                   </ul>
-                </div>
-             </div>
-             <div class="col-lg-2 col-6">
-                <div class="footer-title text_white footer_after">
-                   <h4 class="text-white mb-2 mb-md-4">Links</h4>
-                   <ul>
-                      <li class="mb-2">
-                         <a href="" class="text-white">Links 1</a>
-                      </li>
-                      <li class="mb-2">
-                         <a href="" class="text-white">Links 2</a>
-                      </li>
-                      <li class="mb-2">
-                         <a href="" class="text-white">Links 3</a>
-                      </li>
-                      <li class="mb-2">
-                         <a href="" class="text-white">Links 4</a>
-                      </li>
-                      <li class="mb-2">
-                         <a href="" class="text-white">Links 5</a>
-                      </li>
-                   </ul>
-                </div>
-             </div>
-             <div class="col-lg-4 col-12 mt-4 mt-lg-0">
-                <div class="footer-title text_white footer_after">
-                   <h4 class="text-white mb-2 mb-md-4">Find Us</h4>
-                   <ul>
-                      <li class="text-white mb-2">
-                         <span class="pr-3"
-                            ><i class="fa fa-map-marker" aria-hidden="true"></i></span
-                            >Kathmandu, Nepal
-                      </li>
-                      <li class="text-white mb-2">
-                         <a href="tel:+61283870907, +61452145677" class="text-light"
-                            ><span class="pr-3"
-                            ><i class="fa fa-phone" aria-hidden="true"></i
-                            ></span>
-                         +61283870907, +61452145677</a
-                            >
-                      </li>
-                      <li>
-                         <a href="mailto:niuto@gmail.com" class="text-white"
-                            ><span class="pr-3"
-                            ><i
-                            class="fa fa-envelope-square"
-                            aria-hidden="true"
-                            ></i></span
-                            >niuto@gmail.com</a
-                            >
-                      </li>
-                   </ul>
-                </div>
-             </div>
-          </div>
-          <hr />
-          <div class="row">
-             <div class="col-md-12 text-center pb-3 pt-2">
-                <p class="mb-0 text-white text-center font-weight-normal">
-                   Copyright All Right Reserved 2021.
-                   <span class="testimonial-title">Power by NEXT NEPAL </span>
-                </p>
-             </div>
-          </div>
-       </div>
-    </footer>
-    <!--=============================FOOTER END  ============================ -->
+      <!--=============================FOOTER START  ============================ -->
+      <footer
+         id="footer"
+         class="footer-bg-color position-relative padding_top pt-5"
+         style="--r1: 130%; --r2: 71.5%"
+         >
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-4 col-12">
+                  <div class="footer-logo-box text_white">
+                     <div class="header-logo">
+                        <a
+                           class="footer-logo navbar-brand text-white font-weight-bold text-uppercase font-weight-bolder mb-4 p-0"
+                           href="index.html"
+                           >
+                        <img src="img/logo.png" alt="image" />
+                        </a>
+                     </div>
+                     <p class="text-white font-weight-normal">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi,
+                        quia accusantium eum aperiam ea eaque ab dignissimos totam
+                        pariatur debitis corporis laborum earum illo alias cumque harum
+                        quasi, rem commodi.
+                     </p>
+                     <ul class="d-flex">
+                        <li class="logo-bg">
+                           <a href="https://www.facebook.com" class="text-white"
+                              ><i class="fa fa-facebook" aria-hidden="true"></i
+                              ></a>
+                        </li>
+                        <li class="feature_in_bg ml-3">
+                           <a href="https://www.instagram.com" class="text-white" ="" =""
+                           ><i class="fa fa-instagram" aria-hidden="true"></i
+                              ></a>
+                        </li>
+                        <li class="logo-bg ml-3">
+                           <a href="https://www.google.com" class="text-white" ="" =""
+                           ><i class="fa fa-google-plus" aria-hidden="true"></i
+                              ></a>
+                        </li>
+                        <li class="logo-bg ml-3">
+                           <a href="https://np.linkedin.com" class="text-white" ="" =""
+                           ><i class="fa fa-linkedin" aria-hidden="true"></i
+                              ></a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-2 col-6">
+                  <div class="footer-title text_white footer_after">
+                     <h4 class="mb-2 mb-md-4 text-white">Quick Links</h4>
+                     <ul class="text-white">
+                        <li class="mb-2">
+                           <a href="index.html" class="text-white">Home</a>
+                        </li>
+                        <li class="mb-2">
+                           <a href="product.html" class="text-white">Products</a>
+                        </li>
+                        <li class="mb-2">
+                           <a href="checkout.html" class="text-white">Checkout</a>
+                        </li>
+                        <li class="mb-2">
+                           <a href="cart.html" class="text-white">Cart</a>
+                        </li>
+                        <li class="mb-2">
+                           <a href="blog.html" class="text-white">Blog</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-2 col-6">
+                  <div class="footer-title text_white footer_after">
+                     <h4 class="text-white mb-2 mb-md-4">Links</h4>
+                     <ul>
+                        <li class="mb-2">
+                           <a href="" class="text-white">Links 1</a>
+                        </li>
+                        <li class="mb-2">
+                           <a href="" class="text-white">Links 2</a>
+                        </li>
+                        <li class="mb-2">
+                           <a href="" class="text-white">Links 3</a>
+                        </li>
+                        <li class="mb-2">
+                           <a href="" class="text-white">Links 4</a>
+                        </li>
+                        <li class="mb-2">
+                           <a href="" class="text-white">Links 5</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-12 mt-4 mt-lg-0">
+                  <div class="footer-title text_white footer_after">
+                     <h4 class="text-white mb-2 mb-md-4">Find Us</h4>
+                     <ul>
+                        <li class="text-white mb-2">
+                           <span class="pr-3"
+                              ><i class="fa fa-map-marker" aria-hidden="true"></i></span
+                              >Kathmandu, Nepal
+                        </li>
+                        <li class="text-white mb-2">
+                           <a href="tel:+61283870907, +61452145677" class="text-light"
+                              ><span class="pr-3"
+                              ><i class="fa fa-phone" aria-hidden="true"></i
+                              ></span>
+                           +61283870907, +61452145677</a
+                              >
+                        </li>
+                        <li>
+                           <a href="mailto:niuto@gmail.com" class="text-white"
+                              ><span class="pr-3"
+                              ><i
+                              class="fa fa-envelope-square"
+                              aria-hidden="true"
+                              ></i></span
+                              >niuto@gmail.com</a
+                              >
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <hr />
+            <div class="row">
+               <div class="col-md-12 text-center pb-3 pt-2">
+                  <p class="mb-0 text-white text-center font-weight-normal">
+                     Copyright All Right Reserved 2021.
+                     <span class="testimonial-title">Power by NEXT NEPAL </span>
+                  </p>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!--=============================FOOTER END  ============================ -->
       <!--============================================================ LINK START ====-->
       <!-- 1st Jquery Link Starts-->
       <script src="frontend/assets/jquery-3.5.1/jquery-3.5.1.js"></script>
@@ -931,7 +947,7 @@
       <script src="frontend/assets/js/main.js"></script>
       <!-- Custom Js Ends -->
       <!--============================================================= LINK 
-      <!-- Mobile Nav -->
+         <!-- Mobile Nav -->
       <div class="modal fade" id="rightsidebarfilter" tabindex="-1" role="dialog" aria-labelledby="rightsidebarfilterlabel" aria-hidden="true">
          <div class="modal-dialog" role="document">
             <div class="modal-content h-100">
@@ -1392,6 +1408,5 @@
          </div>
       </div>
       <!-- Mobile Nav -->
-    
    </body>
 </html>

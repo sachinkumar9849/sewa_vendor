@@ -22,3 +22,6 @@ $(".search_icon_new").click(function () {
   // MOBILE SEARCH END
 
 
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+  });

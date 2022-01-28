@@ -317,7 +317,7 @@ a.navbar-brand img {
 
 input.form-control.border-0.search_input {
     width: 68%;
-    transform: translateY(-22px);
+    transform: translateY(-2px);
 }
 
 .search_select.border-0 {
@@ -328,7 +328,7 @@ input.form-control.border-0.search_input {
     background: var(--theme_color);
     color: var(--black);
     width: 7%;
-    transform: translateY(-22px);
+    /* transform: translateY(-22px); */
 }
 
 ul.cart_top_list img {

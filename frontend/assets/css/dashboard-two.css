@@ -8046,4 +8046,10 @@ section#breadcrumb_item .breadcrumb li a {
   min-height: 100px;
   max-height: 100px;
 }
+.custom-image {
+  width: 100%;
+  max-height: 150px;
+  min-height: 150px;
+  object-fit: cover;
+}
 /*========================================== NEW CSS END  */
