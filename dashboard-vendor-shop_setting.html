@@ -423,8 +423,8 @@
       <section id="dashboard-vendor-wrapper">
          <section class="gry-bg py-4 profile">
             <div class="container">
-               <div class="row cols-xs-space cols-sm-space cols-md-space">
-                  <div class="col-lg-3 d-none d-lg-block">
+               <div class="row">
+                  <div class="col-lg-3 ">
                      <div id="sidebar_men_block" class="sidebar sidebar--style-3 no-border stickyfill p-0">
                         <div class="widget mb-0">
                            <div class="widget-profile-box text-center p-3">
@@ -447,14 +447,14 @@
                                     </a>
                                  </li>
                                  <li>
-                                    <a href="" class="">
+                                    <a href="purchase_history.html" class="">
                                     <i class="fa fa-file-text"></i>
                                     <span class="category-name">
                                     Purchase History </span>
                                     </a>
                                  </li>
                                  <li>
-                                    <a href="" class="">
+                                    <a href="download-product.html" class="">
                                     <i class="fa fa-download"></i>
                                     <span class="category-name">
                                     Downloads
@@ -462,7 +462,7 @@
                                     </a>
                                  </li>
                                  <li>
-                                    <a href=" class="">
+                                    <a href="dashboard-vendor-wishlist.html" class="">
                                     <i class="fa fa-heart-o"></i>
                                     <span class="category-name">
                                     Wishlist
@@ -470,7 +470,7 @@
                                     </a>
                                  </li>
                                  <li>
-                                    <a href="" class="">
+                                    <a href="dashboard-vendor-products.html" class="">
                                     <i class="fa fa-diamond"></i>
                                     <span class="category-name">
                                     Products
@@ -478,7 +478,7 @@
                                     </a>
                                  </li>
                                  <li>
-                                    <a href="" class="">
+                                    <a href="digitalproducts-product.html" class="">
                                     <i class="fa fa-diamond"></i>
                                     <span class="category-name">
                                     Digital Products
@@ -486,7 +486,7 @@
                                     </a>
                                  </li>
                                  <li>
-                                    <a href="" class="">
+                                    <a href="dashboard-vendor-classified-products.html" class="">
                                     <i class="fa fa-diamond"></i>
                                     <span class="category-name">
                                     Classified Products
@@ -623,7 +623,7 @@
                         </div>
                      </div>
                   </div>
-                  <div class="col-lg-9">
+                  <div class="col-lg-9 col-12">
                      <div class="main-content">
                         <div class="page-title">
                            <div class="row align-items-center">
@@ -731,23 +731,23 @@
                                        <div class="col-md-2">
                                           <label>Slider Images <small>(1400x400)</small></label>
                                        </div>
-                                       <div class="offset-2 offset-md-0 col-10 col-md-10">
+                                       <div class="offset-lg-2 offset-0 col-10 col-md-10">
                                           <div class="row">
-                                             <div class="col-md-6">
+                                             <div class="col-md-6 col-12">
                                                 <div class="img-upload-preview">
                                                    <img loading="lazy" src="https://durbarmart.nextnepal.org/public/uploads/shop/sliders/HD9a5QeozYPbPWZzVerQXhL8asktBxURt3z8uche.jpeg" alt="" class="img-fluid">
                                                    <input type="hidden" name="previous_sliders[]" value="uploads/shop/sliders/HD9a5QeozYPbPWZzVerQXhL8asktBxURt3z8uche.jpeg">
                                                    <button type="button" class="btn btn-danger close-btn remove-files"><i class="fa fa-times"></i></button>
                                                 </div>
                                              </div>
-                                             <div class="col-md-6">
+                                             <div class="col-md-6 col-12">
                                                 <div class="img-upload-preview">
                                                    <img loading="lazy" src="https://durbarmart.nextnepal.org/public/uploads/shop/sliders/Y67Zi9OcEe60keN7GnD8ND3PvMMNgUArzjHT5OpH.jpeg" alt="" class="img-fluid">
                                                    <input type="hidden" name="previous_sliders[]" value="uploads/shop/sliders/Y67Zi9OcEe60keN7GnD8ND3PvMMNgUArzjHT5OpH.jpeg">
                                                    <button type="button" class="btn btn-danger close-btn remove-files"><i class="fa fa-times"></i></button>
                                                 </div>
                                              </div>
-                                             <div class="col-md-6">
+                                             <div class="col-md-6 col-12">
                                                 <div class="img-upload-preview">
                                                    <img loading="lazy" src="https://durbarmart.nextnepal.org/public/uploads/shop/sliders/ru5yexCvJiYBN5yuTR2shMH8zW7RN8uX7djYJdgZ.png" alt="" class="img-fluid">
                                                    <input type="hidden" name="previous_sliders[]" value="uploads/shop/sliders/ru5yexCvJiYBN5yuTR2shMH8zW7RN8uX7djYJdgZ.png">
@@ -1027,259 +1027,466 @@
       <script src="frontend/assets/js/main.js"></script>
       <!-- Custom Js Ends -->
       <!--============================================================= LINK 
-         <!-- Mobile Nav -->
+      <!-- Mobile Nav -->
       <div class="modal fade" id="rightsidebarfilter" tabindex="-1" role="dialog" aria-labelledby="rightsidebarfilterlabel" aria-hidden="true">
-         <div  id="modal_dialog" class="modal-dialog" role="document">
+         <div class="modal-dialog" role="document">
             <div class="modal-content h-100">
-               <div class="dashboard_menu_btn modal-header px-3 py-3 align-items-center">
+               <div class="modal-header px-3 py-3 align-items-center">
+                  <div class="cart-Track Your Order">
+                     <div class="image">
+                        <a class="navbar-brand" href="index.html">
+                           <!-- <img src="frontend/assets/images/logo/logo.png" alt="navigation-logo" class="img-fluid"> -->
+                           <h2 class="m-0 font-weight-bold">
+                              <span>sewa</span>
+                           </h2>
+                        </a>
+                     </div>
+                  </div>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                   </button>
                </div>
-               <div class="col-lg-3 p-0">
-                  <div id="sidebar_men_block" class="sidebar sidebar--style-3 no-border stickyfill p-0">
-                     <div class="widget mb-0">
-                        <div class="widget-profile-box text-center p-3">
-                           <div class="image" style="background-image:url('http://durbarmart.nextnepal.org/public/uploads/ucQhvfz4EQXNeTbN8Eif0Cpq5LnOwvg8t7qKNKVs.jpeg')">
-                           </div>
-                           <div class="name mb-0">Mr. Seller <span class="ml-2"><i class="fa fa-check-circle"
-                              style="color:green"></i></span></div>
-                        </div>
-                        <div class="sidebar-widget-title py-3">
-                           <span>Menu</span>
-                        </div>
-                        <div class="widget-profile-menu py-3">
-                           <ul class="categories categories--style-3">
-                              <li>
-                                 <a href="https://durbarmart.nextnepal.org/dashboard" class="active">
-                                 <i class="fa fa-dashboard"></i>
-                                 <span class="category-name">
-                                 Dashboard
-                                 </span>
-                                 </a>
-                              </li>
-                              <li>
-                                 <a href="https://durbarmart.nextnepal.org/purchase_history" class="">
-                                 <i class="fa fa-file-text"></i>
-                                 <span class="category-name">
-                                 Purchase History </span>
-                                 </a>
-                              </li>
-                              <li>
-                                 <a href="https://durbarmart.nextnepal.org/digital_purchase_history" class="">
-                                 <i class="fa fa-download"></i>
-                                 <span class="category-name">
-                                 Downloads
-                                 </span>
-                                 </a>
-                              </li>
-                              <li>
-                                 <a href=https://durbarmart.nextnepal.org/ "wishlists" class="">
-                                 <i class="fa fa-heart-o"></i>
-                                 <span class="category-name">
-                                 Wishlist
-                                 </span>
-                                 </a>
-                              </li>
-                              <li>
-                                 <a href="https://durbarmart.nextnepal.org/seller/products" class="">
-                                 <i class="fa fa-diamond"></i>
-                                 <span class="category-name">
-                                 Products
-                                 </span>
-                                 </a>
-                              </li>
-                              <li>
-                                 <a href="https://durbarmart.nextnepal.org/seller/digitalproducts" class="">
-                                 <i class="fa fa-diamond"></i>
-                                 <span class="category-name">
-                                 Digital Products
-                                 </span>
-                                 </a>
-                              </li>
-                              <li>
-                                 <a href="https://durbarmart.nextnepal.org/customer_products" class="">
-                                 <i class="fa fa-diamond"></i>
-                                 <span class="category-name">
-                                 Classified Products
-                                 </span>
-                                 </a>
-                              </li>
-                              <li>
-                                 <a href="https://durbarmart.nextnepal.org/product-bulk-upload/index" class="">
-                                 <i class="fa fa-upload"></i>
-                                 <span class="category-name">
-                                 Product Bulk Upload
-                                 </span>
-                                 </a>
-                              </li>
-                              <li>
-                                 <a href="https://durbarmart.nextnepal.org/orders" class="">
-                                 <i class="fa fa-file-text"></i>
-                                 <span class="category-name">
-                                 Orders </span>
-                                 </a>
-                              </li>
-                              <li>
-                                 <a href="https://durbarmart.nextnepal.org/refund-request" class="">
-                                 <i class="fa fa-file-text"></i>
-                                 <span class="category-name">
-                                 Recieved Refund Request
-                                 </span>
-                                 </a>
-                              </li>
-                              <li>
-                                 <a href="https://durbarmart.nextnepal.org/sent-refund-request" class="">
-                                 <i class="fa fa-file-text"></i>
-                                 <span class="category-name">
-                                 Sent Refund Request
-                                 </span>
-                                 </a>
-                              </li>
-                              <li>
-                                 <a href="dashboard-vendor-product_reviews.html" class="">
-                                 <i class="fa fa-star-o"></i>
-                                 <span class="category-name">
-                                 Product Reviews </span>
-                                 </a>
-                              </li>
-                              <li>
-                                 <a href="dashboard-vendor-conversations.html" class="">
-                                 <i class="fa fa-comment"></i>
-                                 <span class="category-name">
-                                 Conversations
-                                 </span>
-                                 </a>
-                              </li>
-                              <li>
-                                 <a href="dashboard-vendor-shop_setting.html" class="">
-                                 <i class="fa fa-cog"></i>
-                                 <span class="category-name">
-                                 Shop Setting
-                                 </span>
-                                 </a>
-                              </li>
-                              <li>
-                                 <a href="dashboard-vendor-payment_history.html" class="">
-                                 <i class="fa fa-cc-mastercard"></i>
-                                 <span class="category-name">
-                                 Payment History
-                                 </span>
-                                 </a>
-                              </li>
-                              <li>
-                                 <a href="dashboard-vendor-manage_profile.html" class="">
-                                 <i class="fa fa-user"></i>
-                                 <span class="category-name">
-                                 Manage Profile
-                                 </span>
-                                 </a>
-                              </li>
-                              <li>
-                                 <a href="dashboard-vendor-money_withdraw.html" class="">
-                                 <i class="fa fa-money"></i>
-                                 <span class="category-name">
-                                 Money Withdraw
-                                 </span>
-                                 </a>
-                              </li>
-                              <li>
-                                 <a href="dashboard-vendor-wallet.html" class="">
-                                 <i class="fa fa-dollar"></i>
-                                 <span class="category-name">
-                                 Shop Settings
-                                 </span>
-                                 </a>
-                              </li>
-                              <li>
-                                 <a href="dashboard-vendor-support_ticket.html" class="">
-                                 <i class="fa fa-support"></i>
-                                 <span class="category-name">
-                                 Support Ticket </span>
-                                 </a>
-                              </li>
-                           </ul>
-                        </div>
-                        <div class="sidebar-widget-title py-3">
-                           <span>Sold Amount</span>
-                        </div>
-                        <div class="widget-balance pb-3 pt-1">
-                           <div class="text-center">
-                              <div class="heading-4 strong-700 mb-4">
-                                 <small class="d-block text-sm alpha-5 mb-2">Your sold amount (current
-                                 month)</small>
-                                 <span class="p-2 rounded">Rs0.00</span>
+               <div class="modal-body d-flex justify-content-between h-100 px-4">
+                  <ul class="navbar-nav w-100">
+                     <li class="nav-item">
+                        <a class="nav-link active" href="index.html">
+                        <span class="nav-indication mr-2"><i class="fa fa-eercast" aria-hidden="true"></i></span> Home
+                        </a>
+                     </li>
+                     <li class="nav-item d-flex align-items-center">
+                        <a class="nav-link add-on" data-toggle="modal" data-target="#nav-cart">
+                        <span class="nav-indication mr-2"><i class="fa fa-eercast" aria-hidden="true"></i></span>My Cart
+                        <span class="mx-2"><i class="fa fa-shopping-bag" aria-hidden="true"></i></span>
+                        <sup class="cart-items text-white">2</sup>
+                        </a>
+                     </li>
+                     <li class="nav-item d-flex align-items-center">
+                        <a class="nav-link add-on" data-toggle="modal" data-target="#nav-cart">
+                        <span class="nav-indication mr-2"><i class="fa fa-eercast" aria-hidden="true"></i></span>Track Your Order
+                        <span class="mx-2"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+                        <sup class="cart-items text-white">2</sup>
+                        </a>
+                     </li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="nav-indication mr-2"><i class="fa fa-eercast"
+                           aria-hidden="true"></i></span>Products<span class="ml-1">
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                        </a>
+                        <div class="dropdown-menu">
+                           <div class="container d-block">
+                              <div class="row">
+                                 <div class="col-md-12">
+                                    <ul class="nav flex-column">
+                                       <li class="nav-item">
+                                          <a class="nav-link head font-weight-bold" href="under-construction.html">Heading
+                                          29</a>
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html">Item 1</a>
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html">Item 2</a>
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <!-- /.col-md-12  -->
+                                 <div class="col-md-12">
+                                    <ul class="nav flex-column">
+                                       <li class="nav-item">
+                                          <a class="nav-link head font-weight-bold" href="under-construction.html">Heading
+                                          27</a>
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html">Item 1</a>
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html">Item 2</a>
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <!-- /.col-md-12  -->
+                                 <div class="col-md-12">
+                                    <ul class="nav flex-column">
+                                       <li class="nav-item">
+                                          <a class="nav-link head font-weight-bold" href="under-construction.html">Heading
+                                          39</a>
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html">Item 1</a>
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html">Item 2</a>
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <!-- /.col-md-12  -->
+                                 <div class="col-md-12">
+                                    <ul class="nav flex-column">
+                                       <li class="nav-item">
+                                          <a class="nav-link head font-weight-bold" href="under-construction.html">Heading
+                                          4</a>
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html">Item 1</a>
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html">Item 2</a>
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <!-- /.col-md-12  -->
+                                 <div class="col-md-12">
+                                    <ul class="nav flex-column">
+                                       <li class="nav-item">
+                                          <a class="nav-link head font-weight-bold" href="under-construction.html">Heading
+                                          1</a>
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html">Item 1</a>
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html">Item 2</a>
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <!-- /.col-md-12  -->
+                                 <div class="col-md-12">
+                                    <ul class="nav flex-column">
+                                       <li class="nav-item">
+                                          <a class="nav-link head font-weight-bold" href="under-construction.html">Heading
+                                          2</a>
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html">Item 1</a>
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html">Item 2</a>
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <!-- /.col-md-12  -->
+                                 <div class="col-md-12">
+                                    <ul class="nav flex-column">
+                                       <li class="nav-item">
+                                          <a class="nav-link head font-weight-bold" href="under-construction.html">Heading
+                                          3</a>
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html">Item 1</a>
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html">Item 2</a>
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <!-- /.col-md-12  -->
+                                 <div class="col-md-12">
+                                    <ul class="nav flex-column">
+                                       <li class="nav-item">
+                                          <a class="nav-link head font-weight-bold" href="under-construction.html">Heading
+                                          4</a>
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html">Item 1</a>
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html">Item 2</a>
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <!-- /.col-md-12  -->
                               </div>
-                              <table class="text-left mb-0 table w-75 m-auto">
-                                 <tr>
-                                    <td class="p-1 text-sm">
-                                       Total Sold:
-                                    </td>
-                                    <td class="p-1">
-                                       Rs0.00
-                                    </td>
-                                 </tr>
-                                 <tr>
-                                    <td class="p-1 text-sm">
-                                       Last Month Sold:
-                                    </td>
-                                    <td class="p-1">
-                                       Rs0.00
-                                    </td>
-                                 </tr>
-                              </table>
                            </div>
-                           <table>
-                           </table>
+                           <!--  /.container  -->
                         </div>
-                     </div>
-                  </div>
+                     </li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="nav-indication mr-2"><i class="fa fa-eercast"
+                           aria-hidden="true"></i></span>Category<span class="ml-1">
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                        </a>
+                        <div class="dropdown-menu">
+                           <div class="container d-block">
+                              <div class="row">
+                                 <div class="col-md-12">
+                                    <ul class="nav flex-column">
+                                       <li class="nav-item">
+                                          <a class="nav-link head font-weight-bold" href="under-construction.html">Heading
+                                          29</a>
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html">Item 1</a>
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html">Item 2</a>
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <!-- /.col-md-12  -->
+                                 <div class="col-md-12">
+                                    <ul class="nav flex-column">
+                                       <li class="nav-item">
+                                          <a class="nav-link head font-weight-bold" href="under-construction.html">Heading
+                                          27</a>
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html">Item 1</a>
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html">Item 2</a>
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <!-- /.col-md-12  -->
+                                 <div class="col-md-12">
+                                    <ul class="nav flex-column">
+                                       <li class="nav-item">
+                                          <a class="nav-link head font-weight-bold" href="under-construction.html">Heading
+                                          39</a>
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html">Item 1</a>
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html">Item 2</a>
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <!-- /.col-md-12  -->
+                                 <div class="col-md-12">
+                                    <ul class="nav flex-column">
+                                       <li class="nav-item">
+                                          <a class="nav-link head font-weight-bold" href="under-construction.html">Heading
+                                          4</a>
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html">Item 1</a>
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html">Item 2</a>
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <!-- /.col-md-12  -->
+                                 <div class="col-md-12">
+                                    <ul class="nav flex-column">
+                                       <li class="nav-item">
+                                          <a class="nav-link head font-weight-bold" href="under-construction.html">Heading
+                                          1</a>
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html">Item 1</a>
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html">Item 2</a>
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <!-- /.col-md-12  -->
+                                 <div class="col-md-12">
+                                    <ul class="nav flex-column">
+                                       <li class="nav-item">
+                                          <a class="nav-link head font-weight-bold" href="under-construction.html">Heading
+                                          2</a>
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html">Item 1</a>
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html">Item 2</a>
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <!-- /.col-md-12  -->
+                                 <div class="col-md-12">
+                                    <ul class="nav flex-column">
+                                       <li class="nav-item">
+                                          <a class="nav-link head font-weight-bold" href="under-construction.html">Heading
+                                          3</a>
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html">Item 1</a>
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html">Item 2</a>
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <!-- /.col-md-12  -->
+                                 <div class="col-md-12">
+                                    <ul class="nav flex-column">
+                                       <li class="nav-item">
+                                          <a class="nav-link head font-weight-bold" href="under-construction.html">Heading
+                                          4</a>
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html">Item 1</a>
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html">Item 2</a>
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <!-- /.col-md-12  -->
+                              </div>
+                           </div>
+                           <!--  /.container  -->
+                        </div>
+                     </li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="nav-indication mr-2"><i class="fa fa-eercast" aria-hidden="true"></i></span> Recipes
+                        <span class="ml-1">
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                        </a>
+                        <div class="dropdown-menu">
+                           <div class="container d-block">
+                              <div class="row">
+                                 <div class="col-md-12">
+                                    <ul class="nav flex-column">
+                                       <li class="nav-item">
+                                          <a class="nav-link head font-weight-bold" href="under-construction.html">Heading
+                                          29</a>
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html">Item 1</a>
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html">Item 2</a>
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <!-- /.col-md-12  -->
+                                 <div class="col-md-12">
+                                    <ul class="nav flex-column">
+                                       <li class="nav-item">
+                                          <a class="nav-link head font-weight-bold" href="under-construction.html">Heading
+                                          27</a>
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html">Item 1</a>
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html">Item 2</a>
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <!-- /.col-md-12  -->
+                                 <div class="col-md-12">
+                                    <ul class="nav flex-column">
+                                       <li class="nav-item">
+                                          <a class="nav-link head font-weight-bold" href="under-construction.html">Heading
+                                          39</a>
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html">Item 1</a>
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html">Item 2</a>
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <!-- /.col-md-12  -->
+                                 <div class="col-md-12">
+                                    <ul class="nav flex-column">
+                                       <li class="nav-item">
+                                          <a class="nav-link head font-weight-bold" href="under-construction.html">Heading
+                                          4</a>
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html">Item 1</a>
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html">Item 2</a>
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <!-- /.col-md-12  -->
+                                 <div class="col-md-12">
+                                    <ul class="nav flex-column">
+                                       <li class="nav-item">
+                                          <a class="nav-link head font-weight-bold" href="under-construction.html">Heading
+                                          1</a>
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html">Item 1</a>
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html">Item 2</a>
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <!-- /.col-md-12  -->
+                                 <div class="col-md-12">
+                                    <ul class="nav flex-column">
+                                       <li class="nav-item">
+                                          <a class="nav-link head font-weight-bold" href="under-construction.html">Heading
+                                          2</a>
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html">Item 1</a>
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html">Item 2</a>
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <!-- /.col-md-12  -->
+                                 <div class="col-md-12">
+                                    <ul class="nav flex-column">
+                                       <li class="nav-item">
+                                          <a class="nav-link head font-weight-bold" href="under-construction.html">Heading
+                                          3</a>
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html">Item 1</a>
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html">Item 2</a>
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <!-- /.col-md-12  -->
+                                 <div class="col-md-12">
+                                    <ul class="nav flex-column">
+                                       <li class="nav-item">
+                                          <a class="nav-link head font-weight-bold" href="under-construction.html">Heading
+                                          4</a>
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html">Item 1</a>
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html">Item 2</a>
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <!-- /.col-md-12  -->
+                              </div>
+                           </div>
+                           <!--  /.container  -->
+                        </div>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html">
+                        <span class="nav-indication mr-2"><i class="fa fa-eercast" aria-hidden="true"></i></span> Contact Us</a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="modal-footer py-3">
+                  <a class="w-50 text-center" href="under-construction.html">
+                  <span class="mr-2"><i class="fa fa-sign-in" aria-hidden="true"></i></span>Login</a>
+                  <a class="w-50 text-center" href="under-construction.html">
+                  <span class="mr-2"><i class="fa fa-paper-plane" aria-hidden="true"></i></span>Register</a>
                </div>
             </div>
          </div>
       </div>
       <!-- Mobile Nav -->
-      <!-- CREATE TICKET MODAL START  -->
-      <!-- Modal -->
-      <div class="modal fade" id="suport_ticket" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-         <div class="modal-dialog">
-            <div class="modal-content position-relative">
-               <div class="modal-header">
-                  <h5 class="modal-title strong-600 heading-5">Recharge Wallet</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">×</span>
-                  </button>
-               </div>
-               <form class="" action="https://durbarmart.nextnepal.org/recharge" method="post">
-                  <input type="hidden" name="_token" value="SOUEs7EpD3Sp4seTV9xMj87IxCMKkbRA1I3iF59R"> 
-                  <div class="modal-body gry-bg px-3 pt-3">
-                     <div class="row">
-                        <div class="col-md-2">
-                           <label>Amount <span class="required-star">*</span></label>
-                        </div>
-                        <div class="col-md-10">
-                           <input type="number" class="form-control mb-3" name="amount" placeholder="Amount" required="">
-                        </div>
-                     </div>
-                     <div class="row">
-                        <div class="col-md-2">
-                           <label>Payment Method</label>
-                        </div>
-                        <div class="col-md-10">
-                           <div class="mb-3">
-                              <select class="form-control selectpicker select2-hidden-accessible" data-minimum-results-for-search="Infinity" name="payment_option" tabindex="-1" aria-hidden="true">
-                              </select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-payment_option-6u-container"><span class="select2-selection__rendered" id="select2-payment_option-6u-container"></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="modal-footer">
-                     <button type="submit" class="btn btn-base-1">Confirm</button>
-                  </div>
-               </form>
-            </div>
-         </div>
-      </div>
-      <!-- CREATE TICKET MODAL END  -->
    </body>
 </html>

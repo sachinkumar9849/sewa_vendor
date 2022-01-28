@@ -1847,7 +1847,10 @@ button.paction.add-compare:hover {
 }
 
 input:checked + .slider {
-  background-color: rgb(100, 189, 99);
+  background-color: #008000b8 !important;
+}
+.section_packages {
+  background: #c8ced53d;
 }
 
 input:focus + .slider {
@@ -8051,5 +8054,31 @@ section#breadcrumb_item .breadcrumb li a {
   max-height: 150px;
   min-height: 150px;
   object-fit: cover;
+}
+div#sidebar_men_block {
+  top: 0 !important;
+}
+section.gry-bg.py-4.profile li.fa_star.mr-1 {
+  color: #f78035;
+}
+.add_new_div {
+  height: 93px;
+  line-height: 93px;
+  padding: 0;
+}
+th, td {
+  font-family: 'Open Sans', sans-serif !important;
+}
+input.form-control.border-0.search_input {
+  width: 68%;
+  transform: translateY(-1px) !important;
+}
+a.btn.btn-base-1.anchor-btn {
+  background: #f78035 ;
+}
+a.btn.btn-base-1.anchor-btn:hover {
+  background: transparent;
+  color: #f78035;
+  border: 1px solid;
 }
 /*========================================== NEW CSS END  */

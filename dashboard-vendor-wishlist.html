@@ -1,0 +1,1494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upachar Pharmacy</title>
+    <!-- Bootstrap link Starts -->
+    <link rel="stylesheet" href="frontend/assets/bootstrap-4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="frontend/assets/bootstrap-4.3.1/css/bootstrap.min.css.map" />
+    <!-- Bootstrap link Ends -->
+    <!-- Font Awesome Link Starts -->
+    <link rel="stylesheet" href="frontend/assets/font-awesome-4.7.0/css/font-awesome.min.css" />
+    <!-- Font Awesome Link Ends -->
+    <!-- Slick Css -->
+    <link rel="stylesheet" href="frontend/assets/slick/slick.css" />
+    <link rel="stylesheet" href="frontend/assets/slick/slick-theme.css" />
+    <!-- Slick Css Ends-->
+    <!-- Custom Links -->
+    <!-- Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- google font  -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Readex+Pro:wght@200&display=swap" rel="stylesheet" />
+    <!-- Font Link Ends -->
+    <link rel="stylesheet" href="frontend/assets/css/style.css" />
+    <link rel="stylesheet" href="frontend/assets/css/responsive.css" />
+    <link rel="stylesheet" href="frontend/assets/css/dashboard.css" />
+    <link rel="stylesheet" href="frontend/assets/css/dashboard-two.css" />
+    <link rel="stylesheet" href="frontend/assets/css/dashboard-responsive.css" />
+    <!-- Custom Links Ends -->
+    <!-- Countdown start -->
+    <link rel="stylesheet" href="frontend/assets/countdown/css/flipclock.css" />
+    <!-- Countdown end -->
+</head>
+
+<body>
+    <header class="section-header top-header-bg d-md-block d-none">
+        <div class="container px-0">
+           <div class="top-header d-flex justify-content-end align-items-center">
+              <div class="top-social-icon">
+                 <ul class="mb-0">
+                    <li class="d-flex align-items-center top_head_right">
+                       <div class="dropdown user_login_mobile">
+                          <button
+                             class="text-light btn_account pb-0 btn bg-transparent dropdown-toggle pt-0 font-weight-normal "
+                             type="button"
+                             data-toggle="dropdown"
+                             >
+                          Track Your Order
+                          <span class="caret"></span>
+                          </button>
+                          <ul class="my_account dropdown-menu pl-3 ">
+                             <div class="input_track_blo d-flex flex-column pb-2">
+                                <label><small class="font-weight-bold">Track Your Order</small></label>
+                                <div class="track_input_btn d-flex">
+                                   <input type="text" class="form-control" placeholder="Enter order id"/>
+                                   <button class="btn_custom_go">Go</button>
+                                </div>
+                             </div>
+                          </ul>
+                       </div>
+                       <!-- user login start  -->
+                       <div class="dropdown user_login_mobile">
+                          <button
+                             class="text-light btn_account pb-0 btn bg-transparent dropdown-toggle pt-0 font-weight-normal "
+                             type="button"
+                             data-toggle="dropdown"
+                             >
+                          <i class="fa fa-user-o" aria-hidden="true"></i> My Account
+                          <span class="caret"></span>
+                          </button>
+                          <ul class="my_account dropdown-menu pl-3">
+                             <li>
+                                <a href="login.html" class="font-weight-normal"
+                                   ><span class="pr-2"
+                                   ><i class="fa fa-user" aria-hidden="true"></i
+                                   ></span>
+                                Login</a
+                                   >
+                             </li>
+                             <li>
+                                <a href="register.html" class="font-weight-normal"
+                                   ><span class="pr-2"
+                                   ><i
+                                   class="fa fa-sign-in"
+                                   aria-hidden="true"
+                                   ></i></span
+                                   >Sign Up</a
+                                   >
+                             </li>
+                          </ul>
+                       </div>
+                       <!-- cart modal start  -->
+                       <!-- Modal -->
+                       <div
+                          class="modal fade"
+                          id="exampleModal"
+                          tabindex="-1"
+                          role="dialog"
+                          aria-labelledby="exampleModalLabel"
+                          aria-hidden="true"
+                          >
+                          <div class="modal-dialog" role="document">
+                             <div class="modal-content">
+                                <div class="modal-header">
+                                   <h5
+                                      class="modal-title text-dark font-weight-bold"
+                                      id="exampleModalLabel"
+                                      >
+                                      My Cart
+                                   </h5>
+                                   <button
+                                      type="button"
+                                      class="close"
+                                      data-dismiss="modal"
+                                      aria-label="Close"
+                                      >
+                                   <span aria-hidden="true">×</span>
+                                   </button>
+                                </div>
+                                <div class="modal-body mb-0 pb-0">
+                                   <div class="table-responsive px-md-3">
+                                      <table class="table text-center mb-0">
+                                         <tbody class="">
+                                            <tr class="d-flex align-items-center">
+                                               <td class="cart_img">
+                                                  <div>
+                                                     <img
+                                                        src="https://montechbd.com/shopist/demo/public/uploads/1619869340-h-250-tv2.png"
+                                                        alt="image"
+                                                        />
+                                                  </div>
+                                               </td>
+                                               <td>
+                                                  <h5>Blue Diamond Almonds</h5>
+                                                  <h6>Rs233</h6>
+                                               </td>
+                                               <td>
+                                                  <a href="" class="gray_title"
+                                                     ><i
+                                                     class="fa fa-trash-o"
+                                                     aria-hidden="true"
+                                                     ></i
+                                                     ></a>
+                                               </td>
+                                            </tr>
+                                         </tbody>
+                                      </table>
+                                   </div>
+                                </div>
+                                <div
+                                   class="modal-footer d-flex flex-column align-items-end"
+                                   >
+                                   <div class="cart_top_total">
+                                      <h6 class="text-dark fa_star mr-1">Total Rs233</h6>
+                                   </div>
+                                   <div
+                                      class="top_cartmodal_btn d-flex justify-content-between align-items-center w-100"
+                                      >
+                                      <a
+                                         href="cart.html"
+                                         class="them_btn_new btn_cart_modal"
+                                         >View Cart</a
+                                         >
+                                      <a
+                                         href="checkout.html"
+                                         class="them_btn_new btn_cart_modal"
+                                         >Proceed Checkout</a
+                                         >
+                                   </div>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                       <!-- cart modal end  -->
+                       <!-- Popup Search Modal -->
+                       <!-- Modal -->
+                       <!-- Popup Search Modal Ends-->
+                       <!-- search modal end  -->
+                       <!-- search header end  -->
+                    </li>
+                 </ul>
+              </div>
+           </div>
+        </div>
+     </header>
+     <div class="nav_bar header-sticky">
+        <div class="container pl-0 ">
+           <div class="row">
+              <div class="col-md-2">
+                 <a class="navbar-brand text-dark font-weight-bold" href="#"><img src="./frontend/assets/images/logo.jpg" alt="" class="img-fluid"></a>
+              </div>
+              <!-- search start  -->
+              <div class="searchbar d-none d-md-block">
+                 <input
+                    class="search_input"
+                    type="text"
+                    name=""
+                    placeholder="Search..."
+                    />
+                 <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+              </div>
+              <!-- search mobile new star  -->
+              <div class="search_mobile_men  d-block d-md-none">
+                 <button class="search_icon_new" type="submit">
+                 <i class="fa fa-search"></i>
+                 </button>
+                 <div class="sub_search">
+                    <form action="" class="d-flex">
+                       <input
+                          class="input_box"
+                          type="text"
+                          placeholder="Search.."
+                          name="search"
+                          />
+                       <button class="search_top" type="submit">
+                       <i class="fa fa-search" aria-hidden="true"></i>
+                       </button>
+                    </form>
+                 </div>
+              </div>
+              <!-- search mobile new end  -->
+              <div class="col-md-8">
+                 <div class="search_men d-none d-md-block">
+                    <form class="form-inline search_top">
+                       <input
+                          class="form-control border-0 search_input"
+                          type="search"
+                          placeholder="Search for Products"
+                          aria-label="Search"
+                          />
+                       <div class="search_select border-0">
+                          <select
+                             name=""
+                             id=""
+                             class="border-0 search_select_content px-2"
+                             >
+                             <option value="0" selected="selected">
+                                All Categories
+                             </option>
+                             <option class="level-0" value="accessories">
+                                Accessories
+                             </option>
+                             <option class="level-0" value="cameras-photography">
+                                Cameras &amp; Photography
+                             </option>
+                             <option class="level-0" value="computer-components">
+                                Computer Components
+                             </option>
+                             <option class="level-0" value="gadgets">Gadgets</option>
+                             <option class="level-0" value="home-entertainment">
+                                Home Entertainment
+                             </option>
+                             <option class="level-0" value="laptops-computers">
+                                Laptops &amp; Computers
+                             </option>
+                             <option class="level-0" value="headphones-2">
+                                Headphones
+                             </option>
+                             <option class="level-0" value="speakers-2">Speakers</option>
+                          </select>
+                       </div>
+                       <div class="search_icon_top text-center">
+                          <a href="#" class="search_icon text-dark"
+                             ><i class="fa fa-search"></i
+                             ></a>
+                       </div>
+                    </form>
+                 </div>
+              </div>
+              <div class="col-md-2">
+                 <ul
+                    class="cart_top_list d-flex justify-content-around mb-0 h-100 align-items-center "
+                    >
+                    <li>
+                       <a href="" class="position-relative">
+                       <sub class='sub_block'>1</sub>
+                       <img data-toggle="tooltip" data-placement="top" title="" data-original-title="Compare"
+                          src="./frontend/assets/images/logo/compare.svg"
+                          class="img-fluid"
+                          alt=""
+                          /></a>
+                    </li>
+                    <li>
+                       <a href="" class="position-relative">
+                       <sub class='sub_block'>0</sub
+                          ><img data-toggle="tooltip" data-placement="top" title="" data-original-title="Wishlist"
+                          src="./frontend/assets/images/logo/wishlist.svg"
+                          class="img-fluid"
+                          alt=""
+                          /></a>
+                    </li>
+                    <li>
+                       <a href="" class="position-relative"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       <sub class='sub_block'>1</sub
+                          ><img data-toggle="tooltip" data-placement="top" title="" data-original-title="Cart"
+                          src="./frontend/assets/images/logo/cart.svg"
+                          class="img-fluid"
+                          alt=""
+                          /></a>
+                       <!-- cart dropdown start  -->
+                       <div class="dropdown-menu" id="cart_header_table" aria-labelledby="dropdownMenuButton">
+                          <h6 class="text-center font-weight-bold pt-1">Cart Items</h6>
+                          <div class="table-responsive" >
+                             <table class="table mb-0">
+                                <tbody>
+                                   <tr>
+                                      <td class="img_header_cart">
+                                         <div>
+                                            <a href=""><img src="http://127.0.0.1:8000/uploads/products/thumbnail/awQYj0DwQtoWwENvsPuEeWNoHTzOqOZIihRxRj2u.jpeg" alt=""></a>
+                                         </div>
+                                      </td>
+                                      <td class="cart_header_title"> <a href="" class="text-dark">Electric Keema Machine Keema Maker</a> </td>
+                                      <td>
+                                         <a href="" class="header_cart_icon">
+                                            <ii class="fa fa-trash-o" aria-hidden="true">
+                                            </i>
+                                         </a>
+                                      </td>
+                                   </tr>
+                                   <tr>
+                                      <td class="img_header_cart">
+                                         <div>
+                                            <a href=""><img src="http://127.0.0.1:8000/uploads/products/thumbnail/awQYj0DwQtoWwENvsPuEeWNoHTzOqOZIihRxRj2u.jpeg" alt=""></a>
+                                         </div>
+                                      </td>
+                                      <td class="cart_header_title"> <a href="" class="text-dark">Electric Keema </a> </td>
+                                      <td>
+                                         <a href="" class="header_cart_icon">
+                                            <ii class="fa fa-trash-o" aria-hidden="true">
+                                            </i>
+                                         </a>
+                                      </td>
+                                   </tr>
+                                   <tr>
+                                      <td class="img_header_cart">
+                                         <div>
+                                            <a href=""><img src="http://127.0.0.1:8000/uploads/products/thumbnail/awQYj0DwQtoWwENvsPuEeWNoHTzOqOZIihRxRj2u.jpeg" alt=""></a>
+                                         </div>
+                                      </td>
+                                      <td class="cart_header_title"> <a href="" class="text-dark">Electric Keema Machine Keema Maker</a> </td>
+                                      <td>
+                                         <a href="" class="header_cart_icon">
+                                            <ii class="fa fa-trash-o" aria-hidden="true">
+                                            </i>
+                                         </a>
+                                      </td>
+                                   </tr>
+                                </tbody>
+                             </table>
+                          </div>
+                          <div class="cart_header_price d-flex justify-content-between">
+                             <div>
+                                <h6>Subtotal</h6>
+                             </div>
+                             <div>
+                                <h6>Rs4,300.00</h6>
+                             </div>
+                          </div>
+                          <div class="
+                             top_cartmodal_btn
+                             d-flex
+                             justify-content-around
+                             align-items-center
+                             w-100 pt-2 
+                             ">
+                             <a href="cart.html" class="btn-custom rounded-0 py-2">
+                             <img src="./frontend/assets/images/logo/cart.svg" class="img-fluid" alt="">&nbsp; View Cart</a>
+                             <a href="checkout.html" class="btn-custom rounded-0 py-2">Proceed Checkout</a>
+                          </div>
+                       </div>
+                       <!-- cart dropdown end  -->
+                    </li>
+                 </ul>
+              </div>
+           </div>
+        </div>
+        <!-- Button trigger modal -->
+        <div
+           class="mobile-menu d-lg-none d-md-block mr-4 position-absolute"
+           data-toggle="modal"
+           data-target="#rightsidebarfilter"
+           >
+           <span
+              ><i class="fa fa-bars fa-2x text-light" aria-hidden="true"></i
+              ></span>
+        </div>
+        <!-- Button trigger modal -->
+     </div>
+     <!--======================================================= HEADER END ======-->
+    
+        <!-- Navigation Ends -->
+        <section class="gry-bg py-4 profile">
+            <div class="container">
+                <div class="row cols-xs-space cols-sm-space cols-md-space">
+                  <div class="col-lg-3 ">
+                     <div id="sidebar_men_block" class="sidebar sidebar--style-3 no-border stickyfill p-0">
+                        <div class="widget mb-0">
+                           <div class="widget-profile-box text-center p-3">
+                              <div class="image" style="background-image:url('http://durbarmart.nextnepal.org/public/uploads/ucQhvfz4EQXNeTbN8Eif0Cpq5LnOwvg8t7qKNKVs.jpeg')">
+                              </div>
+                              <div class="name mb-0">Mr. Seller <span class="ml-2"><i class="fa fa-check-circle"
+                                 style="color:green"></i></span></div>
+                           </div>
+                           <div class="sidebar-widget-title py-3">
+                              <span>Menu</span>
+                           </div>
+                           <div class="widget-profile-menu py-3">
+                              <ul class="categories categories--style-3">
+                                 <li>
+                                    <a href="dashboard-vendor.html" class="active">
+                                    <i class="fa fa-dashboard"></i>
+                                    <span class="category-name">
+                                    Dashboard
+                                    </span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="purchase_history.html" class="">
+                                    <i class="fa fa-file-text"></i>
+                                    <span class="category-name">
+                                    Purchase History </span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="download-product.html" class="">
+                                    <i class="fa fa-download"></i>
+                                    <span class="category-name">
+                                    Downloads
+                                    </span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="dashboard-vendor-wishlist.html" class="">
+                                    <i class="fa fa-heart-o"></i>
+                                    <span class="category-name">
+                                    Wishlist
+                                    </span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="dashboard-vendor-products.html" class="">
+                                    <i class="fa fa-diamond"></i>
+                                    <span class="category-name">
+                                    Products
+                                    </span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="digitalproducts-product.html" class="">
+                                    <i class="fa fa-diamond"></i>
+                                    <span class="category-name">
+                                    Digital Products
+                                    </span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="dashboard-vendor-classified-products.html" class="">
+                                    <i class="fa fa-diamond"></i>
+                                    <span class="category-name">
+                                    Classified Products
+                                    </span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="product_bulk_upload.html" class="">
+                                    <i class="fa fa-upload"></i>
+                                    <span class="category-name">
+                                    Product Bulk Upload
+                                    </span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="order.html" class="">
+                                    <i class="fa fa-file-text"></i>
+                                    <span class="category-name">
+                                    Orders </span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="dashboard-vendor-refund-request.html" class="">
+                                    <i class="fa fa-file-text"></i>
+                                    <span class="category-name">
+                                    Recieved Refund Request
+                                    </span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="dashboard-vendor-sent_refund.html" class="">
+                                    <i class="fa fa-file-text"></i>
+                                    <span class="category-name">
+                                    Sent Refund Request
+                                    </span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="dashboard-vendor-product_reviews.html" class="">
+                                    <i class="fa fa-star-o"></i>
+                                    <span class="category-name">
+                                    Product Reviews </span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="dashboard-vendor-conversations.html" class="">
+                                    <i class="fa fa-comment"></i>
+                                    <span class="category-name">
+                                    Conversations
+                                    </span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="dashboard-vendor-shop_setting.html" class="">
+                                    <i class="fa fa-cog"></i>
+                                    <span class="category-name">
+                                    Shop Setting
+                                    </span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="dashboard-vendor-payment_history.html" class="">
+                                    <i class="fa fa-cc-mastercard"></i>
+                                    <span class="category-name">
+                                    Payment History
+                                    </span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="dashboard-vendor-manage_profile.html" class="">
+                                    <i class="fa fa-user"></i>
+                                    <span class="category-name">
+                                    Manage Profile
+                                    </span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="dashboard-vendor-money_withdraw.html" class="">
+                                    <i class="fa fa-money"></i>
+                                    <span class="category-name">
+                                    Money Withdraw
+                                    </span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="dashboard-vendor-wallet.html" class="">
+                                    <i class="fa fa-dollar"></i>
+                                    <span class="category-name">
+                                    My Wallet
+                                    </span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="dashboard-vendor-support_ticket.html" class="">
+                                    <i class="fa fa-support"></i>
+                                    <span class="category-name">
+                                    Support Ticket </span>
+                                    </a>
+                                 </li>
+                              </ul>
+                           </div>
+                           <div class="sidebar-widget-title py-3">
+                              <span>Sold Amount</span>
+                           </div>
+                           <div class="widget-balance pb-3 pt-1">
+                              <div class="text-center">
+                                 <div class="heading-4 strong-700 mb-4">
+                                    <small class="d-block text-sm alpha-5 mb-2">Your sold amount (current
+                                    month)</small>
+                                    <span class="p-2 rounded">Rs .00</span>
+                                 </div>
+                                 <table class="text-left mb-0 table w-75 m-auto">
+                                    <tr>
+                                       <td class="p-1 text-sm">
+                                          Total Sold:
+                                       </td>
+                                       <td class="p-1">
+                                          Rs 1.00
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="p-1 text-sm">
+                                          Last Month Sold:
+                                       </td>
+                                       <td class="p-1">
+                                          Rs 0.00
+                                       </td>
+                                    </tr>
+                                 </table>
+                              </div>
+                              <table>
+                              </table>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                    <div class="col-lg-9 col-12" id="dashboard-rightside-content">
+                        <div class="page-title">
+                            <div class="row align-items-center">
+                                <div class="col-md-6">
+                                    <h2 class="heading heading-6 text-capitalize strong-600 mb-0">
+                                        Dashboard
+                                    </h2>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="float-md-right">
+                                        <ul class="breadcrumb">
+                                            <li><a href="">Home</a></li>
+                                            <li class="active"><a href="/dashboard">Dashboard</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mt-3">
+                            <div class="col-xl-4 col-md-4 mb-2">
+                                <div class="alert alert-dismissible fade show bg-white" role="alert">
+                                    <div class="title font-weight-bold">
+                                        <h5>
+                                            Item Product 1
+                                        </h5>
+                                    </div>
+                                    <ul class="rating-wrapper d-flex mb-1">
+                                        <li class="fa_star mr-1">
+                                            <div class="fa fa-star"></div>
+                                        </li>
+                                        <li class="fa_star mr-1">
+                                            <div class="fa fa-star"></div>
+                                        </li>
+                                        <li class="fa_star mr-1">
+                                            <div class="fa fa-star"></div>
+                                        </li>
+                                        <li class="fa_star mr-1">
+                                            <div class="fa fa-star"></div>
+                                        </li>
+                                        <li class="fa_star mr-1">
+                                            <div class="fa fa-star"></div>
+                                        </li>
+
+                                    </ul>
+                                    <div class="product-price d-flex align-items-center mb-2">
+                                        <div class="first-price mr-2">NPR 6000</div>
+                                        <div class="second-price">NPR 3000</div>
+                                    </div><button class="btn btn-base-1">Add to Cart</button>
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-4 mb-2">
+                                <div class="alert alert-dismissible fade show bg-white" role="alert">
+                                    <div class="title font-weight-bold">
+                                        <h5>
+                                            Item Product 1
+                                        </h5>
+                                    </div>
+                                    <ul class="rating-wrapper d-flex mb-1">
+                                        <li class="fa_star mr-1">
+                                            <div class="fa fa-star"></div>
+                                        </li>
+                                        <li class="fa_star mr-1">
+                                            <div class="fa fa-star"></div>
+                                        </li>
+                                        <li class="fa_star mr-1">
+                                            <div class="fa fa-star"></div>
+                                        </li>
+                                        <li class="fa_star mr-1">
+                                            <div class="fa fa-star"></div>
+                                        </li>
+                                        <li class="fa_star mr-1">
+                                            <div class="fa fa-star"></div>
+                                        </li>
+
+                                    </ul>
+                                    <div class="product-price d-flex align-items-center mb-2">
+                                        <div class="first-price mr-2">NPR 6000</div>
+                                        <div class="second-price">NPR 3000</div>
+                                    </div><button class="btn btn-base-1">Add to Cart</button>
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-4 mb-2">
+                                <div class="alert alert-dismissible fade show bg-white" role="alert">
+                                    <div class="title font-weight-bold">
+                                        <h5>
+                                            Item Product 1
+                                        </h5>
+                                    </div>
+                                    <ul class="rating-wrapper d-flex mb-1">
+                                        <li class="fa_star mr-1">
+                                            <div class="fa fa-star"></div>
+                                        </li>
+                                        <li class="fa_star mr-1">
+                                            <div class="fa fa-star"></div>
+                                        </li>
+                                        <li class="fa_star mr-1">
+                                            <div class="fa fa-star"></div>
+                                        </li>
+                                        <li class="fa_star mr-1">
+                                            <div class="fa fa-star"></div>
+                                        </li>
+                                        <li class="fa_star mr-1">
+                                            <div class="fa fa-star"></div>
+                                        </li>
+
+                                    </ul>
+                                    <div class="product-price d-flex align-items-center mb-2">
+                                        <div class="first-price mr-2">NPR 6000</div>
+                                        <div class="second-price">NPR 3000</div>
+                                    </div><button class="btn btn-base-1">Add to Cart</button>
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-4 mb-2">
+                                <div class="alert alert-dismissible fade show bg-white" role="alert">
+                                    <div class="title font-weight-bold">
+                                        <h5>
+                                            Item Product 1
+                                        </h5>
+                                    </div>
+                                    <ul class="rating-wrapper d-flex mb-1">
+                                        <li class="fa_star mr-1">
+                                            <div class="fa fa-star"></div>
+                                        </li>
+                                        <li class="fa_star mr-1">
+                                            <div class="fa fa-star"></div>
+                                        </li>
+                                        <li class="fa_star mr-1">
+                                            <div class="fa fa-star"></div>
+                                        </li>
+                                        <li class="fa_star mr-1">
+                                            <div class="fa fa-star"></div>
+                                        </li>
+                                        <li class="fa_star mr-1">
+                                            <div class="fa fa-star"></div>
+                                        </li>
+
+                                    </ul>
+                                    <div class="product-price d-flex align-items-center mb-2">
+                                        <div class="first-price mr-2">NPR 6000</div>
+                                        <div class="second-price">NPR 3000</div>
+                                    </div><button class="btn btn-base-1">Add to Cart</button>
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-4 mb-2">
+                                <div class="alert alert-dismissible fade show bg-white" role="alert">
+                                    <div class="title font-weight-bold">
+                                        <h5>
+                                            Item Product 1
+                                        </h5>
+                                    </div>
+                                    <ul class="rating-wrapper d-flex mb-1">
+                                        <li class="fa_star mr-1">
+                                            <div class="fa fa-star"></div>
+                                        </li>
+                                        <li class="fa_star mr-1">
+                                            <div class="fa fa-star"></div>
+                                        </li>
+                                        <li class="fa_star mr-1">
+                                            <div class="fa fa-star"></div>
+                                        </li>
+                                        <li class="fa_star mr-1">
+                                            <div class="fa fa-star"></div>
+                                        </li>
+                                        <li class="fa_star mr-1">
+                                            <div class="fa fa-star"></div>
+                                        </li>
+
+                                    </ul>
+                                    <div class="product-price d-flex align-items-center mb-2">
+                                        <div class="first-price mr-2">NPR 6000</div>
+                                        <div class="second-price">NPR 3000</div>
+                                    </div><button class="btn btn-base-1">Add to Cart</button>
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-4 mb-2">
+                                <div class="alert alert-dismissible fade show bg-white" role="alert">
+                                    <div class="title font-weight-bold">
+                                        <h5>
+                                            Item Product 1
+                                        </h5>
+                                    </div>
+                                    <ul class="rating-wrapper d-flex mb-1">
+                                        <li class="fa_star mr-1">
+                                            <div class="fa fa-star"></div>
+                                        </li>
+                                        <li class="fa_star mr-1">
+                                            <div class="fa fa-star"></div>
+                                        </li>
+                                        <li class="fa_star mr-1">
+                                            <div class="fa fa-star"></div>
+                                        </li>
+                                        <li class="fa_star mr-1">
+                                            <div class="fa fa-star"></div>
+                                        </li>
+                                        <li class="fa_star mr-1">
+                                            <div class="fa fa-star"></div>
+                                        </li>
+
+                                    </ul>
+                                    <div class="product-price d-flex align-items-center mb-2">
+                                        <div class="first-price mr-2">NPR 6000</div>
+                                        <div class="second-price">NPR 3000</div>
+                                    </div><button class="btn btn-base-1">Add to Cart</button>
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <section class="slice-sm footer-top-bar">
+            <div class="container sct-inner">
+                <div class="row no-gutters">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-top-box text-center">
+                            <a href="https://durbarmart.nextnepal.org/sellerpolicy">
+                                <i class="fa fa-file-text"></i>
+                                <h4 class="heading-5">Seller Policy</h4>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-top-box text-center">
+                            <a href="https://durbarmart.nextnepal.org/returnpolicy">
+                                <i class="fa fa-mail-reply"></i>
+                                <h4 class="heading-5">Return Policy</h4>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-top-box text-center">
+                            <a href="https://durbarmart.nextnepal.org/supportpolicy">
+                                <i class="fa fa-support"></i>
+                                <h4 class="heading-5">Support Policy</h4>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-top-box text-center">
+                            <a href="https://durbarmart.nextnepal.org/profile">
+                                <i class="fa fa-dashboard"></i>
+                                <h4 class="heading-5">My Profile</h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <!-- Cart Ends -->
+        <!-- Footer -->
+        <!--=============================FOOTER START  ============================ -->
+      <footer
+      id="footer"
+      class="footer-bg-color position-relative padding_top pt-5"
+      style="--r1: 130%; --r2: 71.5%"
+      >
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-4 col-12">
+               <div class="footer-logo-box text_white">
+                  <div class="header-logo">
+                     <a
+                        class="footer-logo navbar-brand text-white font-weight-bold text-uppercase font-weight-bolder mb-4 p-0"
+                        href="index.html"
+                        >
+                     <img src="img/logo.png" alt="image" />
+                     </a>
+                  </div>
+                  <p class="text-white font-weight-normal">
+                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi,
+                     quia accusantium eum aperiam ea eaque ab dignissimos totam
+                     pariatur debitis corporis laborum earum illo alias cumque harum
+                     quasi, rem commodi.
+                  </p>
+                  <ul class="d-flex">
+                     <li class="logo-bg">
+                        <a href="https://www.facebook.com" class="text-white"
+                           ><i class="fa fa-facebook" aria-hidden="true"></i
+                           ></a>
+                     </li>
+                     <li class="feature_in_bg ml-3">
+                        <a href="https://www.instagram.com" class="text-white" ="" =""
+                        ><i class="fa fa-instagram" aria-hidden="true"></i
+                           ></a>
+                     </li>
+                     <li class="logo-bg ml-3">
+                        <a href="https://www.google.com" class="text-white" ="" =""
+                        ><i class="fa fa-google-plus" aria-hidden="true"></i
+                           ></a>
+                     </li>
+                     <li class="logo-bg ml-3">
+                        <a href="https://np.linkedin.com" class="text-white" ="" =""
+                        ><i class="fa fa-linkedin" aria-hidden="true"></i
+                           ></a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <div class="col-lg-2 col-6">
+               <div class="footer-title text_white footer_after">
+                  <h4 class="mb-2 mb-md-4 text-white">Quick Links</h4>
+                  <ul class="text-white">
+                     <li class="mb-2">
+                        <a href="index.html" class="text-white">Home</a>
+                     </li>
+                     <li class="mb-2">
+                        <a href="product.html" class="text-white">Products</a>
+                     </li>
+                     <li class="mb-2">
+                        <a href="checkout.html" class="text-white">Checkout</a>
+                     </li>
+                     <li class="mb-2">
+                        <a href="cart.html" class="text-white">Cart</a>
+                     </li>
+                     <li class="mb-2">
+                        <a href="blog.html" class="text-white">Blog</a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <div class="col-lg-2 col-6">
+               <div class="footer-title text_white footer_after">
+                  <h4 class="text-white mb-2 mb-md-4">Links</h4>
+                  <ul>
+                     <li class="mb-2">
+                        <a href="" class="text-white">Links 1</a>
+                     </li>
+                     <li class="mb-2">
+                        <a href="" class="text-white">Links 2</a>
+                     </li>
+                     <li class="mb-2">
+                        <a href="" class="text-white">Links 3</a>
+                     </li>
+                     <li class="mb-2">
+                        <a href="" class="text-white">Links 4</a>
+                     </li>
+                     <li class="mb-2">
+                        <a href="" class="text-white">Links 5</a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <div class="col-lg-4 col-12 mt-4 mt-lg-0">
+               <div class="footer-title text_white footer_after">
+                  <h4 class="text-white mb-2 mb-md-4">Find Us</h4>
+                  <ul>
+                     <li class="text-white mb-2">
+                        <span class="pr-3"
+                           ><i class="fa fa-map-marker" aria-hidden="true"></i></span
+                           >Kathmandu, Nepal
+                     </li>
+                     <li class="text-white mb-2">
+                        <a href="tel:+61283870907, +61452145677" class="text-light"
+                           ><span class="pr-3"
+                           ><i class="fa fa-phone" aria-hidden="true"></i
+                           ></span>
+                        +61283870907, +61452145677</a
+                           >
+                     </li>
+                     <li>
+                        <a href="mailto:niuto@gmail.com" class="text-white"
+                           ><span class="pr-3"
+                           ><i
+                           class="fa fa-envelope-square"
+                           aria-hidden="true"
+                           ></i></span
+                           >niuto@gmail.com</a
+                           >
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <hr />
+         <div class="row">
+            <div class="col-md-12 text-center pb-3 pt-2">
+               <p class="mb-0 text-white text-center font-weight-normal">
+                  Copyright All Right Reserved 2021.
+                  <span class="testimonial-title">Power by NEXT NEPAL </span>
+               </p>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <!--=============================FOOTER END  ============================ -->
+   
+        <!-- Footer Ends -->
+    </section>
+    <!-- Dashboard Vndeor Wrapper Ends-->
+    <!--============================================================ LINK START ====-->
+    <!-- 1st Jquery Link Starts-->
+    <script src="frontend/assets/jquery-3.5.1/jquery-3.5.1.js"></script>
+    <!-- Jquery Link Ends-->
+    <!-- Popper -->
+    <script src="frontend/assets/popper/popper.min.js"></script>
+    <!-- Popper Ends-->
+    <!-- 3rd Bootstrap Js Link Starts -->
+    <script src="frontend/assets/bootstrap-4.3.1/js/bootstrap.min.js"></script>
+    <script src="frontend/assets/bootstrap-4.3.1/js/bootstrap.min.js.map"></script>
+    <!-- Bootstrap Js Link Ends -->
+    <!-- Slick Js -->
+    <script src="frontend/assets/slick/slick.min.js"></script>
+    <!-- Slick Js Ends-->
+    <!-- Magnific Popup -->
+    <script src="frontend/assets/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <!-- Magnific Popup Ends-->
+    <!-- Countdown start -->
+    <script src="frontend/assets/countdown/js/flipclock.js"></script>
+    <!-- <script src="frontend/assets/countdown/js/flipclock.min.js"></script> -->
+    <!-- Countdown end -->
+    <!-- Custom Js Starts -->
+    <script src="frontend/assets/js/main.js"></script>
+    <!-- Custom Js Ends -->
+    <!--============================================================= LINK START ====-->
+    <!-- Mobile Nav -->
+    <div class="modal fade" id="rightsidebarfilter" tabindex="-1" role="dialog" aria-labelledby="rightsidebarfilterlabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+           <div class="modal-content h-100">
+              <div class="modal-header px-3 py-3 align-items-center">
+                 <div class="cart-Track Your Order">
+                    <div class="image">
+                       <a class="navbar-brand" href="index.html">
+                          <!-- <img src="frontend/assets/images/logo/logo.png" alt="navigation-logo" class="img-fluid"> -->
+                          <h2 class="m-0 font-weight-bold">
+                             <span>sewa</span>
+                          </h2>
+                       </a>
+                    </div>
+                 </div>
+                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                 <span aria-hidden="true">&times;</span>
+                 </button>
+              </div>
+              <div class="modal-body d-flex justify-content-between h-100 px-4">
+                 <ul class="navbar-nav w-100">
+                    <li class="nav-item">
+                       <a class="nav-link active" href="index.html">
+                       <span class="nav-indication mr-2"><i class="fa fa-eercast" aria-hidden="true"></i></span> Home
+                       </a>
+                    </li>
+                    <li class="nav-item d-flex align-items-center">
+                       <a class="nav-link add-on" data-toggle="modal" data-target="#nav-cart">
+                       <span class="nav-indication mr-2"><i class="fa fa-eercast" aria-hidden="true"></i></span>My Cart
+                       <span class="mx-2"><i class="fa fa-shopping-bag" aria-hidden="true"></i></span>
+                       <sup class="cart-items text-white">2</sup>
+                       </a>
+                    </li>
+                    <li class="nav-item d-flex align-items-center">
+                       <a class="nav-link add-on" data-toggle="modal" data-target="#nav-cart">
+                       <span class="nav-indication mr-2"><i class="fa fa-eercast" aria-hidden="true"></i></span>Track Your Order
+                       <span class="mx-2"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+                       <sup class="cart-items text-white">2</sup>
+                       </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                       <a class="nav-link dropdown-toggle" href="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       <span class="nav-indication mr-2"><i class="fa fa-eercast"
+                          aria-hidden="true"></i></span>Products<span class="ml-1">
+                       <i class="fa fa-angle-down" aria-hidden="true"></i>
+                       </span>
+                       </a>
+                       <div class="dropdown-menu">
+                          <div class="container d-block">
+                             <div class="row">
+                                <div class="col-md-12">
+                                   <ul class="nav flex-column">
+                                      <li class="nav-item">
+                                         <a class="nav-link head font-weight-bold" href="under-construction.html">Heading
+                                         29</a>
+                                      </li>
+                                      <li class="nav-item p-0">
+                                         <a class="nav-link" href="under-construction.html">Item 1</a>
+                                      </li>
+                                      <li class="nav-item p-0">
+                                         <a class="nav-link" href="under-construction.html">Item 2</a>
+                                      </li>
+                                   </ul>
+                                </div>
+                                <!-- /.col-md-12  -->
+                                <div class="col-md-12">
+                                   <ul class="nav flex-column">
+                                      <li class="nav-item">
+                                         <a class="nav-link head font-weight-bold" href="under-construction.html">Heading
+                                         27</a>
+                                      </li>
+                                      <li class="nav-item p-0">
+                                         <a class="nav-link" href="under-construction.html">Item 1</a>
+                                      </li>
+                                      <li class="nav-item p-0">
+                                         <a class="nav-link" href="under-construction.html">Item 2</a>
+                                      </li>
+                                   </ul>
+                                </div>
+                                <!-- /.col-md-12  -->
+                                <div class="col-md-12">
+                                   <ul class="nav flex-column">
+                                      <li class="nav-item">
+                                         <a class="nav-link head font-weight-bold" href="under-construction.html">Heading
+                                         39</a>
+                                      </li>
+                                      <li class="nav-item p-0">
+                                         <a class="nav-link" href="under-construction.html">Item 1</a>
+                                      </li>
+                                      <li class="nav-item p-0">
+                                         <a class="nav-link" href="under-construction.html">Item 2</a>
+                                      </li>
+                                   </ul>
+                                </div>
+                                <!-- /.col-md-12  -->
+                                <div class="col-md-12">
+                                   <ul class="nav flex-column">
+                                      <li class="nav-item">
+                                         <a class="nav-link head font-weight-bold" href="under-construction.html">Heading
+                                         4</a>
+                                      </li>
+                                      <li class="nav-item p-0">
+                                         <a class="nav-link" href="under-construction.html">Item 1</a>
+                                      </li>
+                                      <li class="nav-item p-0">
+                                         <a class="nav-link" href="under-construction.html">Item 2</a>
+                                      </li>
+                                   </ul>
+                                </div>
+                                <!-- /.col-md-12  -->
+                                <div class="col-md-12">
+                                   <ul class="nav flex-column">
+                                      <li class="nav-item">
+                                         <a class="nav-link head font-weight-bold" href="under-construction.html">Heading
+                                         1</a>
+                                      </li>
+                                      <li class="nav-item p-0">
+                                         <a class="nav-link" href="under-construction.html">Item 1</a>
+                                      </li>
+                                      <li class="nav-item p-0">
+                                         <a class="nav-link" href="under-construction.html">Item 2</a>
+                                      </li>
+                                   </ul>
+                                </div>
+                                <!-- /.col-md-12  -->
+                                <div class="col-md-12">
+                                   <ul class="nav flex-column">
+                                      <li class="nav-item">
+                                         <a class="nav-link head font-weight-bold" href="under-construction.html">Heading
+                                         2</a>
+                                      </li>
+                                      <li class="nav-item p-0">
+                                         <a class="nav-link" href="under-construction.html">Item 1</a>
+                                      </li>
+                                      <li class="nav-item p-0">
+                                         <a class="nav-link" href="under-construction.html">Item 2</a>
+                                      </li>
+                                   </ul>
+                                </div>
+                                <!-- /.col-md-12  -->
+                                <div class="col-md-12">
+                                   <ul class="nav flex-column">
+                                      <li class="nav-item">
+                                         <a class="nav-link head font-weight-bold" href="under-construction.html">Heading
+                                         3</a>
+                                      </li>
+                                      <li class="nav-item p-0">
+                                         <a class="nav-link" href="under-construction.html">Item 1</a>
+                                      </li>
+                                      <li class="nav-item p-0">
+                                         <a class="nav-link" href="under-construction.html">Item 2</a>
+                                      </li>
+                                   </ul>
+                                </div>
+                                <!-- /.col-md-12  -->
+                                <div class="col-md-12">
+                                   <ul class="nav flex-column">
+                                      <li class="nav-item">
+                                         <a class="nav-link head font-weight-bold" href="under-construction.html">Heading
+                                         4</a>
+                                      </li>
+                                      <li class="nav-item p-0">
+                                         <a class="nav-link" href="under-construction.html">Item 1</a>
+                                      </li>
+                                      <li class="nav-item p-0">
+                                         <a class="nav-link" href="under-construction.html">Item 2</a>
+                                      </li>
+                                   </ul>
+                                </div>
+                                <!-- /.col-md-12  -->
+                             </div>
+                          </div>
+                          <!--  /.container  -->
+                       </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                       <a class="nav-link dropdown-toggle" href="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       <span class="nav-indication mr-2"><i class="fa fa-eercast"
+                          aria-hidden="true"></i></span>Category<span class="ml-1">
+                       <i class="fa fa-angle-down" aria-hidden="true"></i>
+                       </span>
+                       </a>
+                       <div class="dropdown-menu">
+                          <div class="container d-block">
+                             <div class="row">
+                                <div class="col-md-12">
+                                   <ul class="nav flex-column">
+                                      <li class="nav-item">
+                                         <a class="nav-link head font-weight-bold" href="under-construction.html">Heading
+                                         29</a>
+                                      </li>
+                                      <li class="nav-item p-0">
+                                         <a class="nav-link" href="under-construction.html">Item 1</a>
+                                      </li>
+                                      <li class="nav-item p-0">
+                                         <a class="nav-link" href="under-construction.html">Item 2</a>
+                                      </li>
+                                   </ul>
+                                </div>
+                                <!-- /.col-md-12  -->
+                                <div class="col-md-12">
+                                   <ul class="nav flex-column">
+                                      <li class="nav-item">
+                                         <a class="nav-link head font-weight-bold" href="under-construction.html">Heading
+                                         27</a>
+                                      </li>
+                                      <li class="nav-item p-0">
+                                         <a class="nav-link" href="under-construction.html">Item 1</a>
+                                      </li>
+                                      <li class="nav-item p-0">
+                                         <a class="nav-link" href="under-construction.html">Item 2</a>
+                                      </li>
+                                   </ul>
+                                </div>
+                                <!-- /.col-md-12  -->
+                                <div class="col-md-12">
+                                   <ul class="nav flex-column">
+                                      <li class="nav-item">
+                                         <a class="nav-link head font-weight-bold" href="under-construction.html">Heading
+                                         39</a>
+                                      </li>
+                                      <li class="nav-item p-0">
+                                         <a class="nav-link" href="under-construction.html">Item 1</a>
+                                      </li>
+                                      <li class="nav-item p-0">
+                                         <a class="nav-link" href="under-construction.html">Item 2</a>
+                                      </li>
+                                   </ul>
+                                </div>
+                                <!-- /.col-md-12  -->
+                                <div class="col-md-12">
+                                   <ul class="nav flex-column">
+                                      <li class="nav-item">
+                                         <a class="nav-link head font-weight-bold" href="under-construction.html">Heading
+                                         4</a>
+                                      </li>
+                                      <li class="nav-item p-0">
+                                         <a class="nav-link" href="under-construction.html">Item 1</a>
+                                      </li>
+                                      <li class="nav-item p-0">
+                                         <a class="nav-link" href="under-construction.html">Item 2</a>
+                                      </li>
+                                   </ul>
+                                </div>
+                                <!-- /.col-md-12  -->
+                                <div class="col-md-12">
+                                   <ul class="nav flex-column">
+                                      <li class="nav-item">
+                                         <a class="nav-link head font-weight-bold" href="under-construction.html">Heading
+                                         1</a>
+                                      </li>
+                                      <li class="nav-item p-0">
+                                         <a class="nav-link" href="under-construction.html">Item 1</a>
+                                      </li>
+                                      <li class="nav-item p-0">
+                                         <a class="nav-link" href="under-construction.html">Item 2</a>
+                                      </li>
+                                   </ul>
+                                </div>
+                                <!-- /.col-md-12  -->
+                                <div class="col-md-12">
+                                   <ul class="nav flex-column">
+                                      <li class="nav-item">
+                                         <a class="nav-link head font-weight-bold" href="under-construction.html">Heading
+                                         2</a>
+                                      </li>
+                                      <li class="nav-item p-0">
+                                         <a class="nav-link" href="under-construction.html">Item 1</a>
+                                      </li>
+                                      <li class="nav-item p-0">
+                                         <a class="nav-link" href="under-construction.html">Item 2</a>
+                                      </li>
+                                   </ul>
+                                </div>
+                                <!-- /.col-md-12  -->
+                                <div class="col-md-12">
+                                   <ul class="nav flex-column">
+                                      <li class="nav-item">
+                                         <a class="nav-link head font-weight-bold" href="under-construction.html">Heading
+                                         3</a>
+                                      </li>
+                                      <li class="nav-item p-0">
+                                         <a class="nav-link" href="under-construction.html">Item 1</a>
+                                      </li>
+                                      <li class="nav-item p-0">
+                                         <a class="nav-link" href="under-construction.html">Item 2</a>
+                                      </li>
+                                   </ul>
+                                </div>
+                                <!-- /.col-md-12  -->
+                                <div class="col-md-12">
+                                   <ul class="nav flex-column">
+                                      <li class="nav-item">
+                                         <a class="nav-link head font-weight-bold" href="under-construction.html">Heading
+                                         4</a>
+                                      </li>
+                                      <li class="nav-item p-0">
+                                         <a class="nav-link" href="under-construction.html">Item 1</a>
+                                      </li>
+                                      <li class="nav-item p-0">
+                                         <a class="nav-link" href="under-construction.html">Item 2</a>
+                                      </li>
+                                   </ul>
+                                </div>
+                                <!-- /.col-md-12  -->
+                             </div>
+                          </div>
+                          <!--  /.container  -->
+                       </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                       <a class="nav-link dropdown-toggle" href="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       <span class="nav-indication mr-2"><i class="fa fa-eercast" aria-hidden="true"></i></span> Recipes
+                       <span class="ml-1">
+                       <i class="fa fa-angle-down" aria-hidden="true"></i>
+                       </span>
+                       </a>
+                       <div class="dropdown-menu">
+                          <div class="container d-block">
+                             <div class="row">
+                                <div class="col-md-12">
+                                   <ul class="nav flex-column">
+                                      <li class="nav-item">
+                                         <a class="nav-link head font-weight-bold" href="under-construction.html">Heading
+                                         29</a>
+                                      </li>
+                                      <li class="nav-item p-0">
+                                         <a class="nav-link" href="under-construction.html">Item 1</a>
+                                      </li>
+                                      <li class="nav-item p-0">
+                                         <a class="nav-link" href="under-construction.html">Item 2</a>
+                                      </li>
+                                   </ul>
+                                </div>
+                                <!-- /.col-md-12  -->
+                                <div class="col-md-12">
+                                   <ul class="nav flex-column">
+                                      <li class="nav-item">
+                                         <a class="nav-link head font-weight-bold" href="under-construction.html">Heading
+                                         27</a>
+                                      </li>
+                                      <li class="nav-item p-0">
+                                         <a class="nav-link" href="under-construction.html">Item 1</a>
+                                      </li>
+                                      <li class="nav-item p-0">
+                                         <a class="nav-link" href="under-construction.html">Item 2</a>
+                                      </li>
+                                   </ul>
+                                </div>
+                                <!-- /.col-md-12  -->
+                                <div class="col-md-12">
+                                   <ul class="nav flex-column">
+                                      <li class="nav-item">
+                                         <a class="nav-link head font-weight-bold" href="under-construction.html">Heading
+                                         39</a>
+                                      </li>
+                                      <li class="nav-item p-0">
+                                         <a class="nav-link" href="under-construction.html">Item 1</a>
+                                      </li>
+                                      <li class="nav-item p-0">
+                                         <a class="nav-link" href="under-construction.html">Item 2</a>
+                                      </li>
+                                   </ul>
+                                </div>
+                                <!-- /.col-md-12  -->
+                                <div class="col-md-12">
+                                   <ul class="nav flex-column">
+                                      <li class="nav-item">
+                                         <a class="nav-link head font-weight-bold" href="under-construction.html">Heading
+                                         4</a>
+                                      </li>
+                                      <li class="nav-item p-0">
+                                         <a class="nav-link" href="under-construction.html">Item 1</a>
+                                      </li>
+                                      <li class="nav-item p-0">
+                                         <a class="nav-link" href="under-construction.html">Item 2</a>
+                                      </li>
+                                   </ul>
+                                </div>
+                                <!-- /.col-md-12  -->
+                                <div class="col-md-12">
+                                   <ul class="nav flex-column">
+                                      <li class="nav-item">
+                                         <a class="nav-link head font-weight-bold" href="under-construction.html">Heading
+                                         1</a>
+                                      </li>
+                                      <li class="nav-item p-0">
+                                         <a class="nav-link" href="under-construction.html">Item 1</a>
+                                      </li>
+                                      <li class="nav-item p-0">
+                                         <a class="nav-link" href="under-construction.html">Item 2</a>
+                                      </li>
+                                   </ul>
+                                </div>
+                                <!-- /.col-md-12  -->
+                                <div class="col-md-12">
+                                   <ul class="nav flex-column">
+                                      <li class="nav-item">
+                                         <a class="nav-link head font-weight-bold" href="under-construction.html">Heading
+                                         2</a>
+                                      </li>
+                                      <li class="nav-item p-0">
+                                         <a class="nav-link" href="under-construction.html">Item 1</a>
+                                      </li>
+                                      <li class="nav-item p-0">
+                                         <a class="nav-link" href="under-construction.html">Item 2</a>
+                                      </li>
+                                   </ul>
+                                </div>
+                                <!-- /.col-md-12  -->
+                                <div class="col-md-12">
+                                   <ul class="nav flex-column">
+                                      <li class="nav-item">
+                                         <a class="nav-link head font-weight-bold" href="under-construction.html">Heading
+                                         3</a>
+                                      </li>
+                                      <li class="nav-item p-0">
+                                         <a class="nav-link" href="under-construction.html">Item 1</a>
+                                      </li>
+                                      <li class="nav-item p-0">
+                                         <a class="nav-link" href="under-construction.html">Item 2</a>
+                                      </li>
+                                   </ul>
+                                </div>
+                                <!-- /.col-md-12  -->
+                                <div class="col-md-12">
+                                   <ul class="nav flex-column">
+                                      <li class="nav-item">
+                                         <a class="nav-link head font-weight-bold" href="under-construction.html">Heading
+                                         4</a>
+                                      </li>
+                                      <li class="nav-item p-0">
+                                         <a class="nav-link" href="under-construction.html">Item 1</a>
+                                      </li>
+                                      <li class="nav-item p-0">
+                                         <a class="nav-link" href="under-construction.html">Item 2</a>
+                                      </li>
+                                   </ul>
+                                </div>
+                                <!-- /.col-md-12  -->
+                             </div>
+                          </div>
+                          <!--  /.container  -->
+                       </div>
+                    </li>
+                    <li class="nav-item">
+                       <a class="nav-link" href="contact-us.html">
+                       <span class="nav-indication mr-2"><i class="fa fa-eercast" aria-hidden="true"></i></span> Contact Us</a>
+                    </li>
+                 </ul>
+              </div>
+              <div class="modal-footer py-3">
+                 <a class="w-50 text-center" href="under-construction.html">
+                 <span class="mr-2"><i class="fa fa-sign-in" aria-hidden="true"></i></span>Login</a>
+                 <a class="w-50 text-center" href="under-construction.html">
+                 <span class="mr-2"><i class="fa fa-paper-plane" aria-hidden="true"></i></span>Register</a>
+              </div>
+           </div>
+        </div>
+     </div>
+     <!-- Mobile Nav -->
+</body>
+
+</html>

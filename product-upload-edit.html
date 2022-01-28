@@ -1,0 +1,2436 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>SEWA</title>
+      <!-- Bootstrap link Starts -->
+      <link rel="stylesheet" href="frontend/assets/bootstrap-4.3.1/css/bootstrap.min.css" />
+      <link rel="stylesheet" href="frontend/assets/bootstrap-4.3.1/css/bootstrap.min.css.map" />
+      <!-- Bootstrap link Ends -->
+      <!-- Font Awesome Link Starts -->
+      <link rel="stylesheet" href="frontend/assets/font-awesome-4.7.0/css/font-awesome.min.css" />
+      <!-- Font Awesome Link Ends -->
+      <!-- Slick Css -->
+      <link rel="stylesheet" href="frontend/assets/slick/slick.css" />
+      <link rel="stylesheet" href="frontend/assets/slick/slick-theme.css" />
+      <!-- Slick Css Ends-->
+      <!-- Custom Links -->
+      <!-- Font Link -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <!-- google font  -->
+      <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Readex+Pro:wght@200&display=swap" rel="stylesheet" /> -->
+      <link
+         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Readex+Pro:wght@200&display=swap"
+         rel="stylesheet"
+         />
+      <!-- Font Link Ends -->
+      <link rel="stylesheet" href="frontend/assets/css/style.css" />
+      <!-- <link rel="stylesheet" href="frontend/assets/css/responsive.css" /> -->
+      <link rel="stylesheet" href="frontend/assets/css/dashboard.css" />
+      <link rel="stylesheet" href="frontend/assets/css/dashboard-two.css" />
+      <link rel="stylesheet" href="frontend/assets/css/dashboard-responsive.css" />
+      <!-- Custom Links Ends -->
+      <!-- Countdown start -->
+      <link rel="stylesheet" href="frontend/assets/countdown/css/flipclock.css" />
+      <!-- Countdown end -->
+   </head>
+   <body>
+      <!-- <div id="loading"></div> -->
+      <header class="section-header top-header-bg d-md-block d-none">
+         <div class="container px-0">
+            <div class="top-header d-flex justify-content-end align-items-center">
+               <div class="top-social-icon">
+                  <ul class="mb-0">
+                     <li class="d-flex align-items-center top_head_right">
+                        <div class="dropdown user_login_mobile">
+                           <button
+                              class="text-light btn_account pb-0 btn bg-transparent dropdown-toggle pt-0 font-weight-normal "
+                              type="button"
+                              data-toggle="dropdown"
+                              >
+                           Track Your Order
+                           <span class="caret"></span>
+                           </button>
+                           <ul class="my_account dropdown-menu pl-3 ">
+                              <div class="input_track_blo d-flex flex-column pb-2">
+                                 <label><small class="font-weight-bold">Track Your Order</small></label>
+                                 <div class="track_input_btn d-flex">
+                                    <input type="text" class="form-control" placeholder="Enter order id"/>
+                                    <button class="btn_custom_go">Go</button>
+                                 </div>
+                              </div>
+                           </ul>
+                        </div>
+                        <!-- user login start  -->
+                        <div class="dropdown user_login_mobile">
+                           <button
+                              class="text-light btn_account pb-0 btn bg-transparent dropdown-toggle pt-0 font-weight-normal "
+                              type="button"
+                              data-toggle="dropdown"
+                              >
+                           <i class="fa fa-user-o" aria-hidden="true"></i> My Account
+                           <span class="caret"></span>
+                           </button>
+                           <ul class="my_account dropdown-menu pl-3">
+                              <li>
+                                 <a href="login.html" class="font-weight-normal"
+                                    ><span class="pr-2"
+                                    ><i class="fa fa-user" aria-hidden="true"></i
+                                    ></span>
+                                 Login</a
+                                    >
+                              </li>
+                              <li>
+                                 <a href="register.html" class="font-weight-normal"
+                                    ><span class="pr-2"
+                                    ><i
+                                    class="fa fa-sign-in"
+                                    aria-hidden="true"
+                                    ></i></span
+                                    >Sign Up</a
+                                    >
+                              </li>
+                           </ul>
+                        </div>
+                        <!-- cart modal start  -->
+                        <!-- Modal -->
+                        <div
+                           class="modal fade"
+                           id="exampleModal"
+                           tabindex="-1"
+                           role="dialog"
+                           aria-labelledby="exampleModalLabel"
+                           aria-hidden="true"
+                           >
+                           <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                 <div class="modal-header">
+                                    <h5
+                                       class="modal-title text-dark font-weight-bold"
+                                       id="exampleModalLabel"
+                                       >
+                                       My Cart
+                                    </h5>
+                                    <button
+                                       type="button"
+                                       class="close"
+                                       data-dismiss="modal"
+                                       aria-label="Close"
+                                       >
+                                    <span aria-hidden="true">×</span>
+                                    </button>
+                                 </div>
+                                 <div class="modal-body mb-0 pb-0">
+                                    <div class="table-responsive px-md-3">
+                                       <table class="table text-center mb-0">
+                                          <tbody class="">
+                                             <tr class="d-flex align-items-center">
+                                                <td class="cart_img">
+                                                   <div>
+                                                      <img
+                                                         src="https://montechbd.com/shopist/demo/public/uploads/1619869340-h-250-tv2.png"
+                                                         alt="image"
+                                                         />
+                                                   </div>
+                                                </td>
+                                                <td>
+                                                   <h5>Blue Diamond Almonds</h5>
+                                                   <h6>Rs233</h6>
+                                                </td>
+                                                <td>
+                                                   <a href="" class="gray_title"
+                                                      ><i
+                                                      class="fa fa-trash-o"
+                                                      aria-hidden="true"
+                                                      ></i
+                                                      ></a>
+                                                </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </div>
+                                 </div>
+                                 <div
+                                    class="modal-footer d-flex flex-column align-items-end"
+                                    >
+                                    <div class="cart_top_total">
+                                       <h6 class="text-dark mr-1">Total Rs233</h6>
+                                    </div>
+                                    <div
+                                       class="top_cartmodal_btn d-flex justify-content-between align-items-center w-100"
+                                       >
+                                       <a
+                                          href="cart.html"
+                                          class="them_btn_new btn_cart_modal"
+                                          >View Cart</a
+                                          >
+                                       <a
+                                          href="checkout.html"
+                                          class="them_btn_new btn_cart_modal"
+                                          >Proceed Checkout</a
+                                          >
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- cart modal end  -->
+                        <!-- Popup Search Modal -->
+                        <!-- Modal -->
+                        <!-- Popup Search Modal Ends-->
+                        <!-- search modal end  -->
+                        <!-- search header end  -->
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </header>
+      <div class="nav_bar header-sticky">
+         <div class="container pl-0 ">
+            <div class="row">
+               <div class="col-md-2">
+                  <a class="navbar-brand text-dark font-weight-bold" href="#"><img src="./frontend/assets/images/logo.jpg" alt="" class="img-fluid"></a>
+               </div>
+               <!-- search start  -->
+               <div class="searchbar d-none d-md-block">
+                  <input
+                     class="search_input"
+                     type="text"
+                     name=""
+                     placeholder="Search..."
+                     />
+                  <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+               </div>
+               <!-- search mobile new star  -->
+               <div class="search_mobile_men  d-block d-md-none">
+                  <button class="search_icon_new" type="submit">
+                  <i class="fa fa-search"></i>
+                  </button>
+                  <div class="sub_search">
+                     <form action="" class="d-flex">
+                        <input
+                           class="input_box"
+                           type="text"
+                           placeholder="Search.."
+                           name="search"
+                           />
+                        <button class="search_top" type="submit">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
+                     </form>
+                  </div>
+               </div>
+               <!-- search mobile new end  -->
+               <div class="col-md-8">
+                  <div class="search_men d-none d-md-block">
+                     <form class="form-inline search_top">
+                        <input
+                           class="form-control border-0 search_input"
+                           type="search"
+                           placeholder="Search for Products"
+                           aria-label="Search"
+                           />
+                        <div class="search_select border-0">
+                           <select
+                              name=""
+                              id=""
+                              class="border-0 search_select_content px-2"
+                              >
+                              <option value="0" selected="selected">
+                                 All Categories
+                              </option>
+                              <option class="level-0" value="accessories">
+                                 Accessories
+                              </option>
+                              <option class="level-0" value="cameras-photography">
+                                 Cameras &amp; Photography
+                              </option>
+                              <option class="level-0" value="computer-components">
+                                 Computer Components
+                              </option>
+                              <option class="level-0" value="gadgets">Gadgets</option>
+                              <option class="level-0" value="home-entertainment">
+                                 Home Entertainment
+                              </option>
+                              <option class="level-0" value="laptops-computers">
+                                 Laptops &amp; Computers
+                              </option>
+                              <option class="level-0" value="headphones-2">
+                                 Headphones
+                              </option>
+                              <option class="level-0" value="speakers-2">Speakers</option>
+                           </select>
+                        </div>
+                        <div class="search_icon_top text-center">
+                           <a href="#" class="search_icon text-dark"
+                              ><i class="fa fa-search"></i
+                              ></a>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+               <div class="col-md-2">
+                  <ul
+                     class="cart_top_list d-flex justify-content-around mb-0 h-100 align-items-center "
+                     >
+                     <li>
+                        <a href="" class="position-relative">
+                        <sub class='sub_block'>1</sub>
+                        <img data-toggle="tooltip" data-placement="top" title="" data-original-title="Compare"
+                           src="./frontend/assets/images/logo/compare.svg"
+                           class="img-fluid"
+                           alt=""
+                           /></a>
+                     </li>
+                     <li>
+                        <a href="" class="position-relative">
+                        <sub class='sub_block'>0</sub
+                           ><img data-toggle="tooltip" data-placement="top" title="" data-original-title="Wishlist"
+                           src="./frontend/assets/images/logo/wishlist.svg"
+                           class="img-fluid"
+                           alt=""
+                           /></a>
+                     </li>
+                     <li>
+                        <a href="" class="position-relative"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <sub class='sub_block'>1</sub
+                           ><img data-toggle="tooltip" data-placement="top" title="" data-original-title="Cart"
+                           src="./frontend/assets/images/logo/cart.svg"
+                           class="img-fluid"
+                           alt=""
+                           /></a>
+                        <!-- cart dropdown start  -->
+                        <div class="dropdown-menu" id="cart_header_table" aria-labelledby="dropdownMenuButton">
+                           <h6 class="text-center font-weight-bold pt-1">Cart Items</h6>
+                           <div class="table-responsive" >
+                              <table class="table mb-0">
+                                 <tbody>
+                                    <tr>
+                                       <td class="img_header_cart">
+                                          <div>
+                                             <a href=""><img src="http://127.0.0.1:8000/uploads/products/thumbnail/awQYj0DwQtoWwENvsPuEeWNoHTzOqOZIihRxRj2u.jpeg" alt=""></a>
+                                          </div>
+                                       </td>
+                                       <td class="cart_header_title"> <a href="" class="text-dark">Electric Keema Machine Keema Maker</a> </td>
+                                       <td>
+                                          <a href="" class="header_cart_icon">
+                                             <ii class="fa fa-trash-o" aria-hidden="true">
+                                             </i>
+                                          </a>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="img_header_cart">
+                                          <div>
+                                             <a href=""><img src="http://127.0.0.1:8000/uploads/products/thumbnail/awQYj0DwQtoWwENvsPuEeWNoHTzOqOZIihRxRj2u.jpeg" alt=""></a>
+                                          </div>
+                                       </td>
+                                       <td class="cart_header_title"> <a href="" class="text-dark">Electric Keema </a> </td>
+                                       <td>
+                                          <a href="" class="header_cart_icon">
+                                             <ii class="fa fa-trash-o" aria-hidden="true">
+                                             </i>
+                                          </a>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="img_header_cart">
+                                          <div>
+                                             <a href=""><img src="http://127.0.0.1:8000/uploads/products/thumbnail/awQYj0DwQtoWwENvsPuEeWNoHTzOqOZIihRxRj2u.jpeg" alt=""></a>
+                                          </div>
+                                       </td>
+                                       <td class="cart_header_title"> <a href="" class="text-dark">Electric Keema Machine Keema Maker</a> </td>
+                                       <td>
+                                          <a href="" class="header_cart_icon">
+                                             <ii class="fa fa-trash-o" aria-hidden="true">
+                                             </i>
+                                          </a>
+                                       </td>
+                                    </tr>
+                                 </tbody>
+                              </table>
+                           </div>
+                           <div class="cart_header_price d-flex justify-content-between">
+                              <div>
+                                 <h6>Subtotal</h6>
+                              </div>
+                              <div>
+                                 <h6>Rs4,300.00</h6>
+                              </div>
+                           </div>
+                           <div class="
+                              top_cartmodal_btn
+                              d-flex
+                              justify-content-around
+                              align-items-center
+                              w-100 pt-2 
+                              ">
+                              <a href="cart.html" class="btn-custom rounded-0 py-2">
+                              <img src="./frontend/assets/images/logo/cart.svg" class="img-fluid" alt="">&nbsp; View Cart</a>
+                              <a href="checkout.html" class="btn-custom rounded-0 py-2">Proceed Checkout</a>
+                           </div>
+                        </div>
+                        <!-- cart dropdown end  -->
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <!-- Button trigger modal -->
+         <div
+            class="mobile-menu d-lg-none d-md-block mr-4 position-absolute"
+            data-toggle="modal"
+            data-target="#rightsidebarfilter"
+            >
+            <span
+               ><i class="fa fa-bars fa-2x text-light" aria-hidden="true"></i
+               ></span>
+         </div>
+         <!-- Button trigger modal -->
+      </div>
+      <!--======================================================= HEADER END ======-->
+      <!--======================================================= BREADCRUMB START ======-->
+      <section id="breadcrumb_item" class="pb-0 breadcrumb mb-0">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12 m-auto">
+                  <nav aria-label="breadcrumb">
+                     <ol class="breadcrumb">
+                        <li class="breadcrumb-item font-weight-bold">
+                           <a href="index.html"><span><i class="fa fa-home" aria-hidden="true"></i></span>
+                           HOME</a>
+                        </li>
+                        <li class="breadcrumb-item font-weight-bold" aria-current="page">
+                           <a href="" class="text-dark">
+                           Dashboard</a>
+                        </li>
+                        <li class="breadcrumb-item font-weight-bold" aria-current="page">
+                           <a href="" class="text-dark">
+                           Support Ticket</a>
+                        </li>
+                     </ol>
+                  </nav>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!--======================================================= BREADCRUMB END ======-->
+      <!-- Dashboard Vndeor Wrapper -->
+      <section id="dashboard-vendor-wrapper">
+         <section class="gry-bg py-4 profile">
+            <div class="container">
+               <div class="row cols-xs-space cols-sm-space cols-md-space">
+                  <div class="col-lg-3 ">
+                     <div id="sidebar_men_block" class="sidebar sidebar--style-3 no-border stickyfill p-0">
+                        <div class="widget mb-0">
+                           <div class="widget-profile-box text-center p-3">
+                              <div class="image" style="background-image:url('http://durbarmart.nextnepal.org/public/uploads/ucQhvfz4EQXNeTbN8Eif0Cpq5LnOwvg8t7qKNKVs.jpeg')">
+                              </div>
+                              <div class="name mb-0">Mr. Seller <span class="ml-2"><i class="fa fa-check-circle"
+                                 style="color:green"></i></span></div>
+                           </div>
+                           <div class="sidebar-widget-title py-3">
+                              <span>Menu</span>
+                           </div>
+                           <div class="widget-profile-menu py-3">
+                              <ul class="categories categories--style-3">
+                                 <li>
+                                    <a href="dashboard-vendor.html" class="active">
+                                    <i class="fa fa-dashboard"></i>
+                                    <span class="category-name">
+                                    Dashboard
+                                    </span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="purchase_history.html" class="">
+                                    <i class="fa fa-file-text"></i>
+                                    <span class="category-name">
+                                    Purchase History </span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="download-product.html" class="">
+                                    <i class="fa fa-download"></i>
+                                    <span class="category-name">
+                                    Downloads
+                                    </span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="dashboard-vendor-wishlist.html" class="">
+                                    <i class="fa fa-heart-o"></i>
+                                    <span class="category-name">
+                                    Wishlist
+                                    </span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="dashboard-vendor-products.html" class="">
+                                    <i class="fa fa-diamond"></i>
+                                    <span class="category-name">
+                                    Products
+                                    </span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="digitalproducts-product.html" class="">
+                                    <i class="fa fa-diamond"></i>
+                                    <span class="category-name">
+                                    Digital Products
+                                    </span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="dashboard-vendor-classified-products.html" class="">
+                                    <i class="fa fa-diamond"></i>
+                                    <span class="category-name">
+                                    Classified Products
+                                    </span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="product_bulk_upload.html" class="">
+                                    <i class="fa fa-upload"></i>
+                                    <span class="category-name">
+                                    Product Bulk Upload
+                                    </span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="order.html" class="">
+                                    <i class="fa fa-file-text"></i>
+                                    <span class="category-name">
+                                    Orders </span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="dashboard-vendor-refund-request.html" class="">
+                                    <i class="fa fa-file-text"></i>
+                                    <span class="category-name">
+                                    Recieved Refund Request
+                                    </span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="dashboard-vendor-sent_refund.html" class="">
+                                    <i class="fa fa-file-text"></i>
+                                    <span class="category-name">
+                                    Sent Refund Request
+                                    </span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="dashboard-vendor-product_reviews.html" class="">
+                                    <i class="fa fa-star-o"></i>
+                                    <span class="category-name">
+                                    Product Reviews </span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="dashboard-vendor-conversations.html" class="">
+                                    <i class="fa fa-comment"></i>
+                                    <span class="category-name">
+                                    Conversations
+                                    </span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="dashboard-vendor-shop_setting.html" class="">
+                                    <i class="fa fa-cog"></i>
+                                    <span class="category-name">
+                                    Shop Setting
+                                    </span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="dashboard-vendor-payment_history.html" class="">
+                                    <i class="fa fa-cc-mastercard"></i>
+                                    <span class="category-name">
+                                    Payment History
+                                    </span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="dashboard-vendor-manage_profile.html" class="">
+                                    <i class="fa fa-user"></i>
+                                    <span class="category-name">
+                                    Manage Profile
+                                    </span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="dashboard-vendor-money_withdraw.html" class="">
+                                    <i class="fa fa-money"></i>
+                                    <span class="category-name">
+                                    Money Withdraw
+                                    </span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="dashboard-vendor-wallet.html" class="">
+                                    <i class="fa fa-dollar"></i>
+                                    <span class="category-name">
+                                    My Wallet
+                                    </span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="dashboard-vendor-support_ticket.html" class="">
+                                    <i class="fa fa-support"></i>
+                                    <span class="category-name">
+                                    Support Ticket </span>
+                                    </a>
+                                 </li>
+                              </ul>
+                           </div>
+                           <div class="sidebar-widget-title py-3">
+                              <span>Sold Amount</span>
+                           </div>
+                           <div class="widget-balance pb-3 pt-1">
+                              <div class="text-center">
+                                 <div class="heading-4 strong-700 mb-4">
+                                    <small class="d-block text-sm alpha-5 mb-2">Your sold amount (current
+                                    month)</small>
+                                    <span class="p-2 rounded">Rs .00</span>
+                                 </div>
+                                 <table class="text-left mb-0 table w-75 m-auto">
+                                    <tr>
+                                       <td class="p-1 text-sm">
+                                          Total Sold:
+                                       </td>
+                                       <td class="p-1">
+                                          Rs 1.00
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="p-1 text-sm">
+                                          Last Month Sold:
+                                       </td>
+                                       <td class="p-1">
+                                          Rs 0.00
+                                       </td>
+                                    </tr>
+                                 </table>
+                              </div>
+                              <table>
+                              </table>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-9">
+                     <div class="main-content">
+                        <!-- Page title -->
+                        <div class="page-title">
+                           <div class="row align-items-center">
+                              <div class="col-md-6">
+                                 <h2 class="heading heading-6 text-capitalize strong-600 mb-0">
+                                    Update your product
+                                 </h2>
+                              </div>
+                           </div>
+                        </div>
+                        <form class="" action="http://127.0.0.1:8000/products/update/29" method="POST" enctype="multipart/form-data" id="choice_form">
+                           <input name="_method" type="hidden" value="POST">
+                           <input type="hidden" name="id" value="29">
+                           <input type="hidden" name="_token" value="htH56kX4xRByiA4wBENrW6E1Jsr8qiBCLkJ4NWS6">                    		<input type="hidden" name="added_by" value="seller">
+                           <div class="form-box bg-white mt-4">
+                              <div class="form-box-title px-3 py-2">
+                                 General
+                              </div>
+                              <div class="form-box-content p-3">
+                                 <div class="row">
+                                    <div class="col-md-2">
+                                       <label>Product Name <span class="required-star">*</span></label>
+                                    </div>
+                                    <div class="col-md-10">
+                                       <input type="text" class="form-control mb-3" name="name" placeholder="Product Name" value="Red Cherry Himalayan Arabica Coffee - 250 Gm">
+                                    </div>
+                                 </div>
+                                 <div class="row">
+                                    <div class="col-md-2">
+                                       <label>Product Category <span class="required-star">*</span></label>
+                                    </div>
+                                    <div class="col-md-10">
+                                       <div class="form-control mb-3 c-pointer" data-toggle="modal" data-target="#categorySelectModal" id="product_category">Grocery &amp; Pets&gt;Beverages&gt;Coffee</div>
+                                       <input type="hidden" name="category_id" id="category_id" value="3" required="">
+                                       <input type="hidden" name="subcategory_id" id="subcategory_id" value="33" required="">
+                                       <input type="hidden" name="subsubcategory_id" id="subsubcategory_id" value="14">
+                                    </div>
+                                 </div>
+                                 <div class="row">
+                                    <div class="col-md-2">
+                                       <label>Product Brand <span class="required-star">*</span></label>
+                                    </div>
+                                    <div class="col-md-10">
+                                       <div class="mb-3">
+                                          <select class="form-control mb-3 selectpicker select2-hidden-accessible" data-placeholder="Select a brand" id="brands" name="brand_id" tabindex="-1" aria-hidden="true">
+                                             <option value="">Select Brand</option>
+                                             <option value="1">Acer</option>
+                                             <option value="2">Apple</option>
+                                             <option value="3">Adidas</option>
+                                             <option value="4">Asus</option>
+                                             <option value="5">TITAN</option>
+                                             <option value="6">Usupso</option>
+                                             <option value="7">Nyptra</option>
+                                             <option value="8">Jhonson</option>
+                                             <option value="9">Oppo</option>
+                                             <option value="10">KTM Bike</option>
+                                             <option value="11">Alda</option>
+                                             <option value="12">Baltra</option>
+                                             <option value="13">Brother</option>
+                                             <option value="14">Capella</option>
+                                             <option value="15">CG</option>
+                                             <option value="16">Dekha Herbals</option>
+                                             <option value="17">Digicom</option>
+                                             <option value="18">Eset Antivirus</option>
+                                             <option value="19">Feber</option>
+                                             <option value="20">Happy Feet</option>
+                                             <option value="21">Holistic Health</option>
+                                             <option value="22">Johnnie Walker</option>
+                                             <option value="23">Juwas</option>
+                                             <option value="24">Kaku</option>
+                                             <option value="25">Kaspersky</option>
+                                             <option value="26">Kent</option>
+                                             <option value="27">Livpure Water</option>
+                                             <option value="28">Mely</option>
+                                             <option value="29">Naviforce</option>
+                                             <option value="30">Nikon</option>
+                                             <option value="31">Ptron</option>
+                                             <option value="32">Samsung</option>
+                                             <option value="33">SRI</option>
+                                             <option value="34">Tenda</option>
+                                             <option value="35">Tesla</option>
+                                             <option value="36">totolink</option>
+                                             <option value="37">Transcend</option>
+                                             <option value="38">View Sonic</option>
+                                             <option value="39">Virjeans</option>
+                                             <option value="40">Amul</option>
+                                             <option value="41">Bikano</option>
+                                             <option value="42">DDC</option>
+                                             <option value="43">Hulas</option>
+                                             <option value="44">Aoyu</option>
+                                             <option value="45">RoHS</option>
+                                             <option value="46">Autumnz</option>
+                                             <option value="47">CASIO</option>
+                                             <option value="48">Kilofly</option>
+                                             <option value="49">Sprite</option>
+                                             <option value="50">Nescafe</option>
+                                             <option value="51">BRU Instant Coffee</option>
+                                             <option value="52">MacCoffe</option>
+                                             <option value="53" selected="">Red Cherry Coffee( JUAS)</option>
+                                             <option value="54">Super-Coffee</option>
+                                             <option value="55">No Brand</option>
+                                             <option value="56">DEXE</option>
+                                             <option value="57">Kemei</option>
+                                             <option value="58">Progemei</option>
+                                             <option value="59">JBL</option>
+                                             <option value="60">ROMOSS</option>
+                                             <option value="62">SMC</option>
+                                             <option value="63">V-trek</option>
+                                          </select>
+                                          <span class="select2 select2-container select2-container--default" dir="ltr" style="width: 818px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-brands-container"><span class="select2-selection__rendered" id="select2-brands-container" title="Red Cherry Coffee( JUAS)">Red Cherry Coffee( JUAS)</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="row">
+                                    <div class="col-md-2">
+                                       <label>Product Unit <span class="required-star">*</span></label>
+                                    </div>
+                                    <div class="col-md-10">
+                                       <input type="text" class="form-control mb-3" name="unit" placeholder="Product unit" value="250gm">
+                                    </div>
+                                 </div>
+                                 <div class="row">
+                                    <div class="col-md-2">
+                                       <label>Product Tag <span class="required-star">*</span></label>
+                                    </div>
+                                    <div class="col-md-10">
+                                       <div class="bootstrap-tagsinput"><span class="tag label label-primary">Arabica coffee| Coffee<span data-role="remove"></span></span> <input type="text" class="form-control" placeholder="Type &amp; hit enter"></div>
+                                       <input type="text" class="form-control mb-3 tagsInput" name="tags[]" placeholder="Type &amp; hit enter" data-role="tagsinput" value="Arabica coffee| Coffee" style="display: none;">
+                                    </div>
+                                 </div>
+                                 <div class="row mt-2">
+                                    <label class="col-md-2">Refundable</label>
+                                    <div class="col-md-10">
+                                       <label class="switch" style="margin-top:5px;">
+                                       <input type="checkbox" name="refundable">
+                                       <span class="slider round"></span></label>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="form-box bg-white mt-4">
+                              <div class="form-box-title px-3 py-2">
+                                 Images
+                              </div>
+                              <div class="form-box-content p-3">
+                                 <div id="product-images">
+                                    <div class="row">
+                                       <div class="col-md-2">
+                                          <label>Main Images <span class="required-star">*</span></label>
+                                       </div>
+                                       <div class="col-md-10">
+                                          <div class="row">
+                                             <div class="col-md-3">
+                                                <div class="img-upload-preview">
+                                                   <img loading="lazy" src="http://127.0.0.1:8000/uploads/products/photos/M0FdoMZCBWuorGMBp7jgxxr6RsNLBczRQKYHoELD.webp" alt="" class="img-responsive">
+                                                   <input type="hidden" name="previous_photos[]" value="uploads/products/photos/M0FdoMZCBWuorGMBp7jgxxr6RsNLBczRQKYHoELD.webp">
+                                                   <button type="button" class="btn btn-danger close-btn remove-files"><i class="fa fa-times"></i></button>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <input type="file" name="photos[]" id="photos-1" class="custom-input-file custom-input-file--4" data-multiple-caption="{count} files selected" accept="image/*">
+                                          <label for="photos-1" class="mw-100 mb-3">
+                                          <span></span>
+                                          <strong>
+                                          <i class="fa fa-upload"></i>
+                                          Choose image
+                                          </strong>
+                                          </label>
+                                       </div>
+                                    </div>
+                                    <div class="row">
+                                       <div class="col-2"><button type="button" onclick="delete_this_row(this)" class="btn btn-link btn-icon text-danger"><i class="fa fa-trash-o"></i></button></div>
+                                       <div class="col-10"><input type="file" name="photos[]" id="photos-2" class="custom-input-file custom-input-file--4" data-multiple-caption="{count} files selected" multiple="" accept="image/*"><label for="photos-2" class="mw-100 mb-3"><span></span><strong><i class="fa fa-upload"></i>Choose image</strong></label></div>
+                                    </div>
+                                 </div>
+                                 <div class="text-right">
+                                    <button type="button" class="btn btn-info mb-3" onclick="add_more_slider_image()">Add More</button>
+                                 </div>
+                                 <div class="row">
+                                    <div class="col-md-2">
+                                       <label>Thumbnail Image <small>(290x300)</small> <span class="required-star">*</span></label>
+                                    </div>
+                                    <div class="col-md-10">
+                                       <div class="row">
+                                          <div class="col-md-3">
+                                             <div class="img-upload-preview">
+                                                <img loading="lazy" src="http://127.0.0.1:8000/uploads/products/thumbnail/iVmxnzjSz9xSm8qvmHeKpMDwxYY1YMwdv4MEHQPZ.webp" alt="" class="img-responsive">
+                                                <input type="hidden" name="previous_thumbnail_img" value="uploads/products/thumbnail/iVmxnzjSz9xSm8qvmHeKpMDwxYY1YMwdv4MEHQPZ.webp">
+                                                <button type="button" class="btn btn-danger close-btn remove-files"><i class="fa fa-times"></i></button>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <input type="file" name="thumbnail_img" id="file-2" class="custom-input-file custom-input-file--4" data-multiple-caption="{count} files selected" accept="image/*">
+                                       <label for="file-2" class="mw-100 mb-3">
+                                       <span></span>
+                                       <strong>
+                                       <i class="fa fa-upload"></i>
+                                       Choose image
+                                       </strong>
+                                       </label>
+                                    </div>
+                                 </div>
+                                 <div class="row">
+                                    <div class="col-md-2">
+                                       <label>Featured <small>(290x300)</small></label>
+                                    </div>
+                                    <div class="col-md-10">
+                                       <div class="row">
+                                          <div class="col-md-3">
+                                             <div class="img-upload-preview">
+                                                <img loading="lazy" src="http://127.0.0.1:8000/uploads/products/featured/uwaT2TUuq2ruTTQX9XkKnjBcSjlEfE5lW4ecIuFN.webp" alt="" class="img-responsive">
+                                                <input type="hidden" name="previous_featured_img" value="uploads/products/featured/uwaT2TUuq2ruTTQX9XkKnjBcSjlEfE5lW4ecIuFN.webp">
+                                                <button type="button" class="btn btn-danger close-btn remove-files"><i class="fa fa-times"></i></button>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <input type="file" name="featured_img" id="file-3" class="custom-input-file custom-input-file--4" data-multiple-caption="{count} files selected" accept="image/*">
+                                       <label for="file-3" class="mw-100 mb-3">
+                                       <span></span>
+                                       <strong>
+                                       <i class="fa fa-upload"></i>
+                                       Choose image
+                                       </strong>
+                                       </label>
+                                    </div>
+                                 </div>
+                                 <div class="row">
+                                    <div class="col-md-2">
+                                       <label>Flash Deal <small>(290x300)</small></label>
+                                    </div>
+                                    <div class="col-md-10">
+                                       <div class="row">
+                                          <div class="col-md-3">
+                                             <div class="img-upload-preview">
+                                                <img loading="lazy" src="http://127.0.0.1:8000/uploads/products/flash_deal/2Uwb2TW45p2YfFuUhJDjR06ees7VcT9FK1q2gZJP.webp" alt="" class="img-responsive">
+                                                <input type="hidden" name="previous_flash_deal_img" value="uploads/products/flash_deal/2Uwb2TW45p2YfFuUhJDjR06ees7VcT9FK1q2gZJP.webp">
+                                                <button type="button" class="btn btn-danger close-btn remove-files"><i class="fa fa-times"></i></button>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <input type="file" name="flash_deal_img" id="file-4" class="custom-input-file custom-input-file--4" data-multiple-caption="{count} files selected" accept="image/*">
+                                       <label for="file-4" class="mw-100 mb-3">
+                                       <span></span>
+                                       <strong>
+                                       <i class="fa fa-upload"></i>
+                                       Choose image
+                                       </strong>
+                                       </label>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="form-box bg-white mt-4">
+                              <div class="form-box-title px-3 py-2">
+                                 Videos
+                              </div>
+                              <div class="form-box-content p-3">
+                                 <div class="row">
+                                    <div class="col-md-2">
+                                       <label>Video From</label>
+                                    </div>
+                                    <div class="col-md-10">
+                                       <div class="mb-3">
+                                          <select class="form-control selectpicker select2-hidden-accessible" data-minimum-results-for-search="Infinity" name="video_provider" tabindex="-1" aria-hidden="true">
+                                             <option value="youtube" selected="">Youtube</option>
+                                             <option value="dailymotion">Dailymotion</option>
+                                             <option value="vimeo">Vimeo</option>
+                                          </select>
+                                          <span class="select2 select2-container select2-container--default" dir="ltr" style="width: 818px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-video_provider-gh-container"><span class="select2-selection__rendered" id="select2-video_provider-gh-container" title="Youtube">Youtube</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="row">
+                                    <div class="col-md-2">
+                                       <label>Video URL</label>
+                                    </div>
+                                    <div class="col-md-10">
+                                       <input type="text" class="form-control mb-3" name="video_link" placeholder="Video link" value="">
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="form-box bg-white mt-4">
+                              <div class="form-box-title px-3 py-2">
+                                 Meta Tags
+                              </div>
+                              <div class="form-box-content p-3">
+                                 <div class="row">
+                                    <div class="col-md-2">
+                                       <label>Meta Title</label>
+                                    </div>
+                                    <div class="col-md-10">
+                                       <input type="text" class="form-control mb-3" name="meta_title" value="Red Cherry Himalayan Arabica Coffee | Coffee and many more" placeholder="Meta Title">
+                                    </div>
+                                 </div>
+                                 <div class="row">
+                                    <div class="col-md-2">
+                                       <label>Description</label>
+                                    </div>
+                                    <div class="col-md-10">
+                                       <textarea name="meta_description" rows="8" class="form-control mb-3">Red Cherry Himalayan Arabica Coffee products in Nepal</textarea>
+                                    </div>
+                                 </div>
+                                 <div class="row">
+                                    <div class="col-md-2">
+                                       <label>Meta Image</label>
+                                    </div>
+                                    <div class="col-md-10">
+                                       <div class="row">
+                                          <div class="col-md-3">
+                                             <div class="img-upload-preview">
+                                                <img loading="lazy" src="http://127.0.0.1:8000/uploads/products/meta/gm6GZvpWSrAgo6cPVTIfqd0HmNzrnokoxtEOeGt1.webp" alt="" class="img-responsive">
+                                                <input type="hidden" name="previous_meta_img" value="uploads/products/meta/gm6GZvpWSrAgo6cPVTIfqd0HmNzrnokoxtEOeGt1.webp">
+                                                <button type="button" class="btn btn-danger close-btn remove-files"><i class="fa fa-times"></i></button>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <input type="file" name="meta_img" id="file-5" class="custom-input-file custom-input-file--4" data-multiple-caption="{count} files selected" accept="image/*">
+                                       <label for="file-5" class="mw-100 mb-3">
+                                       <span></span>
+                                       <strong>
+                                       <i class="fa fa-upload"></i>
+                                       Choose image
+                                       </strong>
+                                       </label>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="form-box bg-white mt-4">
+                              <div class="form-box-title px-3 py-2">
+                                 Customer Choice
+                              </div>
+                              <div class="form-box-content p-3">
+                                 <div class="row mb-3">
+                                    <div class="col-8 col-md-3 order-1 order-md-0">
+                                       <input type="text" class="form-control" value="Colors" disabled="">
+                                    </div>
+                                    <div class="col-12 col-md-7 col-xl-8 order-3 order-md-0 mt-2 mt-md-0">
+                                       <select class="form-control color-var-select select2-hidden-accessible" name="colors[]" id="colors" multiple="" tabindex="-1" aria-hidden="true">
+                                          <option value="#F0F8FF">AliceBlue</option>
+                                          <option value="#9966CC">Amethyst</option>
+                                          <option value="#FAEBD7">AntiqueWhite</option>
+                                          <option value="#00FFFF">Aqua</option>
+                                          <option value="#7FFFD4">Aquamarine</option>
+                                          <option value="#F0FFFF">Azure</option>
+                                          <option value="#F5F5DC">Beige</option>
+                                          <option value="#FFE4C4">Bisque</option>
+                                          <option value="#000000">Black</option>
+                                          <option value="#FFEBCD">BlanchedAlmond</option>
+                                          <option value="#0000FF">Blue</option>
+                                          <option value="#8A2BE2">BlueViolet</option>
+                                          <option value="#A52A2A">Brown</option>
+                                          <option value="#DEB887">BurlyWood</option>
+                                          <option value="#5F9EA0">CadetBlue</option>
+                                          <option value="#7FFF00">Chartreuse</option>
+                                          <option value="#D2691E">Chocolate</option>
+                                          <option value="#FF7F50">Coral</option>
+                                          <option value="#6495ED">CornflowerBlue</option>
+                                          <option value="#FFF8DC">Cornsilk</option>
+                                          <option value="#DC143C">Crimson</option>
+                                          <option value="#00FFFF">Cyan</option>
+                                          <option value="#00008B">DarkBlue</option>
+                                          <option value="#008B8B">DarkCyan</option>
+                                          <option value="#B8860B">DarkGoldenrod</option>
+                                          <option value="#A9A9A9">DarkGray</option>
+                                          <option value="#006400">DarkGreen</option>
+                                          <option value="#BDB76B">DarkKhaki</option>
+                                          <option value="#8B008B">DarkMagenta</option>
+                                          <option value="#556B2F">DarkOliveGreen</option>
+                                          <option value="#FF8C00">DarkOrange</option>
+                                          <option value="#9932CC">DarkOrchid</option>
+                                          <option value="#8B0000">DarkRed</option>
+                                          <option value="#E9967A">DarkSalmon</option>
+                                          <option value="#8FBC8F">DarkSeaGreen</option>
+                                          <option value="#483D8B">DarkSlateBlue</option>
+                                          <option value="#2F4F4F">DarkSlateGray</option>
+                                          <option value="#00CED1">DarkTurquoise</option>
+                                          <option value="#9400D3">DarkViolet</option>
+                                          <option value="#FF1493">DeepPink</option>
+                                          <option value="#00BFFF">DeepSkyBlue</option>
+                                          <option value="#696969">DimGray</option>
+                                          <option value="#1E90FF">DodgerBlue</option>
+                                          <option value="#B22222">FireBrick</option>
+                                          <option value="#FFFAF0">FloralWhite</option>
+                                          <option value="#228B22">ForestGreen</option>
+                                          <option value="#FF00FF">Fuchsia</option>
+                                          <option value="#DCDCDC">Gainsboro</option>
+                                          <option value="#F8F8FF">GhostWhite</option>
+                                          <option value="#FFD700">Gold</option>
+                                          <option value="#DAA520">Goldenrod</option>
+                                          <option value="#808080">Gray</option>
+                                          <option value="#008000">Green</option>
+                                          <option value="#ADFF2F">GreenYellow</option>
+                                          <option value="#F0FFF0">Honeydew</option>
+                                          <option value="#FF69B4">HotPink</option>
+                                          <option value="#CD5C5C">IndianRed</option>
+                                          <option value="#4B0082">Indigo</option>
+                                          <option value="#FFFFF0">Ivory</option>
+                                          <option value="#F0E68C">Khaki</option>
+                                          <option value="#E6E6FA">Lavender</option>
+                                          <option value="#FFF0F5">LavenderBlush</option>
+                                          <option value="#7CFC00">LawnGreen</option>
+                                          <option value="#FFFACD">LemonChiffon</option>
+                                          <option value="#ADD8E6">LightBlue</option>
+                                          <option value="#F08080">LightCoral</option>
+                                          <option value="#E0FFFF">LightCyan</option>
+                                          <option value="#FAFAD2">LightGoldenrodYellow</option>
+                                          <option value="#90EE90">LightGreen</option>
+                                          <option value="#D3D3D3">LightGrey</option>
+                                          <option value="#FFB6C1">LightPink</option>
+                                          <option value="#FFA07A">LightSalmon</option>
+                                          <option value="#FFA07A">LightSalmon</option>
+                                          <option value="#20B2AA">LightSeaGreen</option>
+                                          <option value="#87CEFA">LightSkyBlue</option>
+                                          <option value="#778899">LightSlateGray</option>
+                                          <option value="#B0C4DE">LightSteelBlue</option>
+                                          <option value="#FFFFE0">LightYellow</option>
+                                          <option value="#00FF00">Lime</option>
+                                          <option value="#32CD32">LimeGreen</option>
+                                          <option value="#FAF0E6">Linen</option>
+                                          <option value="#FF00FF">Magenta</option>
+                                          <option value="#800000">Maroon</option>
+                                          <option value="#66CDAA">MediumAquamarine</option>
+                                          <option value="#0000CD">MediumBlue</option>
+                                          <option value="#BA55D3">MediumOrchid</option>
+                                          <option value="#9370DB">MediumPurple</option>
+                                          <option value="#3CB371">MediumSeaGreen</option>
+                                          <option value="#7B68EE">MediumSlateBlue</option>
+                                          <option value="#7B68EE">MediumSlateBlue</option>
+                                          <option value="#00FA9A">MediumSpringGreen</option>
+                                          <option value="#48D1CC">MediumTurquoise</option>
+                                          <option value="#C71585">MediumVioletRed</option>
+                                          <option value="#191970">MidnightBlue</option>
+                                          <option value="#F5FFFA">MintCream</option>
+                                          <option value="#FFE4E1">MistyRose</option>
+                                          <option value="#FFE4B5">Moccasin</option>
+                                          <option value="#FFDEAD">NavajoWhite</option>
+                                          <option value="#000080">Navy</option>
+                                          <option value="#FDF5E6">OldLace</option>
+                                          <option value="#808000">Olive</option>
+                                          <option value="#6B8E23">OliveDrab</option>
+                                          <option value="#FFA500">Orange</option>
+                                          <option value="#FF4500">OrangeRed</option>
+                                          <option value="#DA70D6">Orchid</option>
+                                          <option value="#EEE8AA">PaleGoldenrod</option>
+                                          <option value="#98FB98">PaleGreen</option>
+                                          <option value="#AFEEEE">PaleTurquoise</option>
+                                          <option value="#DB7093">PaleVioletRed</option>
+                                          <option value="#FFEFD5">PapayaWhip</option>
+                                          <option value="#FFDAB9">PeachPuff</option>
+                                          <option value="#CD853F">Peru</option>
+                                          <option value="#FFC0CB">Pink</option>
+                                          <option value="#DDA0DD">Plum</option>
+                                          <option value="#B0E0E6">PowderBlue</option>
+                                          <option value="#800080">Purple</option>
+                                          <option value="#FF0000">Red</option>
+                                          <option value="#BC8F8F">RosyBrown</option>
+                                          <option value="#4169E1">RoyalBlue</option>
+                                          <option value="#8B4513">SaddleBrown</option>
+                                          <option value="#FA8072">Salmon</option>
+                                          <option value="#F4A460">SandyBrown</option>
+                                          <option value="#2E8B57">SeaGreen</option>
+                                          <option value="#FFF5EE">Seashell</option>
+                                          <option value="#A0522D">Sienna</option>
+                                          <option value="#C0C0C0">Silver</option>
+                                          <option value="#87CEEB">SkyBlue</option>
+                                          <option value="#6A5ACD">SlateBlue</option>
+                                          <option value="#708090">SlateGray</option>
+                                          <option value="#FFFAFA">Snow</option>
+                                          <option value="#00FF7F">SpringGreen</option>
+                                          <option value="#4682B4">SteelBlue</option>
+                                          <option value="#D2B48C">Tan</option>
+                                          <option value="#008080">Teal</option>
+                                          <option value="#D8BFD8">Thistle</option>
+                                          <option value="#FF6347">Tomato</option>
+                                          <option value="#40E0D0">Turquoise</option>
+                                          <option value="#EE82EE">Violet</option>
+                                          <option value="#F5DEB3">Wheat</option>
+                                          <option value="#FFFFFF">White</option>
+                                          <option value="#F5F5F5">WhiteSmoke</option>
+                                          <option value="#FFFF00">Yellow</option>
+                                          <option value="#9ACD32">YellowGreen</option>
+                                       </select>
+                                       <span class="select2 select2-container select2-container--default" dir="ltr" style="width: 649px;">
+                                          <span class="selection">
+                                             <span class="select2-selection select2-selection--multiple" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1">
+                                                <ul class="select2-selection__rendered">
+                                                   <li class="select2-search select2-search--inline"><input class="select2-search__field" type="search" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" role="textbox" aria-autocomplete="list" placeholder="" style="width: 0.75em;"></li>
+                                                </ul>
+                                             </span>
+                                          </span>
+                                          <span class="dropdown-wrapper" aria-hidden="true"></span>
+                                       </span>
+                                    </div>
+                                    <div class="col-4 col-xl-1 col-md-2 order-2 order-md-0 text-right">
+                                       <label class="switch" style="margin-top:5px;">
+                                       <input value="1" type="checkbox" name="colors_active">
+                                       <span class="slider round"></span>
+                                       </label>
+                                    </div>
+                                 </div>
+                                 <div class="row mb-3">
+                                    <div class="col-md-3">
+                                       <label>Attributes</label>
+                                    </div>
+                                    <div class="col-md-7">
+                                       <div class="">
+                                          <select name="choice_attributes[]" id="choice_attributes" class="form-control selectpicker select2-hidden-accessible" multiple="" data-placeholder="Choose Attributes" tabindex="-1" aria-hidden="true">
+                                             <option value="1">Size</option>
+                                             <option value="2">Fabric</option>
+                                             <option value="3">Storage</option>
+                                             <option value="4">Memory</option>
+                                             <option value="5">Capacity</option>
+                                             <option value="6">Load capacity</option>
+                                             <option value="7">Wheel</option>
+                                             <option value="8">Weight</option>
+                                             <option value="9">sleeve</option>
+                                             <option value="10">Lace</option>
+                                             <option value="11">Bulbs</option>
+                                          </select>
+                                          <span class="select2 select2-container select2-container--default" dir="ltr" style="width: 564px;">
+                                             <span class="selection">
+                                                <span class="select2-selection select2-selection--multiple" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1">
+                                                   <ul class="select2-selection__rendered">
+                                                      <li class="select2-search select2-search--inline"><input class="select2-search__field" type="search" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" role="textbox" aria-autocomplete="list" placeholder="Choose Attributes" style="width: 538px;"></li>
+                                                   </ul>
+                                                </span>
+                                             </span>
+                                             <span class="dropdown-wrapper" aria-hidden="true"></span>
+                                          </span>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="mb-3">
+                                    <p>Choose the attributes of this product and then input values of each attribute</p>
+                                 </div>
+                                 <div id="customer_choice_options">
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="form-box bg-white mt-4">
+                              <div class="form-box-title px-3 py-2">
+                                 Price
+                              </div>
+                              <div class="form-box-content p-3">
+                                 <div class="row">
+                                    <div class="col-md-2">
+                                       <label>Unit Price <span class="required-star">*</span></label>
+                                    </div>
+                                    <div class="col-md-10">
+                                       <input type="number" min="0" step="0.01" class="form-control mb-3" name="unit_price" placeholder="Unit Price (Base Price)" value="700">
+                                    </div>
+                                 </div>
+                                 <div class="row">
+                                    <div class="col-md-2">
+                                       <label>Purchase Price <span class="required-star">*</span></label>
+                                    </div>
+                                    <div class="col-md-10">
+                                       <input type="number" min="0" step="0.01" class="form-control mb-3" name="purchase_price" placeholder="Purchase Price" value="615" required="">
+                                    </div>
+                                 </div>
+                                 <div class="row">
+                                    <div class="col-md-2">
+                                       <label>Tax</label>
+                                    </div>
+                                    <div class="col-8">
+                                       <input type="number" min="0" step="0.01" class="form-control mb-3" name="tax" placeholder="Tax" value="0">
+                                    </div>
+                                    <div class="col-md-2 col-4">
+                                       <div class="mb-3">
+                                          <select class="form-control selectpicker select2-hidden-accessible" name="tax_type" data-minimum-results-for-search="Infinity" tabindex="-1" aria-hidden="true">
+                                             <option value="amount" selected="">$</option>
+                                             <option value="percent">%</option>
+                                          </select>
+                                          <span class="select2 select2-container select2-container--default" dir="ltr" style="width: 140px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-tax_type-di-container"><span class="select2-selection__rendered" id="select2-tax_type-di-container" title="$">$</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="row">
+                                    <div class="col-md-2">
+                                       <label>Discount</label>
+                                    </div>
+                                    <div class="col-8">
+                                       <input type="number" min="0" step="0.01" class="form-control mb-3" name="discount" placeholder="Discount" value="0">
+                                    </div>
+                                    <div class="col-md-2 col-4">
+                                       <div class="mb-3">
+                                          <select class="form-control selectpicker select2-hidden-accessible" name="discount_type" data-minimum-results-for-search="Infinity" tabindex="-1" aria-hidden="true">
+                                             <option value="amount" selected="">$</option>
+                                             <option value="percent">%</option>
+                                          </select>
+                                          <span class="select2 select2-container select2-container--default" dir="ltr" style="width: 140px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-discount_type-yy-container"><span class="select2-selection__rendered" id="select2-discount_type-yy-container" title="$">$</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="row" id="quantity">
+                                    <div class="col-md-2">
+                                       <label>Quantity <span class="required-star">*</span></label>
+                                    </div>
+                                    <div class="col-md-10">
+                                       <input type="number" min="0" step="1" class="form-control mb-3" name="current_stock" placeholder="Quantity" value="15">
+                                    </div>
+                                 </div>
+                                 <div class="row">
+                                    <div class="col-12" id="sku_combination"></div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="form-box bg-white mt-4">
+                              <div class="form-box-title px-3 py-2">
+                                 Shipping
+                              </div>
+                              <div class="form-box-content p-3">
+                                 <div class="row">
+                                    <div class="col-md-2">
+                                       <label>Flat Rate</label>
+                                    </div>
+                                    <div class="col-md-8">
+                                       <input type="number" min="0" step="0.01" class="form-control mb-3" name="flat_shipping_cost" value="0" placeholder="Flat Rate Cost">
+                                    </div>
+                                    <div class="col-md-2">
+                                       <label class="switch" style="margin-top:5px;">
+                                       <input type="radio" name="shipping_type" value="flat_rate">
+                                       <span class="slider round"></span>
+                                       </label>
+                                    </div>
+                                 </div>
+                                 <div class="row">
+                                    <div class="col-md-2">
+                                       <label>Free Shipping</label>
+                                    </div>
+                                    <div class="col-md-8">
+                                       <input type="number" min="0" step="0.01" class="form-control mb-3" name="free_shipping_cost" value="0" disabled="" placeholder="Flat Rate Cost">
+                                    </div>
+                                    <div class="col-md-2">
+                                       <label class="switch" style="margin-top:5px;">
+                                       <input type="radio" name="shipping_type" value="free" checked="">
+                                       <span class="slider round"></span>
+                                       </label>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="form-box bg-white mt-4">
+                              <div class="form-box-title px-3 py-2">
+                                 Description
+                              </div>
+                              <div class="form-box-content p-3">
+                                 <div class="row">
+                                    <div class="col-md-2">
+                                       <label>Description</label>
+                                    </div>
+                                    <div class="col-md-10">
+                                       <div class="mb-3">
+                                          <div contenteditable="false" class="jodit_container jodit_default_theme jodit_toolbar_size-middle jodit_wysiwyg_mode" style="min-height: 200px; min-width: 200px; max-width: 100%; height: auto; width: auto;">
+                                             <ul class="jodit_toolbar">
+                                                <li class="jodit_toolbar_btn jodit_toolbar_btn-bold">
+                                                   <a>
+                                                      <span>
+                                                         <svg viewBox="0 0 1792 1792" class="jodit_icon jodit_icon_bold">
+                                                            <path d="M747 1521q74 32 140 32 376 0 376-335 0-114-41-180-27-44-61.5-74t-67.5-46.5-80.5-25-84-10.5-94.5-2q-73 0-101 10 0 53-.5 159t-.5 158q0 8-1 67.5t-.5 96.5 4.5 83.5 12 66.5zm-14-746q42 7 109 7 82 0 143-13t110-44.5 74.5-89.5 25.5-142q0-70-29-122.5t-79-82-108-43.5-124-14q-50 0-130 13 0 50 4 151t4 152q0 27-.5 80t-.5 79q0 46 1 69zm-541 889l2-94q15-4 85-16t106-27q7-12 12.5-27t8.5-33.5 5.5-32.5 3-37.5.5-34v-65.5q0-982-22-1025-4-8-22-14.5t-44.5-11-49.5-7-48.5-4.5-30.5-3l-4-83q98-2 340-11.5t373-9.5q23 0 68.5.5t67.5.5q70 0 136.5 13t128.5 42 108 71 74 104.5 28 137.5q0 52-16.5 95.5t-39 72-64.5 57.5-73 45-84 40q154 35 256.5 134t102.5 248q0 100-35 179.5t-93.5 130.5-138 85.5-163.5 48.5-176 14q-44 0-132-3t-132-3q-106 0-307 11t-231 12z"></path>
+                                                         </svg>
+                                                      </span>
+                                                   </a>
+                                                </li>
+                                                <li class="jodit_toolbar_btn jodit_toolbar_btn-underline">
+                                                   <a>
+                                                      <span>
+                                                         <svg viewBox="0 0 1792 1792" class="jodit_icon jodit_icon_underline">
+                                                            <path d="M176 223q-37-2-45-4l-3-88q13-1 40-1 60 0 112 4 132 7 166 7 86 0 168-3 116-4 146-5 56 0 86-2l-1 14 2 64v9q-60 9-124 9-60 0-79 25-13 14-13 132 0 13 .5 32.5t.5 25.5l1 229 14 280q6 124 51 202 35 59 96 92 88 47 177 47 104 0 191-28 56-18 99-51 48-36 65-64 36-56 53-114 21-73 21-229 0-79-3.5-128t-11-122.5-13.5-159.5l-4-59q-5-67-24-88-34-35-77-34l-100 2-14-3 2-86h84l205 10q76 3 196-10l18 2q6 38 6 51 0 7-4 31-45 12-84 13-73 11-79 17-15 15-15 41 0 7 1.5 27t1.5 31q8 19 22 396 6 195-15 304-15 76-41 122-38 65-112 123-75 57-182 89-109 33-255 33-167 0-284-46-119-47-179-122-61-76-83-195-16-80-16-237v-333q0-188-17-213-25-36-147-39zm1488 1409v-64q0-14-9-23t-23-9h-1472q-14 0-23 9t-9 23v64q0 14 9 23t23 9h1472q14 0 23-9t9-23z"></path>
+                                                         </svg>
+                                                      </span>
+                                                   </a>
+                                                </li>
+                                                <li class="jodit_toolbar_btn jodit_toolbar_btn-italic">
+                                                   <a>
+                                                      <span>
+                                                         <svg viewBox="0 0 1792 1792" class="jodit_icon jodit_icon_italic">
+                                                            <path d="M384 1662l17-85q6-2 81.5-21.5t111.5-37.5q28-35 41-101 1-7 62-289t114-543.5 52-296.5v-25q-24-13-54.5-18.5t-69.5-8-58-5.5l19-103q33 2 120 6.5t149.5 7 120.5 2.5q48 0 98.5-2.5t121-7 98.5-6.5q-5 39-19 89-30 10-101.5 28.5t-108.5 33.5q-8 19-14 42.5t-9 40-7.5 45.5-6.5 42q-27 148-87.5 419.5t-77.5 355.5q-2 9-13 58t-20 90-16 83.5-6 57.5l1 18q17 4 185 31-3 44-16 99-11 0-32.5 1.5t-32.5 1.5q-29 0-87-10t-86-10q-138-2-206-2-51 0-143 9t-121 11z"></path>
+                                                         </svg>
+                                                      </span>
+                                                   </a>
+                                                </li>
+                                                <li class="jodit_toolbar_btn jodit_toolbar_btn-hr">
+                                                   <a>
+                                                      <span>
+                                                         <svg viewBox="0 0 1792 1792" class="jodit_icon jodit_icon_hr">
+                                                            <path d="M1600 736v192q0 40-28 68t-68 28h-1216q-40 0-68-28t-28-68v-192q0-40 28-68t68-28h1216q40 0 68 28t28 68z"></path>
+                                                         </svg>
+                                                      </span>
+                                                   </a>
+                                                </li>
+                                                <li class="jodit_toolbar_btn jodit_toolbar_btn-separator"></li>
+                                                <li class="jodit_toolbar_btn jodit_toolbar_btn-ul">
+                                                   <a>
+                                                      <span>
+                                                         <svg viewBox="0 0 1792 1792" class="jodit_icon jodit_icon_ul">
+                                                            <path d="M384 1408q0 80-56 136t-136 56-136-56-56-136 56-136 136-56 136 56 56 136zm0-512q0 80-56 136t-136 56-136-56-56-136 56-136 136-56 136 56 56 136zm1408 416v192q0 13-9.5 22.5t-22.5 9.5h-1216q-13 0-22.5-9.5t-9.5-22.5v-192q0-13 9.5-22.5t22.5-9.5h1216q13 0 22.5 9.5t9.5 22.5zm-1408-928q0 80-56 136t-136 56-136-56-56-136 56-136 136-56 136 56 56 136zm1408 416v192q0 13-9.5 22.5t-22.5 9.5h-1216q-13 0-22.5-9.5t-9.5-22.5v-192q0-13 9.5-22.5t22.5-9.5h1216q13 0 22.5 9.5t9.5 22.5zm0-512v192q0 13-9.5 22.5t-22.5 9.5h-1216q-13 0-22.5-9.5t-9.5-22.5v-192q0-13 9.5-22.5t22.5-9.5h1216q13 0 22.5 9.5t9.5 22.5z"></path>
+                                                         </svg>
+                                                      </span>
+                                                   </a>
+                                                </li>
+                                                <li class="jodit_toolbar_btn jodit_toolbar_btn-ol">
+                                                   <a>
+                                                      <span>
+                                                         <svg role="img" viewBox="0 0 1792 1792" class="jodit_icon jodit_icon_ol">
+                                                            <path d="M381 1620q0 80-54.5 126t-135.5 46q-106 0-172-66l57-88q49 45 106 45 29 0 50.5-14.5t21.5-42.5q0-64-105-56l-26-56q8-10 32.5-43.5t42.5-54 37-38.5v-1q-16 0-48.5 1t-48.5 1v53h-106v-152h333v88l-95 115q51 12 81 49t30 88zm2-627v159h-362q-6-36-6-54 0-51 23.5-93t56.5-68 66-47.5 56.5-43.5 23.5-45q0-25-14.5-38.5t-39.5-13.5q-46 0-81 58l-85-59q24-51 71.5-79.5t105.5-28.5q73 0 123 41.5t50 112.5q0 50-34 91.5t-75 64.5-75.5 50.5-35.5 52.5h127v-60h105zm1409 319v192q0 13-9.5 22.5t-22.5 9.5h-1216q-13 0-22.5-9.5t-9.5-22.5v-192q0-14 9-23t23-9h1216q13 0 22.5 9.5t9.5 22.5zm-1408-899v99h-335v-99h107q0-41 .5-122t.5-121v-12h-2q-8 17-50 54l-71-76 136-127h106v404h108zm1408 387v192q0 13-9.5 22.5t-22.5 9.5h-1216q-13 0-22.5-9.5t-9.5-22.5v-192q0-14 9-23t23-9h1216q13 0 22.5 9.5t9.5 22.5zm0-512v192q0 13-9.5 22.5t-22.5 9.5h-1216q-13 0-22.5-9.5t-9.5-22.5v-192q0-13 9.5-22.5t22.5-9.5h1216q13 0 22.5 9.5t9.5 22.5z"></path>
+                                                         </svg>
+                                                      </span>
+                                                   </a>
+                                                </li>
+                                                <li class="jodit_toolbar_btn jodit_toolbar_btn-separator"></li>
+                                                <li class="jodit_toolbar_btn jodit_with_dropdownlist jodit_toolbar_btn-left">
+                                                   <a>
+                                                      <span>
+                                                         <svg viewBox="0 0 1792 1792" class="jodit_icon jodit_icon_left">
+                                                            <path d="M1792 1344v128q0 26-19 45t-45 19h-1664q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1664q26 0 45 19t19 45zm-384-384v128q0 26-19 45t-45 19h-1280q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1280q26 0 45 19t19 45zm256-384v128q0 26-19 45t-45 19h-1536q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1536q26 0 45 19t19 45zm-384-384v128q0 26-19 45t-45 19h-1152q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1152q26 0 45 19t19 45z"></path>
+                                                         </svg>
+                                                      </span>
+                                                      <span class="jodit_with_dropdownlist-trigger"></span>
+                                                   </a>
+                                                </li>
+                                                <li class="jodit_toolbar_btn jodit_with_dropdownlist jodit_toolbar_btn-paragraph">
+                                                   <a>
+                                                      <span>
+                                                         <svg viewBox="0 0 1792 1792" class="jodit_icon jodit_icon_paragraph">
+                                                            <path d="M1534 189v73q0 29-18.5 61t-42.5 32q-50 0-54 1-26 6-32 31-3 11-3 64v1152q0 25-18 43t-43 18h-108q-25 0-43-18t-18-43v-1218h-143v1218q0 25-17.5 43t-43.5 18h-108q-26 0-43.5-18t-17.5-43v-496q-147-12-245-59-126-58-192-179-64-117-64-259 0-166 88-286 88-118 209-159 111-37 417-37h479q25 0 43 18t18 43z"></path>
+                                                         </svg>
+                                                      </span>
+                                                      <span class="jodit_with_dropdownlist-trigger"></span>
+                                                   </a>
+                                                </li>
+                                                <li class="jodit_toolbar_btn jodit_toolbar_btn-separator"></li>
+                                                <li class="jodit_toolbar_btn jodit_toolbar_btn-image">
+                                                   <a>
+                                                      <span>
+                                                         <svg viewBox="0 0 1792 1792" class="jodit_icon jodit_icon_image">
+                                                            <path d="M576 576q0 80-56 136t-136 56-136-56-56-136 56-136 136-56 136 56 56 136zm1024 384v448h-1408v-192l320-320 160 160 512-512zm96-704h-1600q-13 0-22.5 9.5t-9.5 22.5v1216q0 13 9.5 22.5t22.5 9.5h1600q13 0 22.5-9.5t9.5-22.5v-1216q0-13-9.5-22.5t-22.5-9.5zm160 32v1216q0 66-47 113t-113 47h-1600q-66 0-113-47t-47-113v-1216q0-66 47-113t113-47h1600q66 0 113 47t47 113z"></path>
+                                                         </svg>
+                                                      </span>
+                                                   </a>
+                                                </li>
+                                                <li class="jodit_toolbar_btn jodit_toolbar_btn-table">
+                                                   <a>
+                                                      <span>
+                                                         <svg viewBox="0 0 1792 1792" class="jodit_icon jodit_icon_table">
+                                                            <path d="M576 1376v-192q0-14-9-23t-23-9h-320q-14 0-23 9t-9 23v192q0 14 9 23t23 9h320q14 0 23-9t9-23zm0-384v-192q0-14-9-23t-23-9h-320q-14 0-23 9t-9 23v192q0 14 9 23t23 9h320q14 0 23-9t9-23zm512 384v-192q0-14-9-23t-23-9h-320q-14 0-23 9t-9 23v192q0 14 9 23t23 9h320q14 0 23-9t9-23zm-512-768v-192q0-14-9-23t-23-9h-320q-14 0-23 9t-9 23v192q0 14 9 23t23 9h320q14 0 23-9t9-23zm512 384v-192q0-14-9-23t-23-9h-320q-14 0-23 9t-9 23v192q0 14 9 23t23 9h320q14 0 23-9t9-23zm512 384v-192q0-14-9-23t-23-9h-320q-14 0-23 9t-9 23v192q0 14 9 23t23 9h320q14 0 23-9t9-23zm-512-768v-192q0-14-9-23t-23-9h-320q-14 0-23 9t-9 23v192q0 14 9 23t23 9h320q14 0 23-9t9-23zm512 384v-192q0-14-9-23t-23-9h-320q-14 0-23 9t-9 23v192q0 14 9 23t23 9h320q14 0 23-9t9-23zm0-384v-192q0-14-9-23t-23-9h-320q-14 0-23 9t-9 23v192q0 14 9 23t23 9h320q14 0 23-9t9-23zm128-320v1088q0 66-47 113t-113 47h-1344q-66 0-113-47t-47-113v-1088q0-66 47-113t113-47h1344q66 0 113 47t47 113z"></path>
+                                                         </svg>
+                                                      </span>
+                                                   </a>
+                                                </li>
+                                                <li class="jodit_toolbar_btn jodit_toolbar_btn-link">
+                                                   <a>
+                                                      <span>
+                                                         <svg viewBox="0 0 1792 1792" class="jodit_icon jodit_icon_link">
+                                                            <path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"></path>
+                                                         </svg>
+                                                      </span>
+                                                   </a>
+                                                </li>
+                                                <li class="jodit_toolbar_btn jodit_toolbar_btn-undo jodit_disabled" disabled="disabled">
+                                                   <a>
+                                                      <span>
+                                                         <svg viewBox="0 0 1792 1792" class="jodit_icon jodit_icon_undo">
+                                                            <path d="M1664 896q0 156-61 298t-164 245-245 164-298 61q-172 0-327-72.5t-264-204.5q-7-10-6.5-22.5t8.5-20.5l137-138q10-9 25-9 16 2 23 12 73 95 179 147t225 52q104 0 198.5-40.5t163.5-109.5 109.5-163.5 40.5-198.5-40.5-198.5-109.5-163.5-163.5-109.5-198.5-40.5q-98 0-188 35.5t-160 101.5l137 138q31 30 14 69-17 40-59 40h-448q-26 0-45-19t-19-45v-448q0-42 40-59 39-17 69 14l130 129q107-101 244.5-156.5t284.5-55.5q156 0 298 61t245 164 164 245 61 298z"></path>
+                                                         </svg>
+                                                      </span>
+                                                   </a>
+                                                </li>
+                                                <li class="jodit_toolbar_btn jodit_toolbar_btn-redo jodit_disabled" disabled="disabled">
+                                                   <a>
+                                                      <span>
+                                                         <svg viewBox="0 0 1792 1792" class="jodit_icon jodit_icon_redo">
+                                                            <path d="M1664 256v448q0 26-19 45t-45 19h-448q-42 0-59-40-17-39 14-69l138-138q-148-137-349-137-104 0-198.5 40.5t-163.5 109.5-109.5 163.5-40.5 198.5 40.5 198.5 109.5 163.5 163.5 109.5 198.5 40.5q119 0 225-52t179-147q7-10 23-12 14 0 25 9l137 138q9 8 9.5 20.5t-7.5 22.5q-109 132-264 204.5t-327 72.5q-156 0-298-61t-245-164-164-245-61-298 61-298 164-245 245-164 298-61q147 0 284.5 55.5t244.5 156.5l130-129q29-31 70-14 39 17 39 59z"></path>
+                                                         </svg>
+                                                      </span>
+                                                   </a>
+                                                </li>
+                                             </ul>
+                                             <div contenteditable="false" class="jodit_workplace" style="min-height: 148px;">
+                                                <div class="jodit_progress_bar">
+                                                   <div></div>
+                                                </div>
+                                                <div class="jodit_error_box_for_messages"></div>
+                                                <div class="jodit_wysiwyg" contenteditable="" aria-disabled="false" tabindex="-1" spellcheck="true" style="min-height: 146px;">
+                                                   <ul>
+                                                      <li>250 gm coarse ground powder.</li>
+                                                      <li>100% Arabica Nepali Coffee.</li>
+                                                      <li>Roasted in traditional slow gourmet.</li>
+                                                      <li>Less acidic, more bitter, and more highly caffeinated.</li>
+                                                      <li>Easy and healthy to use<br></li>
+                                                   </ul>
+                                                </div>
+                                                <span style="display: none;" class="jodit_placeholder">Start writing...</span>
+                                                <div class="jodit_source">
+                                                   <div class="jodit_source_mirror-fake ace_editor ace-idle-fingers ace_dark">
+                                                      <textarea class="ace_text-input" wrap="off" autocorrect="off" autocapitalize="off" spellcheck="false" style="opacity: 0;"></textarea>
+                                                      <div class="ace_gutter" aria-hidden="true">
+                                                         <div class="ace_layer ace_gutter-layer ace_folding-enabled"></div>
+                                                         <div class="ace_gutter-active-line"></div>
+                                                      </div>
+                                                      <div class="ace_scroller">
+                                                         <div class="ace_content">
+                                                            <div class="ace_layer ace_print-margin-layer">
+                                                               <div class="ace_print-margin" style="left: 4px; visibility: visible;"></div>
+                                                            </div>
+                                                            <div class="ace_layer ace_marker-layer"></div>
+                                                            <div class="ace_layer ace_text-layer" style="padding: 0px 4px;"></div>
+                                                            <div class="ace_layer ace_marker-layer"></div>
+                                                            <div class="ace_layer ace_cursor-layer ace_hidden-cursors">
+                                                               <div class="ace_cursor"></div>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                      <div class="ace_scrollbar ace_scrollbar-v" style="display: none; width: 22px;">
+                                                         <div class="ace_scrollbar-inner" style="width: 22px;"></div>
+                                                      </div>
+                                                      <div class="ace_scrollbar ace_scrollbar-h" style="display: none; height: 22px;">
+                                                         <div class="ace_scrollbar-inner" style="height: 22px;"></div>
+                                                      </div>
+                                                      <div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: hidden;">
+                                                         <div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: visible;"></div>
+                                                         <div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: visible;">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</div>
+                                                      </div>
+                                                   </div>
+                                                   <textarea class="jodit_source_mirror" placeholder="Start writing..." style="min-height: 146px; display: none; height: 0px;"></textarea>
+                                                </div>
+                                                <div class="jodit_search">
+                                                   <div class="jodit_search_box">
+                                                      <div class="jodit_search_inputs"><input tabindex="0" class="jodit_search-query" placeholder="Search for" type="text"><input tabindex="0" class="jodit_search-replace" placeholder="Replace with" type="text"></div>
+                                                      <div class="jodit_search_counts"><span>0/0</span></div>
+                                                      <div class="jodit_search_buttons">
+                                                         <button tabindex="0" type="button" class="jodit_search_buttons-next">
+                                                            <svg viewBox="0 0 1792 1792">
+                                                               <path d="M1395 736q0 13-10 23l-466 466q-10 10-23 10t-23-10l-466-466q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l393 393 393-393q10-10 23-10t23 10l50 50q10 10 10 23z"></path>
+                                                            </svg>
+                                                         </button>
+                                                         <button tabindex="0" type="button" class="jodit_search_buttons-prev">
+                                                            <svg viewBox="0 0 1792 1792">
+                                                               <path d="M1395 1184q0 13-10 23l-50 50q-10 10-23 10t-23-10l-393-393-393 393q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l466-466q10-10 23-10t23 10l466 466q10 10 10 23z"></path>
+                                                            </svg>
+                                                         </button>
+                                                         <button tabindex="0" type="button" class="jodit_search_buttons-cancel">
+                                                            <svg viewBox="0 0 16 16">
+                                                               <g transform="translate(0,-1036.3622)">
+                                                                  <path d="m 2,1050.3622 12,-12" style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"></path>
+                                                                  <path d="m 2,1038.3622 12,12" style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"></path>
+                                                               </g>
+                                                            </svg>
+                                                         </button>
+                                                         <button tabindex="0" type="button" class="jodit_search_buttons-replace">Replace</button>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="jodit_statusbar" style="display: block;">
+                                                <div class="jodit_statusbar_item jodit_statusbar_item-right"><span>Chars: 146</span></div>
+                                                <div class="jodit_statusbar_item jodit_statusbar_item-right"><span>Words: 27</span></div>
+                                             </div>
+                                             <div role="button" tabindex="-1" title="Break" class="jodit-add-new-line">
+                                                <span>
+                                                   <svg viewBox="0 0 128 128" xml:space="preserve">
+                                                      <g>
+                                                         <polygon points="112.4560547,23.3203125 112.4560547,75.8154297 31.4853516,75.8154297 31.4853516,61.953125     16.0131836,72.6357422 0.5410156,83.3164063 16.0131836,93.9990234 31.4853516,104.6796875 31.4853516,90.8183594     112.4560547,90.8183594 112.4560547,90.8339844 127.4589844,90.8339844 127.4589844,23.3203125   "></polygon>
+                                                      </g>
+                                                   </svg>
+                                                </span>
+                                             </div>
+                                          </div>
+                                          <textarea class="editor" name="description" style="display: none;">&lt;ul&gt;&lt;li&gt;250 gm coarse ground powder.
+&lt;/li&gt;&lt;li&gt;100% Arabica Nepali Coffee.
+&lt;/li&gt;&lt;li&gt;Roasted in traditional slow gourmet.
+&lt;/li&gt;&lt;li&gt;Less acidic, more bitter, and more highly caffeinated.&lt;/li&gt;&lt;li&gt;Easy and healthy to use&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;</textarea>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="form-box bg-white mt-4">
+                              <div class="form-box-title px-3 py-2">
+                                 PDF Specification
+                              </div>
+                              <div class="form-box-content p-3">
+                                 <div class="row">
+                                    <div class="col-md-2">
+                                       <label>PDF</label>
+                                    </div>
+                                    <div class="col-md-10">
+                                       <input type="file" name="pdf" id="file-6" class="custom-input-file custom-input-file--4" data-multiple-caption="{count} files selected" accept="pdf/*">
+                                       <label for="file-6" class="mw-100 mb-3">
+                                       <span></span>
+                                       <strong>
+                                       <i class="fa fa-upload"></i>
+                                       Choose PDF
+                                       </strong>
+                                       </label>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="form-box mt-4 text-right">
+                              <button type="submit" class="btn btn-styled btn-base-1">Update This Product</button>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="slice-sm footer-top-bar">
+            <div class="container sct-inner">
+               <div class="row no-gutters">
+                  <div class="col-lg-3 col-md-6">
+                     <div class="footer-top-box text-center">
+                        <a href="dashboard-vendor.html">
+                           <i class="fa fa-file-text"></i>
+                           <h4 class="heading-5">Seller Policy</h4>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                     <div class="footer-top-box text-center">
+                        <a href="https://durbarmart.nextnepal.org/returnpolicy">
+                           <i class="fa fa-mail-reply"></i>
+                           <h4 class="heading-5">Return Policy</h4>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                     <div class="footer-top-box text-center">
+                        <a href="https://durbarmart.nextnepal.org/supportpolicy">
+                           <i class="fa fa-support"></i>
+                           <h4 class="heading-5">Support Policy</h4>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                     <div class="footer-top-box text-center">
+                        <a href="https://durbarmart.nextnepal.org/profile">
+                           <i class="fa fa-dashboard"></i>
+                           <h4 class="heading-5">My Profile</h4>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- Cart Ends -->
+      </section>
+      <!-- Dashboard Vndeor Wrapper Ends-->
+      <!--=============================FOOTER START  ============================ -->
+      <footer
+         id="footer"
+         class="footer-bg-color position-relative padding_top pt-5"
+         style="--r1: 130%; --r2: 71.5%"
+         >
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-4 col-12">
+                  <div class="footer-logo-box text_white">
+                     <div class="header-logo">
+                        <a
+                           class="footer-logo navbar-brand text-white font-weight-bold text-uppercase font-weight-bolder mb-4 p-0"
+                           href="index.html"
+                           >
+                        <img src="img/logo.png" alt="image" />
+                        </a>
+                     </div>
+                     <p class="text-white font-weight-normal">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi,
+                        quia accusantium eum aperiam ea eaque ab dignissimos totam
+                        pariatur debitis corporis laborum earum illo alias cumque harum
+                        quasi, rem commodi.
+                     </p>
+                     <ul class="d-flex">
+                        <li class="logo-bg">
+                           <a href="https://www.facebook.com" class="text-white"
+                              ><i class="fa fa-facebook" aria-hidden="true"></i
+                              ></a>
+                        </li>
+                        <li class="feature_in_bg ml-3">
+                           <a href="https://www.instagram.com" class="text-white" ="" =""
+                           ><i class="fa fa-instagram" aria-hidden="true"></i
+                              ></a>
+                        </li>
+                        <li class="logo-bg ml-3">
+                           <a href="https://www.google.com" class="text-white" ="" =""
+                           ><i class="fa fa-google-plus" aria-hidden="true"></i
+                              ></a>
+                        </li>
+                        <li class="logo-bg ml-3">
+                           <a href="https://np.linkedin.com" class="text-white" ="" =""
+                           ><i class="fa fa-linkedin" aria-hidden="true"></i
+                              ></a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-2 col-6">
+                  <div class="footer-title text_white footer_after">
+                     <h4 class="mb-2 mb-md-4 text-white">Quick Links</h4>
+                     <ul class="text-white">
+                        <li class="mb-2">
+                           <a href="index.html" class="text-white">Home</a>
+                        </li>
+                        <li class="mb-2">
+                           <a href="product.html" class="text-white">Products</a>
+                        </li>
+                        <li class="mb-2">
+                           <a href="checkout.html" class="text-white">Checkout</a>
+                        </li>
+                        <li class="mb-2">
+                           <a href="cart.html" class="text-white">Cart</a>
+                        </li>
+                        <li class="mb-2">
+                           <a href="blog.html" class="text-white">Blog</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-2 col-6">
+                  <div class="footer-title text_white footer_after">
+                     <h4 class="text-white mb-2 mb-md-4">Links</h4>
+                     <ul>
+                        <li class="mb-2">
+                           <a href="" class="text-white">Links 1</a>
+                        </li>
+                        <li class="mb-2">
+                           <a href="" class="text-white">Links 2</a>
+                        </li>
+                        <li class="mb-2">
+                           <a href="" class="text-white">Links 3</a>
+                        </li>
+                        <li class="mb-2">
+                           <a href="" class="text-white">Links 4</a>
+                        </li>
+                        <li class="mb-2">
+                           <a href="" class="text-white">Links 5</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-12 mt-4 mt-lg-0">
+                  <div class="footer-title text_white footer_after">
+                     <h4 class="text-white mb-2 mb-md-4">Find Us</h4>
+                     <ul>
+                        <li class="text-white mb-2">
+                           <span class="pr-3"
+                              ><i class="fa fa-map-marker" aria-hidden="true"></i></span
+                              >Kathmandu, Nepal
+                        </li>
+                        <li class="text-white mb-2">
+                           <a href="tel:+61283870907, +61452145677" class="text-light"
+                              ><span class="pr-3"
+                              ><i class="fa fa-phone" aria-hidden="true"></i
+                              ></span>
+                           +61283870907, +61452145677</a
+                              >
+                        </li>
+                        <li>
+                           <a href="mailto:niuto@gmail.com" class="text-white"
+                              ><span class="pr-3"
+                              ><i
+                              class="fa fa-envelope-square"
+                              aria-hidden="true"
+                              ></i></span
+                              >niuto@gmail.com</a
+                              >
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <hr />
+            <div class="row">
+               <div class="col-md-12 text-center pb-3 pt-2">
+                  <p class="mb-0 text-white text-center font-weight-normal">
+                     Copyright All Right Reserved 2021.
+                     <span class="testimonial-title">Power by NEXT NEPAL </span>
+                  </p>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!--=============================FOOTER END  ============================ -->
+      <!--============================================================ LINK START ====-->
+      <!-- 1st Jquery Link Starts-->
+      <script src="frontend/assets/jquery-3.5.1/jquery-3.5.1.js"></script>
+      <!-- Jquery Link Ends-->
+      <!-- Popper -->
+      <script src="frontend/assets/popper/popper.min.js"></script>
+      <!-- Popper Ends-->
+      <!-- 3rd Bootstrap Js Link Starts -->
+      <script src="frontend/assets/bootstrap-4.3.1/js/bootstrap.min.js"></script>
+      <script src="frontend/assets/bootstrap-4.3.1/js/bootstrap.min.js.map"></script>
+      <!-- Bootstrap Js Link Ends -->
+      <!-- Slick Js -->
+      <script src="frontend/assets/slick/slick.min.js"></script>
+      <!-- Slick Js Ends-->
+      <!-- Magnific Popup -->
+      <script src="frontend/assets/magnific-popup/jquery.magnific-popup.min.js"></script>
+      <!-- Magnific Popup Ends-->
+      <!-- Countdown start -->
+      <script src="frontend/assets/countdown/js/flipclock.js"></script>
+      <!-- <script src="frontend/assets/countdown/js/flipclock.min.js"></script> -->
+      <!-- Countdown end -->
+      <!-- Custom Js Starts -->
+      <script src="frontend/assets/js/main.js"></script>
+      <!-- Custom Js Ends -->
+      <!--============================================================= LINK 
+         <!-- Mobile Nav -->
+      <!-- Mobile Nav start -->
+      <div
+         class="modal fade"
+         id="rightsidebarfilter"
+         tabindex="-1"
+         role="dialog"
+         aria-labelledby="rightsidebarfilterlabel"
+         aria-hidden="true"
+         >
+         <div class="modal-dialog" role="document">
+            <div class="modal-content h-100">
+               <div class="modal-header px-3 py-3 align-items-center">
+                  <div class="cart-Track Your Order">
+                     <div class="image">
+                        <a class="navbar-brand" href="index.html">
+                           <!-- <img src="frontend/assets/images/logo/logo.png" alt="navigation-logo" class="img-fluid"> -->
+                           <h2 class="m-0 font-weight-bold">
+                              <span>Sewa</span> 
+                           </h2>
+                        </a>
+                     </div>
+                  </div>
+                  <button
+                     type="button"
+                     class="close"
+                     data-dismiss="modal"
+                     aria-label="Close"
+                     >
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body d-flex justify-content-between h-100 px-4">
+                  <ul class="navbar-nav w-100">
+                     <li class="nav-item">
+                        <a class="nav-link active" href="index.html">
+                        <span class="nav-indication mr-2"
+                           ><i class="fa fa-eercast" aria-hidden="true"></i
+                           ></span>
+                        Home</a
+                           >
+                     </li>
+                     <li class="nav-item d-flex align-items-center">
+                        <a
+                           class="nav-link add-on"
+                           data-toggle="modal"
+                           data-target="#nav-cart"
+                           >
+                        <span class="nav-indication mr-2"
+                           ><i class="fa fa-eercast" aria-hidden="true"></i></span
+                           >My Cart
+                        <span class="mx-2"
+                           ><i class="fa fa-shopping-bag" aria-hidden="true"></i
+                           ></span>
+                        <sup class="cart-items text-white">2</sup>
+                        </a>
+                     </li>
+                     <li class="nav-item d-flex align-items-center">
+                        <a
+                           class="nav-link add-on"
+                           data-toggle="modal"
+                           data-target="#nav-cart"
+                           >
+                        <span class="nav-indication mr-2"
+                           ><i class="fa fa-eercast" aria-hidden="true"></i></span
+                           >Track Your Order
+                        <span class="mx-2"
+                           ><i class="fa fa-heart-o" aria-hidden="true"></i
+                           ></span>
+                        <sup class="cart-items text-white">2</sup>
+                        </a>
+                     </li>
+                     <li class="nav-item dropdown">
+                        <a
+                           class="nav-link dropdown-toggle"
+                           href=""
+                           role="button"
+                           data-toggle="dropdown"
+                           aria-haspopup="true"
+                           aria-expanded="false"
+                           >
+                        <span class="nav-indication mr-2"
+                           ><i class="fa fa-eercast" aria-hidden="true"></i></span
+                           >Products<span class="ml-1">
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                        </a>
+                        <div class="dropdown-menu">
+                           <div class="container d-block">
+                              <div class="row">
+                                 <div class="col-md-12">
+                                    <ul class="nav flex-column">
+                                       <li class="nav-item">
+                                          <a
+                                             class="nav-link head font-weight-bold"
+                                             href="under-construction.html"
+                                             >Heading 29</a
+                                             >
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html"
+                                             >Item 1</a
+                                             >
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html"
+                                             >Item 2</a
+                                             >
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <!-- /.col-md-12  -->
+                                 <div class="col-md-12">
+                                    <ul class="nav flex-column">
+                                       <li class="nav-item">
+                                          <a
+                                             class="nav-link head font-weight-bold"
+                                             href="under-construction.html"
+                                             >Heading 27</a
+                                             >
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html"
+                                             >Item 1</a
+                                             >
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html"
+                                             >Item 2</a
+                                             >
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <!-- /.col-md-12  -->
+                                 <div class="col-md-12">
+                                    <ul class="nav flex-column">
+                                       <li class="nav-item">
+                                          <a
+                                             class="nav-link head font-weight-bold"
+                                             href="under-construction.html"
+                                             >Heading 39</a
+                                             >
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html"
+                                             >Item 1</a
+                                             >
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html"
+                                             >Item 2</a
+                                             >
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <!-- /.col-md-12  -->
+                                 <div class="col-md-12">
+                                    <ul class="nav flex-column">
+                                       <li class="nav-item">
+                                          <a
+                                             class="nav-link head font-weight-bold"
+                                             href="under-construction.html"
+                                             >Heading 4</a
+                                             >
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html"
+                                             >Item 1</a
+                                             >
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html"
+                                             >Item 2</a
+                                             >
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <!-- /.col-md-12  -->
+                                 <div class="col-md-12">
+                                    <ul class="nav flex-column">
+                                       <li class="nav-item">
+                                          <a
+                                             class="nav-link head font-weight-bold"
+                                             href="under-construction.html"
+                                             >Heading 1</a
+                                             >
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html"
+                                             >Item 1</a
+                                             >
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html"
+                                             >Item 2</a
+                                             >
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <!-- /.col-md-12  -->
+                                 <div class="col-md-12">
+                                    <ul class="nav flex-column">
+                                       <li class="nav-item">
+                                          <a
+                                             class="nav-link head font-weight-bold"
+                                             href="under-construction.html"
+                                             >Heading 2</a
+                                             >
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html"
+                                             >Item 1</a
+                                             >
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html"
+                                             >Item 2</a
+                                             >
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <!-- /.col-md-12  -->
+                                 <div class="col-md-12">
+                                    <ul class="nav flex-column">
+                                       <li class="nav-item">
+                                          <a
+                                             class="nav-link head font-weight-bold"
+                                             href="under-construction.html"
+                                             >Heading 3</a
+                                             >
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html"
+                                             >Item 1</a
+                                             >
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html"
+                                             >Item 2</a
+                                             >
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <!-- /.col-md-12  -->
+                                 <div class="col-md-12">
+                                    <ul class="nav flex-column">
+                                       <li class="nav-item">
+                                          <a
+                                             class="nav-link head font-weight-bold"
+                                             href="under-construction.html"
+                                             >Heading 4</a
+                                             >
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html"
+                                             >Item 1</a
+                                             >
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html"
+                                             >Item 2</a
+                                             >
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <!-- /.col-md-12  -->
+                              </div>
+                           </div>
+                           <!--  /.container  -->
+                        </div>
+                     </li>
+                     <li class="nav-item dropdown">
+                        <a
+                           class="nav-link dropdown-toggle"
+                           href=""
+                           role="button"
+                           data-toggle="dropdown"
+                           aria-haspopup="true"
+                           aria-expanded="false"
+                           >
+                        <span class="nav-indication mr-2"
+                           ><i class="fa fa-eercast" aria-hidden="true"></i></span
+                           >Category<span class="ml-1">
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                        </a>
+                        <div class="dropdown-menu">
+                           <div class="container d-block">
+                              <div class="row">
+                                 <div class="col-md-12">
+                                    <ul class="nav flex-column">
+                                       <li class="nav-item">
+                                          <a
+                                             class="nav-link head font-weight-bold"
+                                             href="under-construction.html"
+                                             >Heading 29</a
+                                             >
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html"
+                                             >Item 1</a
+                                             >
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html"
+                                             >Item 2</a
+                                             >
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <!-- /.col-md-12  -->
+                                 <div class="col-md-12">
+                                    <ul class="nav flex-column">
+                                       <li class="nav-item">
+                                          <a
+                                             class="nav-link head font-weight-bold"
+                                             href="under-construction.html"
+                                             >Heading 27</a
+                                             >
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html"
+                                             >Item 1</a
+                                             >
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html"
+                                             >Item 2</a
+                                             >
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <!-- /.col-md-12  -->
+                                 <div class="col-md-12">
+                                    <ul class="nav flex-column">
+                                       <li class="nav-item">
+                                          <a
+                                             class="nav-link head font-weight-bold"
+                                             href="under-construction.html"
+                                             >Heading 39</a
+                                             >
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html"
+                                             >Item 1</a
+                                             >
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html"
+                                             >Item 2</a
+                                             >
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <!-- /.col-md-12  -->
+                                 <div class="col-md-12">
+                                    <ul class="nav flex-column">
+                                       <li class="nav-item">
+                                          <a
+                                             class="nav-link head font-weight-bold"
+                                             href="under-construction.html"
+                                             >Heading 4</a
+                                             >
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html"
+                                             >Item 1</a
+                                             >
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html"
+                                             >Item 2</a
+                                             >
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <!-- /.col-md-12  -->
+                                 <div class="col-md-12">
+                                    <ul class="nav flex-column">
+                                       <li class="nav-item">
+                                          <a
+                                             class="nav-link head font-weight-bold"
+                                             href="under-construction.html"
+                                             >Heading 1</a
+                                             >
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html"
+                                             >Item 1</a
+                                             >
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html"
+                                             >Item 2</a
+                                             >
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <!-- /.col-md-12  -->
+                                 <div class="col-md-12">
+                                    <ul class="nav flex-column">
+                                       <li class="nav-item">
+                                          <a
+                                             class="nav-link head font-weight-bold"
+                                             href="under-construction.html"
+                                             >Heading 2</a
+                                             >
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html"
+                                             >Item 1</a
+                                             >
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html"
+                                             >Item 2</a
+                                             >
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <!-- /.col-md-12  -->
+                                 <div class="col-md-12">
+                                    <ul class="nav flex-column">
+                                       <li class="nav-item">
+                                          <a
+                                             class="nav-link head font-weight-bold"
+                                             href="under-construction.html"
+                                             >Heading 3</a
+                                             >
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html"
+                                             >Item 1</a
+                                             >
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html"
+                                             >Item 2</a
+                                             >
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <!-- /.col-md-12  -->
+                                 <div class="col-md-12">
+                                    <ul class="nav flex-column">
+                                       <li class="nav-item">
+                                          <a
+                                             class="nav-link head font-weight-bold"
+                                             href="under-construction.html"
+                                             >Heading 4</a
+                                             >
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html"
+                                             >Item 1</a
+                                             >
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html"
+                                             >Item 2</a
+                                             >
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <!-- /.col-md-12  -->
+                              </div>
+                           </div>
+                           <!--  /.container  -->
+                        </div>
+                     </li>
+                     <li class="nav-item dropdown">
+                        <a
+                           class="nav-link dropdown-toggle"
+                           href=""
+                           role="button"
+                           data-toggle="dropdown"
+                           aria-haspopup="true"
+                           aria-expanded="false"
+                           >
+                        <span class="nav-indication mr-2"
+                           ><i class="fa fa-eercast" aria-hidden="true"></i
+                           ></span>
+                        Recipes<span class="ml-1">
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                        </a>
+                        <div class="dropdown-menu">
+                           <div class="container d-block">
+                              <div class="row">
+                                 <div class="col-md-12">
+                                    <ul class="nav flex-column">
+                                       <li class="nav-item">
+                                          <a
+                                             class="nav-link head font-weight-bold"
+                                             href="under-construction.html"
+                                             >Heading 29</a
+                                             >
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html"
+                                             >Item 1</a
+                                             >
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html"
+                                             >Item 2</a
+                                             >
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <!-- /.col-md-12  -->
+                                 <div class="col-md-12">
+                                    <ul class="nav flex-column">
+                                       <li class="nav-item">
+                                          <a
+                                             class="nav-link head font-weight-bold"
+                                             href="under-construction.html"
+                                             >Heading 27</a
+                                             >
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html"
+                                             >Item 1</a
+                                             >
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html"
+                                             >Item 2</a
+                                             >
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <!-- /.col-md-12  -->
+                                 <div class="col-md-12">
+                                    <ul class="nav flex-column">
+                                       <li class="nav-item">
+                                          <a
+                                             class="nav-link head font-weight-bold"
+                                             href="under-construction.html"
+                                             >Heading 39</a
+                                             >
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html"
+                                             >Item 1</a
+                                             >
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html"
+                                             >Item 2</a
+                                             >
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <!-- /.col-md-12  -->
+                                 <div class="col-md-12">
+                                    <ul class="nav flex-column">
+                                       <li class="nav-item">
+                                          <a
+                                             class="nav-link head font-weight-bold"
+                                             href="under-construction.html"
+                                             >Heading 4</a
+                                             >
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html"
+                                             >Item 1</a
+                                             >
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html"
+                                             >Item 2</a
+                                             >
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <!-- /.col-md-12  -->
+                                 <div class="col-md-12">
+                                    <ul class="nav flex-column">
+                                       <li class="nav-item">
+                                          <a
+                                             class="nav-link head font-weight-bold"
+                                             href="under-construction.html"
+                                             >Heading 1</a
+                                             >
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html"
+                                             >Item 1</a
+                                             >
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html"
+                                             >Item 2</a
+                                             >
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <!-- /.col-md-12  -->
+                                 <div class="col-md-12">
+                                    <ul class="nav flex-column">
+                                       <li class="nav-item">
+                                          <a
+                                             class="nav-link head font-weight-bold"
+                                             href="under-construction.html"
+                                             >Heading 2</a
+                                             >
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html"
+                                             >Item 1</a
+                                             >
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html"
+                                             >Item 2</a
+                                             >
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <!-- /.col-md-12  -->
+                                 <div class="col-md-12">
+                                    <ul class="nav flex-column">
+                                       <li class="nav-item">
+                                          <a
+                                             class="nav-link head font-weight-bold"
+                                             href="under-construction.html"
+                                             >Heading 3</a
+                                             >
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html"
+                                             >Item 1</a
+                                             >
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html"
+                                             >Item 2</a
+                                             >
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <!-- /.col-md-12  -->
+                                 <div class="col-md-12">
+                                    <ul class="nav flex-column">
+                                       <li class="nav-item">
+                                          <a
+                                             class="nav-link head font-weight-bold"
+                                             href="under-construction.html"
+                                             >Heading 4</a
+                                             >
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html"
+                                             >Item 1</a
+                                             >
+                                       </li>
+                                       <li class="nav-item p-0">
+                                          <a class="nav-link" href="under-construction.html"
+                                             >Item 2</a
+                                             >
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <!-- /.col-md-12  -->
+                              </div>
+                           </div>
+                           <!--  /.container  -->
+                        </div>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html">
+                        <span class="nav-indication mr-2"
+                           ><i class="fa fa-eercast" aria-hidden="true"></i
+                           ></span>
+                        Contact Us</a
+                           >
+                     </li>
+                  </ul>
+               </div>
+               <div class="modal-footer py-3">
+                  <a class="w-50 text-center" href="under-construction.html">
+                  <span class="mr-2"
+                     ><i class="fa fa-sign-in" aria-hidden="true"></i></span
+                     >Login</a
+                     >
+                  <a class="w-50 text-center" href="under-construction.html">
+                  <span class="mr-2"
+                     ><i class="fa fa-paper-plane" aria-hidden="true"></i></span
+                     >Register</a
+                     >
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Mobile Nav -->
+   </body>
+</html>

@@ -109,7 +109,7 @@
 }
     /*=========================== COMMON CSS END  */
      
-  
+ 
   /* Mobile Menu */
               
   .mobile-menu {
@@ -162,13 +162,13 @@
       #rightsidebarfilter .dropdown-toggle::after {
         display: none;
       }
-      
       #rightsidebarfilter .modal-body .nav-link {
         font-size: 16px;
         margin-bottom: 0px;
         font-weight: 500;
         color: var(--black);
-      }
+        border: 0;
+    }
       
       #rightsidebarfilter .modal-footer a {
         text-decoration: none;

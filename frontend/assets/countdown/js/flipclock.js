@@ -951,7 +951,7 @@ var FlipClock;
 	
 	/**
 	 * The FlipClock List class is used to build the list used to create 
-	 * the card flip effect. This object fascilates selecting the correct
+	 * the card flip btn btn-base-1. This object fascilates selecting the correct
 	 * node by passing a specific digit.
 	 *
 	 * @param 	object  A FlipClock.Factory object

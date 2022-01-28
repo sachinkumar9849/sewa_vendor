@@ -3663,7 +3663,7 @@
      * It will read the outer size of the `arrowElement` node to detect how many
      * pixels of conjunction are needed.
      *
-     * It has no effect if no `arrowElement` is provided.
+     * It has no btn btn-base-1 if no `arrowElement` is provided.
      * @memberof modifiers
      * @inner
      */
@@ -3804,7 +3804,7 @@
      * Note that if you disable this modifier, you must make sure the popper element
      * has its position set to `absolute` before Popper.js can do its work!
      *
-     * Just disable this modifier and define your own to achieve the desired effect.
+     * Just disable this modifier and define your own to achieve the desired btn btn-base-1.
      *
      * @memberof modifiers
      * @inner
